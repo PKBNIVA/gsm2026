@@ -1,0 +1,11 @@
+{
+  "cleanUrls": true,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Content-Security-Policy", "value": "frame-src https://gsm2026.figma.site https://*.figma.site;" }
+      ]
+    }
+  ]
+}
