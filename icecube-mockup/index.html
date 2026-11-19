@@ -1,9 +1,5 @@
-<!doctype html>
-<html lang="en-IN">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Event Management Company in Kochi, Kerala | Icecube Events</title>
+<title>Icecube Events Redesign</title>
+<meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Kochi-based event management company since 2009. Corporate conferences, government events, launches, inaugurations and exhibitions across India.">
 <meta property="og:image" content="https://www.icecubeevents.com/uploads/our_works/1785322384_featured.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +13,7 @@
   --bg:#060b18; --bg2:#0b1326; --card:#111b33; --line:#1f2b48;
   --text:#e9eef8; --muted:#9aa8c4; --ice:#3fc8ff; --ice2:#8be0ff; --gold:#ffc861;
   --radius:14px; --wrap:1180px;
+  color-scheme:dark;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -29,7 +26,7 @@ h1{font-size:clamp(34px,5.4vw,60px)}
 h2{font-size:clamp(28px,3.6vw,40px)}
 h3{font-size:22px}
 p{margin:0 0 1em}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
 .eyebrow{font:700 12px/1 Orbitron,sans-serif;letter-spacing:2.5px;text-transform:uppercase;color:var(--ice);margin-bottom:14px;display:block}
 .muted{color:var(--muted)}
 .ph{border-bottom:1.5px dashed var(--gold);color:var(--gold)}
@@ -53,7 +50,8 @@ section{padding:80px 0}
 .mock{background:#2a2108;color:var(--gold);font-size:13px;text-align:center;padding:7px 16px}
 
 /* header */
-header{position:sticky;top:0;z-index:50;background:rgba(6,11,24,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:70;background:var(--bg)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(6,11,24,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:70px}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
 .logo img{height:34px}
@@ -72,7 +70,7 @@ nav a:hover,nav a.on{color:var(--text)}
 
 /* hero */
 .hero{position:relative;padding:110px 0 90px;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:url(https://www.icecubeevents.com/uploads/our_works/1785322384_featured.jpg) center/cover;opacity:.32}
+.hero::before{content:"";position:absolute;inset:0;background:url(img/1785322384_featured.jpg) center/cover;opacity:.32}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,11,24,.35),var(--bg) 92%)}
 .hero .wrap{position:relative;z-index:1}
 .hero p.lead{font-size:20px;color:#c9d4ea;max-width:640px}
@@ -159,26 +157,24 @@ footer a{text-decoration:none}
 footer a:hover{color:var(--text)}
 
 /* contact bars */
-.fab{position:fixed;right:22px;bottom:22px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.4);text-decoration:none;font-size:28px}
+.fab{position:fixed;right:calc(22px + env(safe-area-inset-right,0px));bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.4);text-decoration:none;font-size:28px}
 .mbar{display:none}
 @media(max-width:760px){
   .fab{display:none}
   body{padding-bottom:70px}
-  .mbar{display:grid;grid-template-columns:1fr 1fr 1.3fr;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--bg2);border-top:1px solid var(--line);padding:8px;gap:8px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr 1.3fr;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--bg2);border-top:1px solid var(--line);padding:8px max(8px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-left,0px));gap:8px}
   .mbar a{padding:12px 6px;font-size:15px}
 }
 [data-page]{display:none}
 [data-page].show{display:block}
 </style>
-</head>
-<body>
 
 <div class="mock">Design mockup · <span class="ph">dashed gold items</span> are placeholders — replace with real figures, quotes and reviews before launch.</div>
 
 <header>
   <div class="wrap nav">
     <a class="logo" href="#home" aria-label="Icecube Events home">
-      <img src="https://www.icecubeevents.com/assets/user/public/images/logo/icecube-logo.svg" alt="Icecube Events">
+      <img src="img/logo.svg" alt="Icecube Events">
     </a>
     <nav aria-label="Main">
       <button class="menu-btn" aria-expanded="false" aria-controls="menu" onclick="toggleMenu(this)">Menu</button>
@@ -205,10 +201,10 @@ footer a:hover{color:var(--text)}
       <h1>What are you planning?</h1>
       <p class="lead">We plan and run corporate, government and large-scale events, from a 50-person leadership meet to a Prime Minister's visit.</p>
       <div class="choices">
-        <a class="choice" href="#service/corporate"><i>🏢</i><b>Corporate event</b><small>Conferences, dealer meets, awards</small></a>
-        <a class="choice" href="#service/government"><i>🏛️</i><b>Government event</b><small>VIP visits, protocol, public events</small></a>
-        <a class="choice" href="#service/launch"><i>🚀</i><b>Brand launch</b><small>Product launches, activations</small></a>
-        <a class="choice" href="#service/exhibitions"><i>🧩</i><b>Exhibition</b><small>Stalls, expos, roadshows</small></a>
+        <a class="choice" href="#service-corporate"><i>🏢</i><b>Corporate event</b><small>Conferences, dealer meets, awards</small></a>
+        <a class="choice" href="#service-government"><i>🏛️</i><b>Government event</b><small>VIP visits, protocol, public events</small></a>
+        <a class="choice" href="#service-launch"><i>🚀</i><b>Brand launch</b><small>Product launches, activations</small></a>
+        <a class="choice" href="#service-exhibitions"><i>🧩</i><b>Exhibition</b><small>Stalls, expos, roadshows</small></a>
       </div>
     </div>
   </section>
@@ -362,8 +358,8 @@ footer a:hover{color:var(--text)}
   <section><div class="wrap">
     <h2>Certifications</h2>
     <div class="grid g4" style="margin-top:24px">
-      <img class="card" style="padding:10px;background:#fff" loading="lazy" src="https://www.icecubeevents.com/uploads/certificates/1783008132_6a468b84d28ea_ISO%20Quality%20management_page-0001.jpg" alt="ISO quality management certificate">
-      <img class="card" style="padding:10px;background:#fff" loading="lazy" src="https://www.icecubeevents.com/uploads/certificates/1783008119_6a468b77cca25_ISO_page-0001.jpg" alt="ISO certificate">
+      <img class="card" style="padding:10px;background:#fff" loading="lazy" src="img/cert1.jpg" alt="ISO quality management certificate">
+      <img class="card" style="padding:10px;background:#fff" loading="lazy" src="img/cert2.jpg" alt="ISO certificate">
     </div>
   </div></section>
 </div>
@@ -437,7 +433,7 @@ footer a:hover{color:var(--text)}
   <div class="wrap">
     <div class="cols">
       <div>
-        <img src="https://www.icecubeevents.com/assets/user/public/images/logo/icecube-logo.svg" alt="Icecube Events" style="height:34px;margin-bottom:14px">
+        <img src="img/logo.svg" alt="Icecube Events" style="height:34px;margin-bottom:14px">
         <p>Event management company in Kochi, Kerala, since 2009. Corporate, government and large-scale events across India.</p>
       </div>
       <div><h4>Company</h4><ul><li><a href="#about">About</a></li><li><a href="#work">Our Work</a></li><li><a href="#clients">Clients</a></li><li><a href="#insights">Insights</a></li><li><a href="https://www.icecubeevents.com/careers">Careers</a></li><li><a href="#contact">Contact</a></li></ul></div>
@@ -461,7 +457,7 @@ footer a:hover{color:var(--text)}
 </div>
 
 <script>
-const IMG = f => `https://www.icecubeevents.com/uploads/our_works/${f}`;
+const IMG = f => `img/${f.replace(/\.webp$/,".jpg")}`;
 
 const SERVICES = [
   {s:'corporate', n:'Corporate Events & Conferences', d:'Conferences, dealer meets, annual days, awards nights and leadership offsites.',
@@ -533,7 +529,7 @@ const $ = s => document.querySelector(s);
 const svcBy = s => SERVICES.find(x => x.s === s);
 
 function storyCard(w){
-  return `<a class="story" href="#case/${w.id}">
+  return `<a class="story" href="#case-${w.id}">
     <img loading="lazy" src="${IMG(w.img)}" alt="${w.t}">
     <div class="body"><span class="tag">${CATS[w.c]}</span><h3>${w.t}</h3>
     <div class="meta"><span>👥 <span class="ph">000 guests</span></span><span>📍 <span class="ph">City</span></span><span>🗓 <span class="ph">Year</span></span></div></div></a>`;
@@ -560,8 +556,8 @@ function renderStatic(){
   $('#home-logos').innerHTML = CLIENTS.flatMap(g=>g.l).map(n=>`<div>${n}</div>`).join('');
   $('#home-reviews').innerHTML = REVIEWS.map(([t,n,r])=>`<div class="card review phbox"><div class="stars">★★★★★</div><p class="ph" style="border:0">"${t}"</p><div class="who"><span class="av">${n[0]}</span><div><b class="ph" style="border:0">${n}</b><br><span class="muted">${r}</span></div></div></div>`).join('');
   $('#home-faq').innerHTML = faqHTML(FAQ);
-  $('#svc-grid').innerHTML = SERVICES.map(s=>`<a class="card story" style="padding:24px" href="#service/${s.s}"><h3>${s.n}</h3><p class="muted" style="margin:0">${s.d}</p><span style="color:var(--ice);font-weight:800;margin-top:14px">Details →</span></a>`).join('');
-  $('#foot-svc').innerHTML = SERVICES.map(s=>`<li><a href="#service/${s.s}">${s.n}</a></li>`).join('');
+  $('#svc-grid').innerHTML = SERVICES.map(s=>`<a class="card story" style="padding:24px" href="#service-${s.s}"><h3>${s.n}</h3><p class="muted" style="margin:0">${s.d}</p><span style="color:var(--ice);font-weight:800;margin-top:14px">Details →</span></a>`).join('');
+  $('#foot-svc').innerHTML = SERVICES.map(s=>`<li><a href="#service-${s.s}">${s.n}</a></li>`).join('');
   const cats = ['All', ...Object.keys(CATS)];
   $('#work-chips').innerHTML = cats.map((c,i)=>`<button class="chip ${i?'':'on'}" aria-pressed="${!i}" data-c="${c}">${c==='All'?'All':CATS[c]}</button>`).join('');
   $('#work-chips').onclick = e => {
@@ -572,7 +568,7 @@ function renderStatic(){
   drawWork('All');
   $('#clients-list').innerHTML = CLIENTS.map(g=>`<h2 style="margin-top:10px">${g.g}</h2><div class="grid g3" style="margin:20px 0 50px">${g.l.map(n=>{
       const ws = WORKS.filter(w=>w.client===n);
-      return `<div class="card"><h3 style="margin:0 0 8px">${n}</h3>${ws.length?ws.map(w=>`<a href="#case/${w.id}" style="display:block;color:var(--ice);text-decoration:none;font-weight:700;margin-top:6px">${w.t} →</a>`).join(''):'<span class="muted ph" style="border:0">Add one-line summary of work done</span>'}</div>`;
+      return `<div class="card"><h3 style="margin:0 0 8px">${n}</h3>${ws.length?ws.map(w=>`<a href="#case-${w.id}" style="display:block;color:var(--ice);text-decoration:none;font-weight:700;margin-top:6px">${w.t} →</a>`).join(''):'<span class="muted ph" style="border:0">Add one-line summary of work done</span>'}</div>`;
     }).join('')}</div>`).join('');
   $('#blog-list').innerHTML = BLOG.map(([c,t])=>`<a class="card story" style="padding:24px" href="https://www.icecubeevents.com/blogs" target="_blank" rel="noopener"><span class="tag">${c}</span><h3 style="margin-top:8px">${t}</h3></a>`).join('');
   document.querySelectorAll('[data-form]').forEach(el=>el.innerHTML = formHTML());
@@ -608,7 +604,6 @@ function renderService(s){
     <div class="formbox">${formHTML(svc.s)}</div>
     <div><h2>Questions</h2>${faqHTML(FAQ.slice(0,4))}</div>
   </div></section>`;
-  document.title = `${svc.n} in Kochi, Kerala | Icecube Events`;
 }
 
 function renderCase(id){
@@ -632,17 +627,16 @@ function renderCase(id){
       </div>
       <div class="card"><h3>Event facts</h3><table>
         <tr><th>Client</th><td>${w.client}</td></tr>
-        <tr><th>Type</th><td><a href="#service/${svc.s}" style="color:var(--ice)">${svc.n}</a></td></tr>
+        <tr><th>Type</th><td><a href="#service-${svc.s}" style="color:var(--ice)">${svc.n}</a></td></tr>
         <tr><th>Guests</th><td class="ph">000</td></tr>
         <tr><th>Venue / City</th><td class="ph">Venue, City</td></tr>
         <tr><th>Year</th><td class="ph">20XX</td></tr>
         <tr><th>Duration</th><td class="ph">X days</td></tr>
       </table>
-      <a class="btn btn-ice" style="width:100%;margin-top:20px" href="#service/${svc.s}">Plan a similar event</a></div>
+      <a class="btn btn-ice" style="width:100%;margin-top:20px" href="#service-${svc.s}">Plan a similar event</a></div>
     </div>
   </div></section>
   ${more.length?`<section class="alt"><div class="wrap"><h2>More ${CATS[w.c].toLowerCase()} work</h2><div class="grid g3" style="margin-top:24px">${more.map(storyCard).join('')}</div></div></section>`:''}`;
-  document.title = `${w.t} | Case study | Icecube Events`;
 }
 
 const TITLES = {home:'Event Management Company in Kochi, Kerala | Icecube Events', services:'Event Services in Kochi & Kerala | Icecube Events', work:'Our Work: Events Delivered | Icecube Events', clients:'Clients | Icecube Events', about:'About Icecube Events, Kochi (since 2009)', insights:'Event Planning Guides for Kerala | Icecube Events', contact:'Contact Icecube Events, Kochi', thanks:'Thank you | Icecube Events'};
@@ -650,11 +644,12 @@ const TITLES = {home:'Event Management Company in Kochi, Kerala | Icecube Events
 function route(){
   const h = location.hash.replace('#','') || 'home';
   if (h === 'home-form' || h === 'svc-form') { showPage(h==='home-form'?'home':'service', false); document.getElementById(h)?.scrollIntoView(); return; }
-  const [p, arg] = h.split('/');
+  let p = h, arg;
+  if (h.startsWith('service-')) { p='service'; arg=h.slice(8); }
+  else if (h.startsWith('case-')) { p='case'; arg=h.slice(5); }
   if (p === 'service') renderService(arg);
   if (p === 'case') renderCase(arg);
   showPage(p in TITLES || p==='service' || p==='case' ? p : 'home', true);
-  if (TITLES[p]) document.title = TITLES[p];
 }
 function showPage(p, top){
   document.querySelectorAll('[data-page]').forEach(el=>el.classList.toggle('show', el.dataset.page===p));
@@ -668,5 +663,3 @@ renderStatic();
 window.addEventListener('hashchange', route);
 route();
 </script>
-</body>
-</html>
