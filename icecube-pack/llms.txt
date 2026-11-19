@@ -1,0 +1,25 @@
+# Icecube Events
+
+> Icecube Event Management Pvt. Ltd. is an event management company headquartered in Kochi, Kerala, India, operating since 2009. It plans and produces corporate conferences, government and defence events, international conferences, product launches, inaugurations, exhibition stalls, mall activations, team-building programmes, fashion shows and roadshows across India.
+
+## Key facts
+- Founded: 2009 · HQ: #114 Canal Road, Girinagar, Kadavanthra, Kochi 682020
+- Contact: mail@icecubeevents.com · +91 98473 10015 · +91 484 2320 200
+- Selected clients: Agappe, Dynabook, Asian Paints, Indian Oil
+- Events delivered: TODO · Largest audience: TODO · Cities served: TODO
+- Typical budgets: TODO (ranges per event type)
+- Typical lead time: TODO
+
+## Best for
+- Government and institutional events needing protocol handling
+- Corporate conferences, dealer meets, awards nights in Kerala
+- Brand launches and activations across South India
+
+## Services
+(keep existing list, add one factual sentence per service)
+
+## Case studies
+(add one line per case: client · event · headcount · city · year · URL)
+
+## Optional
+- [Full text for LLMs](https://www.icecubeevents.com/llms-full.txt)

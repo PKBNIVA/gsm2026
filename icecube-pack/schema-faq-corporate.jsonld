@@ -1,0 +1,8 @@
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"How much does a corporate event cost in Kochi?","acceptedAnswer":{"@type":"Answer","text":"TODO: give real ranges, e.g. a 200-person one-day conference typically costs ₹X–₹Y lakh including venue, AV, stage and hospitality."}},
+ {"@type":"Question","name":"How far in advance should we book an event company?","acceptedAnswer":{"@type":"Answer","text":"TODO: e.g. 6–8 weeks for 300+ attendees; 2–3 weeks possible for smaller formats."}},
+ {"@type":"Question","name":"Do you manage events outside Kerala?","acceptedAnswer":{"@type":"Answer","text":"TODO: list cities/countries actually delivered."}},
+ {"@type":"Question","name":"Do you handle government protocol, permits and VIP security?","acceptedAnswer":{"@type":"Answer","text":"TODO"}}
+]}
+</script>

@@ -1,0 +1,26 @@
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@graph":[
+  {"@type":["Organization","LocalBusiness","EventPlanner"],"@id":"https://www.icecubeevents.com/#org",
+   "name":"Icecube Events","legalName":"Icecube Event Management Pvt. Ltd.","url":"https://www.icecubeevents.com/",
+   "logo":"https://www.icecubeevents.com/assets/user/public/images/logo/icecube-logo.png",
+   "image":"https://www.icecubeevents.com/og/home-1200x630.jpg","foundingDate":"2009",
+   "telephone":["+91-98473-10015","+91-484-2320200"],"email":"mail@icecubeevents.com",
+   "address":{"@type":"PostalAddress","streetAddress":"#114, Canal Road, Girinagar, Kadavanthra","addressLocality":"Kochi","addressRegion":"Kerala","postalCode":"682020","addressCountry":"IN"},
+   "geo":{"@type":"GeoCoordinates","latitude":"TODO","longitude":"TODO"},
+   "areaServed":[{"@type":"State","name":"Kerala"},{"@type":"Country","name":"India"}],
+   "knowsAbout":["Corporate events","Government events","International conferences","Product launches","Inaugurations","Exhibition stalls","Mall activations","Team building","Fashion shows","Roadshows","MICE"],
+   "sameAs":["TODO-linkedin","TODO-instagram","TODO-facebook","TODO-google-maps-cid","TODO-wikidata"],
+   "hasOfferCatalog":{"@type":"OfferCatalog","name":"Event services","itemListElement":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Government Event Management","url":"https://www.icecubeevents.com/service/government-event-management-icecube-events"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Corporate Event Management","url":"https://www.icecubeevents.com/service/corporate-event-management-company-icecube-events"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"International Conference Management","url":"https://www.icecubeevents.com/service/international-conference-management-icecube-events"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Launch Events","url":"https://www.icecubeevents.com/service/launch-event-company-icecube-events"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Stalls & Exhibitions","url":"https://www.icecubeevents.com/service/stalls-exhibitions-icecube-events"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Roadshows","url":"https://www.icecubeevents.com/service/roadshow-event-management-company-india-icecube-events"}}]}
+  },
+  {"@type":"WebSite","@id":"https://www.icecubeevents.com/#site","url":"https://www.icecubeevents.com/","name":"Icecube Events","publisher":{"@id":"https://www.icecubeevents.com/#org"},"inLanguage":"en-IN"}
+ ]
+}
+</script>
