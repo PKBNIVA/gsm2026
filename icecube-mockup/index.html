@@ -1,665 +1,697 @@
 <title>Icecube Events Redesign</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Kochi-based event management company since 2009. Corporate conferences, government events, launches, inaugurations and exhibitions across India.">
-<meta property="og:image" content="https://www.icecubeevents.com/uploads/our_works/1785322384_featured.jpg">
+<meta name="description" content="Icecube Events, Kochi. Government, corporate and international events since 2009.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Orbitron:wght@700;900&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":["Organization","LocalBusiness"],"name":"Icecube Events","legalName":"Icecube Event Management Pvt. Ltd.","url":"https://www.icecubeevents.com/","foundingDate":"2009","telephone":["+91-98473-10015","+91-484-2320200"],"email":"mail@icecubeevents.com","address":{"@type":"PostalAddress","streetAddress":"#114, Canal Road, Girinagar, Kadavanthra","addressLocality":"Kochi","addressRegion":"Kerala","postalCode":"682020","addressCountry":"IN"},"areaServed":["Kerala","India"]}
+{"@context":"https://schema.org","@type":["Organization","LocalBusiness"],"name":"Icecube Events","legalName":"Icecube Event Management Pvt. Ltd.","url":"https://www.icecubeevents.com/","foundingDate":"2009","telephone":["+91-98473-10015","+91-484-2320200"],"email":"mail@icecubeevents.com","address":{"@type":"PostalAddress","streetAddress":"#114, Canal Road, Girinagar, Kadavanthra","addressLocality":"Kochi","addressRegion":"Kerala","postalCode":"682020","addressCountry":"IN"}}
 </script>
 <style>
+/* Layout: a show running live — full-bleed event photography cut against a stage manager's cue sheet. */
 :root{
-  --bg:#060b18; --bg2:#0b1326; --card:#111b33; --line:#1f2b48;
-  --text:#e9eef8; --muted:#9aa8c4; --ice:#3fc8ff; --ice2:#8be0ff; --gold:#ffc861;
-  --radius:14px; --wrap:1180px;
+  --ink:#06080d; --ink-2:#0b0f17; --ink-3:#121826;
+  --ice:#eaf3ff; --mist:#8e99ad; --line:rgba(205,225,255,.13);
+  --frost:#a9dcff; --tungsten:#ffb46a;
+  --display:"Archivo","Arial Narrow",Impact,sans-serif;
+  --body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --gut:max(20px,env(safe-area-inset-left,0px));
+  --gutr:max(20px,env(safe-area-inset-right,0px));
   color-scheme:dark;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
-body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.65 Nunito,system-ui,sans-serif;-webkit-font-smoothing:antialiased;padding-bottom:0}
+body{margin:0;background:var(--ink);color:var(--ice);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{color:inherit}
-h1,h2,h3{font-family:Rajdhani,Nunito,sans-serif;line-height:1.15;margin:0 0 .5em;letter-spacing:.2px}
-h1{font-size:clamp(34px,5.4vw,60px)}
-h2{font-size:clamp(28px,3.6vw,40px)}
-h3{font-size:22px}
-p{margin:0 0 1em}
-.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
-.eyebrow{font:700 12px/1 Orbitron,sans-serif;letter-spacing:2.5px;text-transform:uppercase;color:var(--ice);margin-bottom:14px;display:block}
-.muted{color:var(--muted)}
-.ph{border-bottom:1.5px dashed var(--gold);color:var(--gold)}
-.phbox{outline:1.5px dashed var(--gold);outline-offset:-1.5px}
-section{padding:80px 0}
-.alt{background:var(--bg2)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:999px;font-weight:800;text-decoration:none;border:0;cursor:pointer;font-size:16px;font-family:inherit}
-.btn-ice{background:var(--ice);color:#04121d}
-.btn-ice:hover{background:var(--ice2)}
-.btn-ghost{background:transparent;color:var(--text);border:1.5px solid var(--line)}
-.btn-ghost:hover{border-color:var(--ice)}
-.btn-wa{background:#25d366;color:#05210f}
-.grid{display:grid;gap:20px}
-.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
-.g3{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
-.g4{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
-:focus-visible{outline:3px solid var(--ice);outline-offset:2px}
+:focus-visible{outline:2px solid var(--frost);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.wrap{max-width:1280px;margin:0 auto;padding-left:var(--gut);padding-right:var(--gutr)}
+.display{font-family:var(--display);font-stretch:68%;font-weight:850;text-transform:uppercase;line-height:.9;letter-spacing:-.005em;margin:0;text-wrap:balance}
+.cue{font:600 12px/1.2 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--frost)}
+.mono{font-family:var(--mono);font-size:13px;letter-spacing:.06em}
+.muted{color:var(--mist)}
+p{margin:0 0 1em;max-width:62ch}
+[data-page]{display:none}
+[data-page].show{display:block}
 
-/* mockup banner */
-.mock{background:#2a2108;color:var(--gold);font-size:13px;text-align:center;padding:7px 16px}
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 15px var(--body);text-decoration:none;padding:15px 24px;border-radius:2px;border:1px solid var(--ice);background:var(--ice);color:var(--ink);cursor:pointer}
+.btn:hover{background:var(--frost);border-color:var(--frost)}
+.btn.line{background:transparent;color:var(--ice);border-color:var(--line)}
+.btn.line:hover{border-color:var(--ice)}
+.arrow::after{content:"→";font-family:var(--body)}
 
 /* header */
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:70;background:var(--bg)}
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(6,11,24,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.logo img{height:34px}
-.logo span{font:900 18px Orbitron,sans-serif;letter-spacing:2px}
-nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
-nav a{text-decoration:none;color:var(--muted);font-weight:700}
-nav a:hover,nav a.on{color:var(--text)}
-.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:10px;padding:8px 12px;font:inherit}
-@media(max-width:900px){
-  nav ul{display:none;position:absolute;top:70px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg2);border-bottom:1px solid var(--line)}
-  nav ul.open{display:flex}
-  nav li a{display:block;padding:14px 20px;border-top:1px solid var(--line)}
-  .menu-btn{display:block}
-  .nav .btn{display:none}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--ink);z-index:90}
+header{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:80;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+header.solid{background:rgba(6,8,13,.88);backdrop-filter:blur(14px);border-color:var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.brand img{height:36px;width:auto}
+nav.main{display:flex;gap:32px;align-items:center}
+nav.main a{text-decoration:none;font-weight:600;font-size:15px;color:var(--mist)}
+nav.main a:hover,nav.main a.on{color:var(--ice)}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--ice);font:600 14px var(--body);padding:9px 14px;border-radius:2px}
+@media (max-width:860px){
+  nav.main{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--ink-2);border-bottom:1px solid var(--line);padding:0 var(--gutr) 0 var(--gut)}
+  nav.main.open{display:flex}
+  nav.main a{padding:16px 0;border-top:1px solid var(--line);font-size:17px}
+  .burger{display:block}
+  .bar .btn{display:none}
 }
 
 /* hero */
-.hero{position:relative;padding:110px 0 90px;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:url(img/1785322384_featured.jpg) center/cover;opacity:.32}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,11,24,.35),var(--bg) 92%)}
-.hero .wrap{position:relative;z-index:1}
-.hero p.lead{font-size:20px;color:#c9d4ea;max-width:640px}
-.choices{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px;max-width:900px}
-@media(max-width:760px){.choices{grid-template-columns:1fr 1fr}}
-.choice{background:rgba(17,27,51,.85);border:1.5px solid var(--line);border-radius:var(--radius);padding:20px 18px;text-decoration:none;transition:.2s}
-.choice:hover{border-color:var(--ice);transform:translateY(-3px)}
-.choice b{display:block;font:700 20px Rajdhani,sans-serif}
-.choice small{color:var(--muted)}
-.choice i{font-style:normal;font-size:26px;display:block;margin-bottom:8px}
+.hero{position:relative;min-height:min(100svh,920px);display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;isolation:isolate}
+.hero .bg{position:absolute;inset:0;background:url(img/1785322384_featured.jpg) center 35%/cover;filter:saturate(.55) contrast(1.05) brightness(.55);z-index:-3;transform:scale(1.04)}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;z-index:-2;mix-blend-mode:screen}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(6,8,13,.65) 0%,rgba(6,8,13,.1) 35%,rgba(6,8,13,.55) 70%,var(--ink) 100%)}
+.hero .wrap{width:100%;padding-top:180px;padding-bottom:56px}
+.hero h1{font-size:clamp(58px,11.5vw,176px)}
+.hero h1 em{font-style:normal;color:transparent;-webkit-text-stroke:1.5px var(--ice)}
+.hero .lede{font-size:clamp(18px,1.7vw,21px);color:#cfd9ea;margin:28px 0 36px;max-width:56ch}
+.clock{position:absolute;top:130px;right:var(--gutr);text-align:right;z-index:1}
+.clock b{display:block;font:600 22px var(--mono);letter-spacing:.04em;color:var(--ice)}
+.live{display:inline-flex;align-items:center;gap:8px}
+.live::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--tungsten);box-shadow:0 0 12px var(--tungsten);animation:pulse 1.6s infinite}
+@keyframes pulse{50%{opacity:.35}}
+@media (max-width:700px){.clock{display:none}}
 
-/* facts */
-.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
-.facts div{padding:26px 22px;border-right:1px solid var(--line)}
-.facts div:last-child{border:0}
-.facts strong{display:block;font:900 30px Orbitron,sans-serif;color:var(--ice)}
-@media(max-width:760px){.facts{grid-template-columns:1fr 1fr}.facts div:nth-child(2){border-right:0}.facts div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+.intent{display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;font-size:19px}
+.intent span{color:var(--mist);margin-right:4px}
+.intent a{text-decoration:none;border:1px solid rgba(234,243,255,.35);padding:10px 18px;border-radius:999px;font-weight:600;backdrop-filter:blur(6px);background:rgba(6,8,13,.35);transition:.2s}
+.intent a:hover{background:var(--ice);color:var(--ink);border-color:var(--ice)}
+.credit{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:56px;padding-top:18px}
+.credit a{text-decoration:none}
+.credit a:hover{color:var(--ice)}
 
-/* story cards */
-.story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;display:flex;flex-direction:column;transition:.2s}
-.story:hover{border-color:var(--ice)}
-.story img{aspect-ratio:16/10;object-fit:cover;width:100%;background:#1a2440}
-.story .body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:6px;flex:1}
-.tag{font:700 11px Orbitron,sans-serif;letter-spacing:1.5px;color:var(--ice);text-transform:uppercase}
-.story h3{font-size:21px;margin:0}
-.meta{display:flex;gap:14px;flex-wrap:wrap;font-size:14px;color:var(--muted);margin-top:auto;padding-top:8px}
+/* sections */
+section{padding:120px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:48px}
+.head h2{font-size:clamp(44px,7vw,96px)}
+
+/* index of work */
+.index{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:1fr 240px 200px 40px;gap:24px;align-items:center;padding:26px 0;border-bottom:1px solid var(--line);text-decoration:none;position:relative;transition:padding .25s}
+.row .t{font-family:var(--display);font-stretch:75%;font-weight:750;font-size:clamp(24px,3vw,40px);line-height:1;text-transform:uppercase;transition:color .2s}
+.row .thumb{display:none}
+.row:hover .t{color:var(--frost)}
+.row:hover{padding-left:14px}
+.row .go{font-size:22px;color:var(--mist);text-align:right}
+.row:hover .go{color:var(--frost)}
+@media (max-width:900px){
+  .row{grid-template-columns:96px 1fr;gap:6px 16px;padding:18px 0}
+  .row:hover{padding-left:0}
+  .row .thumb{display:block;grid-row:span 3;width:96px;height:72px;object-fit:cover}
+  .row .t{font-size:22px}
+  .row .go{display:none}
+}
+.peek{position:fixed;left:0;top:0;width:340px;aspect-ratio:4/3;object-fit:cover;pointer-events:none;z-index:70;opacity:0;transform:translate(-50%,-50%) scale(.92);transition:opacity .2s,transform .2s;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.peek.on{opacity:1;transform:translate(-50%,-50%) scale(1)}
+@media (hover:none),(max-width:900px){.peek{display:none}}
+
+/* proof numbers */
+.proof{background:var(--ink-2);border-block:1px solid var(--line)}
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.nums > a{padding:8px 28px 8px 0;margin-right:28px;border-right:1px solid var(--line);text-decoration:none;display:flex;flex-direction:column;gap:12px}
+.nums > a:last-child{border:0;margin:0}
+.nums b{font-family:var(--display);font-stretch:62%;font-weight:900;font-size:clamp(84px,10vw,150px);line-height:.8;color:var(--ice)}
+.nums b small{font-size:.35em;font-stretch:80%;margin-left:6px;color:var(--frost)}
+.nums p{font-size:16px;color:#c6d0e1;margin:0}
+.nums a:hover p{color:var(--ice)}
+@media (max-width:900px){.nums{grid-template-columns:1fr 1fr;gap:40px 0}.nums > a:nth-child(2n){border:0;margin-right:0}}
+@media (max-width:480px){.nums{grid-template-columns:1fr}.nums > a{border:0;margin:0;padding:0 0 28px;border-bottom:1px solid var(--line)}}
+
+/* cue sheet */
+.cuesheet{width:100%;border-collapse:collapse}
+.cuesheet td{padding:26px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.cuesheet tr:first-child td{border-top:1px solid var(--line)}
+.cuesheet td:first-child{width:180px}
+.cuesheet td:nth-child(2){width:32%;font-family:var(--display);font-stretch:75%;font-weight:750;font-size:30px;text-transform:uppercase;line-height:1;padding-right:24px}
+.cuesheet td:last-child{color:#c6d0e1}
+.cuesheet .lamp{display:inline-flex;align-items:center;gap:10px}
+.cuesheet .lamp::before{content:"";width:10px;height:10px;border-radius:50%;border:1.5px solid var(--frost)}
+.cuesheet tr.go .lamp::before{background:var(--frost);box-shadow:0 0 10px var(--frost)}
+@media (max-width:760px){
+  .cuesheet,.cuesheet tbody,.cuesheet tr,.cuesheet td{display:block;width:auto!important}
+  .cuesheet tr{border-bottom:1px solid var(--line);padding:22px 0}
+  .cuesheet tr:first-child{border-top:1px solid var(--line)}
+  .cuesheet td{border:0!important;padding:4px 0}
+}
 
 /* clients */
-.logos{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}
-.logos div{border:1px solid var(--line);border-radius:12px;padding:20px 14px;text-align:center;font-weight:800;color:#c9d4ea;background:var(--card)}
+.marquee{overflow:hidden;border-block:1px solid var(--line);padding:34px 0;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;gap:56px;width:max-content;animation:roll 48s linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+.track span{font-family:var(--display);font-stretch:70%;font-weight:800;font-size:clamp(40px,5.4vw,76px);text-transform:uppercase;white-space:nowrap;color:transparent;-webkit-text-stroke:1px rgba(234,243,255,.55)}
+.track span:nth-child(3n+1){color:var(--ice);-webkit-text-stroke:0}
+@keyframes roll{to{transform:translateX(-50%)}}
 
-/* reviews */
-.stars{color:var(--gold);letter-spacing:2px}
-.review p{font-size:16px}
-.who{display:flex;align-items:center;gap:12px;font-size:14px}
-.who span.av{width:40px;height:40px;border-radius:50%;background:#22304f;display:grid;place-items:center;font-weight:800}
+/* services list */
+.svc{display:grid;grid-template-columns:1fr 1fr;column-gap:56px}
+.svc a{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:22px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.svc a b{font-family:var(--display);font-stretch:78%;font-weight:700;font-size:26px;text-transform:uppercase;line-height:1.05}
+.svc a span{color:var(--mist);font-size:15px;text-align:right;max-width:26ch}
+.svc a:hover b{color:var(--frost)}
+@media (max-width:860px){.svc{grid-template-columns:1fr}.svc a{flex-direction:column;gap:4px}.svc a span{text-align:left}}
 
-/* steps */
-.steps{counter-reset:s}
-.steps .card{position:relative;padding-top:56px}
-.steps .card::before{counter-increment:s;content:"0" counter(s);position:absolute;top:20px;left:24px;font:900 20px Orbitron,sans-serif;color:var(--ice)}
+/* brief */
+.brief{background:radial-gradient(900px 420px at 80% 0%,rgba(169,220,255,.10),transparent 70%),var(--ink-2);border-top:1px solid var(--line)}
+.sentence{font-family:var(--display);font-stretch:75%;font-weight:700;font-size:clamp(30px,4.4vw,58px);line-height:1.35;text-transform:uppercase;margin:0 0 40px;max-width:none}
+.sentence label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.sentence select,.sentence input{font:inherit;font-stretch:75%;text-transform:uppercase;color:var(--frost);background:transparent;border:0;border-bottom:2px solid var(--frost);padding:0 4px;border-radius:0;appearance:none;-webkit-appearance:none;cursor:pointer;max-width:100%}
+.sentence select option{background:var(--ink-2);color:var(--ice);text-transform:none;font:16px var(--body)}
+.sentence input{width:7.5em;cursor:text}
+.sentence input::placeholder{color:rgba(169,220,255,.4)}
+.sentence select:focus,.sentence input:focus{outline:none;border-bottom-color:var(--ice);color:var(--ice)}
+.alt-contact{display:flex;gap:28px;flex-wrap:wrap;margin-top:28px;color:var(--mist);font-size:15px}
+.alt-contact b{color:var(--ice);font-weight:600}
 
-/* faq */
-details{border-bottom:1px solid var(--line);padding:18px 0}
-summary{cursor:pointer;font-weight:800;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:16px}
-summary::after{content:"+";color:var(--ice);font-size:24px;line-height:1}
-details[open] summary::after{content:"–"}
-details p{margin:12px 0 0;color:#c9d4ea}
-
-/* form */
-.formbox{background:linear-gradient(160deg,#10203f,#0b1326);border:1px solid var(--line);border-radius:20px;padding:34px}
-form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-@media(max-width:640px){form{grid-template-columns:1fr}}
-label{font-size:14px;font-weight:700;color:var(--muted);display:flex;flex-direction:column;gap:6px}
-select,input{background:#0a1224;color:var(--text);border:1.5px solid var(--line);border-radius:12px;padding:14px;font:inherit;width:100%}
-select:focus,input:focus{border-color:var(--ice);outline:none}
-form .full{grid-column:1/-1}
-.promise{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;color:var(--muted);margin-top:14px}
-
-/* page header */
-.phead{padding:70px 0 40px;border-bottom:1px solid var(--line);background:radial-gradient(800px 300px at 20% 0,rgba(63,200,255,.12),transparent)}
-.crumb{font-size:14px;color:var(--muted);margin-bottom:12px}
-.crumb a{color:var(--muted)}
-.answer{font-size:19px;color:#d6dff0;max-width:760px;border-left:3px solid var(--ice);padding-left:18px}
-table{width:100%;border-collapse:collapse;font-size:16px}
-td,th{text-align:left;padding:12px 0;border-bottom:1px solid var(--line);vertical-align:top}
-th{color:var(--muted);font-weight:700;width:42%}
-ul.ticks{list-style:none;padding:0;margin:0;display:grid;gap:10px}
-ul.ticks li::before{content:"✓";color:var(--ice);font-weight:900;margin-right:10px}
-.chips{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
-.chip{border:1.5px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:9px 16px;font:700 14px Nunito,sans-serif;cursor:pointer}
-.chip.on,.chip:hover{border-color:var(--ice);color:var(--text)}
-.split{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:start}
-@media(max-width:900px){.split{grid-template-columns:1fr}}
-.quote{font:600 24px/1.4 Rajdhani,sans-serif;border-left:3px solid var(--gold);padding-left:20px}
+/* inner pages */
+.ph{padding:180px 0 64px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.ph h1{font-size:clamp(52px,9vw,128px)}
+.ph .lede{font-size:20px;color:#cfd9ea;margin-top:28px;max-width:60ch}
+.crumbs{margin-bottom:24px}
+.crumbs a{text-decoration:none;color:var(--mist)}
+.crumbs a:hover{color:var(--ice)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.chip{background:transparent;border:1px solid var(--line);color:var(--mist);font:600 14px var(--body);padding:9px 16px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"],.chip:hover{border-color:var(--ice);color:var(--ice)}
+.split{display:grid;grid-template-columns:1.5fr 1fr;gap:72px;align-items:start}
+@media (max-width:900px){.split{grid-template-columns:1fr;gap:48px}}
+.split > *{min-width:0}
+.facts{border-top:1px solid var(--line)}
+.facts div{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid var(--line)}
+.facts dt{color:var(--mist)}
+.facts dd{margin:0;text-align:right;font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.tags li{border:1px solid var(--line);padding:7px 12px;font-size:14px;color:#c6d0e1}
+.casehero{width:100%;aspect-ratio:21/9;object-fit:cover;max-height:72vh}
+@media (max-width:700px){.casehero{aspect-ratio:4/3}}
+.big{font-size:clamp(20px,2vw,24px);line-height:1.55;color:var(--ice)}
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:22px 0;display:flex;justify-content:space-between;gap:20px;font-weight:600;font-size:18px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:400 24px/1 var(--mono);color:var(--frost)}
+details[open] summary::after{content:"−"}
+details p{color:#c6d0e1;padding-bottom:22px;margin:0}
+.ticks{list-style:none;margin:0;padding:0;columns:2;column-gap:40px}
+.ticks li{break-inside:avoid;padding:12px 0;border-bottom:1px solid var(--line)}
+@media (max-width:600px){.ticks{columns:1}}
+.certs{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px}
+.certs img{background:#fff;padding:8px}
+.contactgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;border-top:1px solid var(--line)}
+.contactgrid > div{padding:28px 28px 28px 0;border-bottom:1px solid var(--line)}
+.contactgrid b{display:block;font:600 22px var(--body);margin-top:8px;user-select:all}
 
 /* footer */
-footer{border-top:1px solid var(--line);padding:56px 0 30px;font-size:15px;color:var(--muted)}
-footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:30px}
-@media(max-width:800px){footer .cols{grid-template-columns:1fr 1fr}}
-footer h4{color:var(--text);font:700 16px Rajdhani,sans-serif;margin:0 0 12px;letter-spacing:1px;text-transform:uppercase}
-footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+footer{border-top:1px solid var(--line);padding:72px 0 calc(40px + env(safe-area-inset-bottom,0px))}
+.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:40px}
+@media (max-width:860px){.fgrid{grid-template-columns:1fr 1fr}}
+footer h4{margin:0 0 14px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:9px;font-size:15px;color:var(--mist)}
 footer a{text-decoration:none}
-footer a:hover{color:var(--text)}
+footer a:hover{color:var(--ice)}
+.wordmark{font-family:var(--display);font-stretch:62%;font-weight:900;font-size:clamp(80px,19vw,300px);line-height:.8;text-transform:uppercase;color:transparent;-webkit-text-stroke:1px rgba(234,243,255,.2);margin-top:64px;white-space:nowrap;overflow:hidden}
 
-/* contact bars */
-.fab{position:fixed;right:calc(22px + env(safe-area-inset-right,0px));bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.4);text-decoration:none;font-size:28px}
-.mbar{display:none}
-@media(max-width:760px){
-  .fab{display:none}
-  body{padding-bottom:70px}
-  .mbar{display:grid;grid-template-columns:1fr 1fr 1.3fr;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--bg2);border-top:1px solid var(--line);padding:8px max(8px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-left,0px));gap:8px}
-  .mbar a{padding:12px 6px;font-size:15px}
+/* floating contact */
+.wa{position:fixed;right:calc(24px + env(safe-area-inset-right,0px));bottom:calc(24px + env(safe-area-inset-bottom,0px));z-index:75;display:flex;align-items:center;gap:10px;background:#1fbf5b;color:#03140a;text-decoration:none;font-weight:700;padding:13px 20px 13px 16px;border-radius:999px;box-shadow:0 12px 30px rgba(0,0,0,.45)}
+.wa svg{width:22px;height:22px}
+.dock{display:none}
+@media (max-width:760px){
+  .wa{display:none}
+  body{padding-bottom:calc(72px + env(safe-area-inset-bottom,0px))}
+  .dock{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:75;background:rgba(11,15,23,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:10px var(--gutr) calc(10px + env(safe-area-inset-bottom,0px)) var(--gut)}
+  .dock a{justify-content:center;padding:13px}
+  .dock .w{background:#1fbf5b;border-color:#1fbf5b;color:#03140a}
 }
-[data-page]{display:none}
-[data-page].show{display:block}
+.note{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mist);text-align:center;padding:7px var(--gutr) 7px var(--gut);border-bottom:1px solid var(--line);background:rgba(6,8,13,.9)}
 </style>
 
-<div class="mock">Design mockup · <span class="ph">dashed gold items</span> are placeholders — replace with real figures, quotes and reviews before launch.</div>
-
-<header>
-  <div class="wrap nav">
-    <a class="logo" href="#home" aria-label="Icecube Events home">
-      <img src="img/logo.svg" alt="Icecube Events">
-    </a>
-    <nav aria-label="Main">
-      <button class="menu-btn" aria-expanded="false" aria-controls="menu" onclick="toggleMenu(this)">Menu</button>
-      <ul id="menu">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#work">Our Work</a></li>
-        <li><a href="#clients">Clients</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#insights">Insights</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+<header id="top">
+  <div class="note">Redesign concept · not the live site · events and details from icecubeevents.com</div>
+  <div class="wrap bar">
+    <a class="brand" href="#home" aria-label="Icecube Events, home"><img src="img/logo.svg" alt="Icecube Events"></a>
+    <nav class="main" id="nav" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <a class="btn btn-ice" href="#home-form">Plan my event</a>
+    <div style="display:flex;gap:10px;align-items:center">
+      <a class="btn arrow" href="#brief">Plan an event</a>
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+    </div>
   </div>
 </header>
 
 <main>
 
-<!-- ============ HOME ============ -->
+<!-- HOME -->
 <div data-page="home">
-  <section class="hero">
+  <section class="hero" style="padding:0">
+    <div class="bg" role="img" aria-label="Prime Minister's programme in Lakshadweep, produced by Icecube Events"></div>
+    <canvas id="beams" aria-hidden="true"></canvas>
+    <div class="clock"><span class="cue live">Show clock · Kochi</span><b id="clock">--:--:--</b></div>
     <div class="wrap">
-      <span class="eyebrow">Kochi · Since 2009 · Across India</span>
-      <h1>What are you planning?</h1>
-      <p class="lead">We plan and run corporate, government and large-scale events, from a 50-person leadership meet to a Prime Minister's visit.</p>
-      <div class="choices">
-        <a class="choice" href="#service-corporate"><i>🏢</i><b>Corporate event</b><small>Conferences, dealer meets, awards</small></a>
-        <a class="choice" href="#service-government"><i>🏛️</i><b>Government event</b><small>VIP visits, protocol, public events</small></a>
-        <a class="choice" href="#service-launch"><i>🚀</i><b>Brand launch</b><small>Product launches, activations</small></a>
-        <a class="choice" href="#service-exhibitions"><i>🧩</i><b>Exhibition</b><small>Stalls, expos, roadshows</small></a>
+      <p class="cue" style="margin-bottom:22px">Icecube Events · Kochi · Since 2009</p>
+      <h1 class="display">Events that<br><em>can't</em> go wrong.</h1>
+      <p class="lede">Prime Minister's visits. Parliamentary committees. World congresses. For seventeen years we've run the events where every second is on the record.</p>
+      <div class="intent" role="group" aria-label="Choose your event type">
+        <span>I'm planning</span>
+        <a href="#service-corporate">a corporate conference</a>
+        <a href="#service-government">a government event</a>
+        <a href="#service-launch">a launch</a>
+        <a href="#service-exhibitions">an exhibition</a>
       </div>
-    </div>
-  </section>
-
-  <section style="padding-top:10px">
-    <div class="wrap">
-      <div class="facts">
-        <div><strong>2009</strong><span class="muted">Running events since</span></div>
-        <div><strong class="ph">000+</strong><span class="muted">Events delivered</span></div>
-        <div><strong class="ph">00,000</strong><span class="muted">Largest audience handled</span></div>
-        <div><strong>ISO</strong><span class="muted">Certified quality management</span></div>
+      <div class="credit mono muted">
+        <a href="#case-pm-lakshadweep">Now showing: Prime Minister's Visit, Lakshadweep. Five projects inaugurated. →</a>
+        <span>Scroll</span>
       </div>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <span class="eyebrow">Proof, not promises</span>
-      <div style="display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:28px">
-        <h2 style="margin:0">Events we've delivered</h2>
-        <a class="btn btn-ghost" href="#work">See all work →</a>
+      <div class="head">
+        <div><p class="cue">The record</p><h2 class="display">Recent shows</h2></div>
+        <a class="btn line arrow" href="#work">All work</a>
       </div>
-      <div class="grid g3" id="home-stories"></div>
+      <div class="index" id="home-index"></div>
     </div>
   </section>
 
-  <section class="alt">
+  <section class="proof">
     <div class="wrap">
-      <span class="eyebrow">Trusted by</span>
-      <h2>Organisations that have worked with us</h2>
-      <div class="logos" id="home-logos" style="margin-top:24px"></div>
+      <p class="cue" style="margin-bottom:48px">By the numbers, from real shows</p>
+      <div class="nums">
+        <a href="#case-pm-lakshadweep"><b>5</b><p>projects inaugurated by the Prime Minister in one programme, with two teams on the island and the mainland.</p></a>
+        <a href="#case-kobelco-roadshow"><b>30<small>days</small></b><p>of continuous roadshow across Ernakulam for Kobelco, run day after day.</p></a>
+        <a href="#case-milma-inauguration"><b>3<small>days</small></b><p>of ceremonies and a statewide exhibition at the Malabar Milma factory inauguration.</p></a>
+        <a href="#about"><b>2009</b><p>the year we started in Kochi. ISO certified for quality management.</p></a>
+      </div>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <span class="eyebrow">What clients say</span>
-      <div style="display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:28px">
-        <h2 style="margin:0">Rated <span class="ph">4.9</span> on Google</h2>
-        <span class="muted"><span class="stars">★★★★★</span> from <span class="ph">000</span> reviews</span>
-      </div>
-      <div class="grid g3" id="home-reviews"></div>
+      <div class="head"><div><p class="cue">How a show runs</p><h2 class="display">One cue sheet.<br>One show caller.</h2></div></div>
+      <table class="cuesheet">
+        <tr><td><span class="cue lamp">Standby</span></td><td>The brief</td><td>You tell us four things. A named event manager calls you back and stays your one point of contact to the end.</td></tr>
+        <tr><td><span class="cue lamp">Cue 1</span></td><td>The plan</td><td>Concept, venue, protocol and permissions, with a budget you can read line by line.</td></tr>
+        <tr><td><span class="cue lamp">Cue 2</span></td><td>The build</td><td>Stage, LED and sound, branding, delegate registration. Then technical rehearsals until it runs clean.</td></tr>
+        <tr class="go"><td><span class="cue lamp">Go</span></td><td>Show day</td><td>Live show calling from one desk: every speaker, VIP movement and lighting change on cue.</td></tr>
+        <tr><td><span class="cue lamp">Clear</span></td><td>After</td><td>Photos, video and a wrap-up report, so the event keeps working for you after the lights go down.</td></tr>
+      </table>
     </div>
   </section>
 
-  <section class="alt">
+  <div class="marquee" aria-label="Clients">
+    <div class="track" id="track"></div>
+  </div>
+
+  <section>
     <div class="wrap">
-      <span class="eyebrow">How it works</span>
-      <h2>Four simple steps</h2>
-      <div class="grid g4 steps" style="margin-top:24px">
-        <div class="card"><h3>Tell us the basics</h3><p class="muted">Event type, guests, month. Takes 30 seconds.</p></div>
-        <div class="card"><h3>We call you</h3><p class="muted">A named event manager calls within 2 working hours.</p></div>
-        <div class="card"><h3>Concept &amp; quote</h3><p class="muted">A clear plan and cost breakdown, usually within <span class="ph">48 hours</span>.</p></div>
-        <div class="card"><h3>We run it</h3><p class="muted">One point of contact from setup to final guest out.</p></div>
-      </div>
+      <div class="head"><div><p class="cue">What we run</p><h2 class="display">Services</h2></div></div>
+      <div class="svc" id="home-svc"></div>
     </div>
   </section>
 
-  <section id="home-form">
-    <div class="wrap split">
-      <div class="formbox" data-form></div>
-      <div>
-        <span class="eyebrow">Common questions</span>
-        <h2>Before you call</h2>
-        <div id="home-faq"></div>
-      </div>
-    </div>
+  <section class="brief" id="brief-sec">
+    <div class="wrap" data-brief></div>
   </section>
 </div>
 
-<!-- ============ SERVICES ============ -->
-<div data-page="services">
-  <div class="phead"><div class="wrap">
-    <div class="crumb"><a href="#home">Home</a> / Services</div>
-    <h1>Event services</h1>
-    <p class="answer">Icecube Events plans and runs ten types of events from Kochi, across Kerala and India. Pick the one closest to yours to see what's included, past examples and typical questions.</p>
-  </div></div>
-  <section><div class="wrap"><div class="grid g3" id="svc-grid"></div></div></section>
-</div>
-
-<!-- ============ SERVICE DETAIL (dynamic) ============ -->
-<div data-page="service" id="svc-detail"></div>
-
-<!-- ============ WORK ============ -->
+<!-- WORK -->
 <div data-page="work">
-  <div class="phead"><div class="wrap">
-    <div class="crumb"><a href="#home">Home</a> / Our Work</div>
-    <h1>Our work</h1>
-    <p class="answer">Real events we have planned and delivered: government visits, international conferences, inaugurations, roadshows and corporate programmes.</p>
+  <div class="ph"><div class="wrap">
+    <p class="cue crumbs"><a href="#home">Home</a> / Work</p>
+    <h1 class="display">The record</h1>
+    <p class="lede">Government visits, international conferences, inaugurations, roadshows and corporate programmes we've produced, from Lakshadweep to Chennai.</p>
   </div></div>
-  <section><div class="wrap">
-    <div class="chips" id="work-chips" role="group" aria-label="Filter by type"></div>
-    <div class="grid g3" id="work-grid"></div>
+  <section style="padding-top:56px"><div class="wrap">
+    <div class="chips" id="chips" role="group" aria-label="Filter by type"></div>
+    <div class="index" id="work-index"></div>
   </div></section>
 </div>
 
-<!-- ============ CASE DETAIL (dynamic) ============ -->
-<div data-page="case" id="case-detail"></div>
+<!-- CASE -->
+<div data-page="case" id="case"></div>
 
-<!-- ============ CLIENTS ============ -->
-<div data-page="clients">
-  <div class="phead"><div class="wrap">
-    <div class="crumb"><a href="#home">Home</a> / Clients</div>
-    <h1>Our clients</h1>
-    <p class="answer">Public sector undertakings, government bodies, international institutions and national brands. Tap a client with a story to see the event.</p>
+<!-- SERVICES -->
+<div data-page="services">
+  <div class="ph"><div class="wrap">
+    <p class="cue crumbs"><a href="#home">Home</a> / Services</p>
+    <h1 class="display">Services</h1>
+    <p class="lede">Ten kinds of events, one way of running them. Pick the one closest to yours to see what's included and work we've done.</p>
   </div></div>
-  <section><div class="wrap" id="clients-list"></div></section>
+  <section style="padding-top:40px"><div class="wrap"><div class="svc" id="svc-all"></div></div></section>
 </div>
 
-<!-- ============ ABOUT ============ -->
+<!-- SERVICE -->
+<div data-page="service" id="service"></div>
+
+<!-- ABOUT -->
 <div data-page="about">
-  <div class="phead"><div class="wrap">
-    <div class="crumb"><a href="#home">Home</a> / About</div>
-    <h1>About Icecube Events</h1>
-    <p class="answer">Icecube Event Management Pvt. Ltd. is a Kochi-based event company founded in 2009. We specialise in corporate, government and large-scale events that need careful planning, protocol and on-ground control.</p>
+  <div class="ph"><div class="wrap">
+    <p class="cue crumbs"><a href="#home">Home</a> / About</p>
+    <h1 class="display">Kochi. Since 2009.</h1>
+    <p class="lede">Icecube Event Management Pvt. Ltd. plans and produces corporate, government and international events across India, from our office in Kadavanthra, Kochi.</p>
   </div></div>
   <section><div class="wrap split">
     <div>
-      <h2>Our story</h2>
-      <p class="muted">Short, honest founder story goes here: why the company started, what kind of events it became known for, and what has not changed since 2009. <span class="ph">(3–4 sentences, written by the founder)</span></p>
-      <h3 style="margin-top:34px">Milestones</h3>
-      <table>
-        <tr><th>2009</th><td>Company founded in Kochi</td></tr>
-        <tr><th class="ph">20XX</th><td class="ph">First government / PSU event</td></tr>
-        <tr><th class="ph">20XX</th><td class="ph">First international conference</td></tr>
-        <tr><th class="ph">20XX</th><td>ISO quality management certification</td></tr>
-        <tr><th class="ph">20XX</th><td>Prime Minister's visit, Lakshadweep</td></tr>
-      </table>
+      <p class="big">We're at our best when the stakes are high: a Prime Minister's programme on an island cut off from the mainland, a parliamentary committee at the Grand Hyatt, a ministerial address to an open-air crowd at Palakkad Fort Maidan.</p>
+      <p class="muted">The same discipline runs through smaller work too: a team bonding day for Indian Oil, a hybrid seminar in Chennai, a 30-day roadshow through Ernakulam. One cue sheet, technical rehearsals, and a show caller who knows every second of the programme.</p>
     </div>
-    <div class="card">
-      <h3>Quick facts</h3>
-      <table>
-        <tr><th>Founded</th><td>2009</td></tr>
-        <tr><th>Head office</th><td>Kadavanthra, Kochi</td></tr>
-        <tr><th>Events delivered</th><td class="ph">000+</td></tr>
-        <tr><th>Team size</th><td class="ph">00 full-time</td></tr>
-        <tr><th>Cities served</th><td class="ph">00</td></tr>
-        <tr><th>Certifications</th><td>ISO (quality management)</td></tr>
-      </table>
-    </div>
+    <dl class="facts">
+      <div><dt>Founded</dt><dd>2009</dd></div>
+      <div><dt>Company</dt><dd>Icecube Event Management Pvt. Ltd.</dd></div>
+      <div><dt>Office</dt><dd>Kadavanthra, Kochi</dd></div>
+      <div><dt>Certified</dt><dd>ISO, quality management</dd></div>
+      <div><dt>Works across</dt><dd>Kerala, Lakshadweep, Tamil Nadu and India</dd></div>
+    </dl>
   </div></section>
-  <section class="alt"><div class="wrap">
-    <h2>The people you'll work with</h2>
-    <div class="grid g4" style="margin-top:24px">
-      <div class="card phbox"><div class="who"><span class="av">?</span><div><b>Name</b><br><span class="muted">Founder &amp; MD</span></div></div></div>
-      <div class="card phbox"><div class="who"><span class="av">?</span><div><b>Name</b><br><span class="muted">Head of Operations</span></div></div></div>
-      <div class="card phbox"><div class="who"><span class="av">?</span><div><b>Name</b><br><span class="muted">Creative Director</span></div></div></div>
-      <div class="card phbox"><div class="who"><span class="av">?</span><div><b>Name</b><br><span class="muted">Client Servicing</span></div></div></div>
+  <section class="proof"><div class="wrap">
+    <p class="cue" style="margin-bottom:28px">Certifications</p>
+    <div class="certs">
+      <img loading="lazy" src="img/cert1.jpg" alt="ISO quality management certificate">
+      <img loading="lazy" src="img/cert2.jpg" alt="ISO certificate">
     </div>
   </div></section>
   <section><div class="wrap">
-    <h2>Certifications</h2>
-    <div class="grid g4" style="margin-top:24px">
-      <img class="card" style="padding:10px;background:#fff" loading="lazy" src="img/cert1.jpg" alt="ISO quality management certificate">
-      <img class="card" style="padding:10px;background:#fff" loading="lazy" src="img/cert2.jpg" alt="ISO certificate">
-    </div>
+    <div class="head"><div><p class="cue">Join the crew</p><h2 class="display">Careers</h2></div>
+    <a class="btn line arrow" href="https://www.icecubeevents.com/careers" target="_blank" rel="noopener">Current openings</a></div>
   </div></section>
 </div>
 
-<!-- ============ INSIGHTS ============ -->
-<div data-page="insights">
-  <div class="phead"><div class="wrap">
-    <div class="crumb"><a href="#home">Home</a> / Insights</div>
-    <h1>Insights</h1>
-    <p class="answer">Practical guides for people planning events in Kerala: costs, timelines, checklists and lessons from our own events.</p>
-  </div></div>
-  <section><div class="wrap">
-    <span class="eyebrow">Recommended new guides</span>
-    <div class="grid g3" style="margin-bottom:50px">
-      <div class="card phbox"><span class="tag">Guide · New</span><h3 style="margin-top:8px">What does a corporate event cost in Kochi? (2026 guide)</h3><p class="muted">Cost ranges by event size, with a sample budget split.</p></div>
-      <div class="card phbox"><span class="tag">Checklist · New</span><h3 style="margin-top:8px">Government event protocol checklist</h3><p class="muted">VIP movement, stage protocol, permissions and security.</p></div>
-      <div class="card phbox"><span class="tag">Guide · New</span><h3 style="margin-top:8px">Planning an event in Kerala's monsoon</h3><p class="muted">Venues, backups and timing between June and September.</p></div>
-    </div>
-    <span class="eyebrow">Existing articles</span>
-    <div class="grid g3" id="blog-list"></div>
-  </div></section>
-</div>
-
-<!-- ============ CONTACT ============ -->
+<!-- CONTACT -->
 <div data-page="contact">
-  <div class="phead"><div class="wrap">
-    <div class="crumb"><a href="#home">Home</a> / Contact</div>
-    <h1>Let's plan your event</h1>
-    <p class="answer">Share four details and a named event manager will call you within 2 working hours. Prefer to talk now? WhatsApp or call us directly.</p>
+  <div class="ph"><div class="wrap">
+    <p class="cue crumbs"><a href="#home">Home</a> / Contact</p>
+    <h1 class="display">Let's run your show</h1>
   </div></div>
-  <section><div class="wrap split">
-    <div class="formbox" data-form></div>
-    <div class="grid" style="gap:16px">
-      <a class="btn btn-wa" href="https://wa.me/919847310015?text=Hi%20Icecube%2C%20I%27m%20planning%20an%20event" target="_blank" rel="noopener">💬 WhatsApp +91 98473 10015</a>
-      <a class="btn btn-ghost" href="tel:+919847310015">📞 Call +91 98473 10015</a>
-      <a class="btn btn-ghost" href="tel:+914842320200">☎️ Office +91 484 2320 200</a>
-      <a class="btn btn-ghost" href="mailto:mail@icecubeevents.com">✉️ mail@icecubeevents.com</a>
-      <div class="card">
-        <h3>Office</h3>
-        <p class="muted" style="margin:0">#114, Canal Road, Girinagar, Kadavanthra, Kochi, Kerala 682020</p>
-        <p class="muted" style="margin:8px 0 0">Mon–Sat, 9:30 am – 6:30 pm <span class="ph">(confirm)</span></p>
-        <a class="btn btn-ghost" style="margin-top:14px" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Icecube+Events+Kadavanthra+Kochi">Open in Google Maps</a>
-      </div>
+  <section style="padding-top:56px"><div class="wrap">
+    <div class="contactgrid">
+      <div><span class="cue">WhatsApp / Mobile</span><b>+91 98473 10015</b><a class="muted" href="https://wa.me/919847310015" target="_blank" rel="noopener">Open WhatsApp →</a></div>
+      <div><span class="cue">Office</span><b>+91 484 2320 200</b><span class="muted">Mon to Sat</span></div>
+      <div><span class="cue">Email</span><b>mail@icecubeevents.com</b></div>
+      <div><span class="cue">Visit</span><b style="font-size:17px;line-height:1.5">#114, Canal Road, Girinagar, Kadavanthra, Kochi 682020</b><a class="muted" href="https://www.google.com/maps/search/?api=1&query=Icecube+Events+Kadavanthra+Kochi" target="_blank" rel="noopener">Open in Maps →</a></div>
     </div>
   </div></section>
+  <section class="brief"><div class="wrap" data-brief></div></section>
 </div>
 
-<!-- ============ THANK YOU ============ -->
+<!-- THANKS -->
 <div data-page="thanks">
-  <section><div class="wrap" style="max-width:760px;text-align:center">
-    <div style="font-size:54px">✅</div>
-    <h1>Thank you. We've got your brief.</h1>
-    <p class="answer" style="border:0;padding:0;margin:0 auto 34px">Your event manager will call you within <b>2 working hours</b>.</p>
-    <div class="card" style="display:flex;gap:18px;align-items:center;text-align:left;max-width:460px;margin:0 auto 34px">
-      <span class="av phbox" style="width:72px;height:72px;border-radius:50%;background:#22304f;display:grid;place-items:center;font-size:28px;flex:none">👤</span>
-      <div><b class="ph">Name of event manager</b><br><span class="muted">Your point of contact · <span class="ph">+91 00000 00000</span></span></div>
+  <div class="ph" style="border:0"><div class="wrap">
+    <p class="cue live" style="margin-bottom:22px">Brief received</p>
+    <h1 class="display">You're on<br>standby.</h1>
+    <p class="lede">An event manager will call you within 2 working hours. They'll be your one point of contact from here to the last guest out.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:36px">
+      <a class="btn arrow" href="https://wa.me/919847310015" target="_blank" rel="noopener">Talk now on WhatsApp</a>
+      <a class="btn line" href="#work">See shows like yours</a>
     </div>
-    <div class="grid g3" style="text-align:left">
-      <div class="card"><span class="tag">Step 1 · Today</span><p style="margin:8px 0 0">Quick call to understand your event</p></div>
-      <div class="card"><span class="tag">Step 2 · ~48 hrs</span><p style="margin:8px 0 0">Concept and cost estimate</p></div>
-      <div class="card"><span class="tag">Step 3</span><p style="margin:8px 0 0">Venue visit and final plan</p></div>
-    </div>
-    <p style="margin-top:34px"><a class="btn btn-wa" href="https://wa.me/919847310015" target="_blank" rel="noopener">Can't wait? WhatsApp us now</a></p>
-    <p><a href="#work" class="muted">Meanwhile, see events like yours →</a></p>
-  </div></section>
+  </div></div>
 </div>
 
 </main>
 
 <footer>
   <div class="wrap">
-    <div class="cols">
-      <div>
-        <img src="img/logo.svg" alt="Icecube Events" style="height:34px;margin-bottom:14px">
-        <p>Event management company in Kochi, Kerala, since 2009. Corporate, government and large-scale events across India.</p>
-      </div>
-      <div><h4>Company</h4><ul><li><a href="#about">About</a></li><li><a href="#work">Our Work</a></li><li><a href="#clients">Clients</a></li><li><a href="#insights">Insights</a></li><li><a href="https://www.icecubeevents.com/careers">Careers</a></li><li><a href="#contact">Contact</a></li></ul></div>
-      <div><h4>Services</h4><ul id="foot-svc"></ul></div>
-      <div><h4>Get in touch</h4><ul>
-        <li>#114, Canal Road, Girinagar, Kadavanthra, Kochi 682020</li>
-        <li><a href="tel:+919847310015">+91 98473 10015</a></li>
-        <li><a href="tel:+914842320200">+91 484 2320 200</a></li>
-        <li><a href="mailto:mail@icecubeevents.com">mail@icecubeevents.com</a></li>
-      </ul></div>
+    <div class="fgrid">
+      <div><img src="img/logo.svg" alt="Icecube Events" style="height:40px;width:auto;margin-bottom:18px"><p class="muted" style="font-size:15px">Corporate, government and international events. Kochi, since 2009.</p></div>
+      <div><h4 class="cue">Explore</h4><ul><li><a href="#work">Work</a></li><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="https://www.icecubeevents.com/blogs" target="_blank" rel="noopener">Insights</a></li><li><a href="https://www.icecubeevents.com/careers" target="_blank" rel="noopener">Careers</a></li></ul></div>
+      <div><h4 class="cue">Services</h4><ul id="foot-svc"></ul></div>
+      <div><h4 class="cue">Contact</h4><ul><li>+91 98473 10015</li><li>+91 484 2320 200</li><li>mail@icecubeevents.com</li><li>Kadavanthra, Kochi 682020</li></ul></div>
     </div>
-    <p style="margin-top:40px;font-size:13px">© 2026 Icecube Event Management Pvt. Ltd.</p>
+    <div class="wordmark" aria-hidden="true">Icecube</div>
+    <p class="mono muted" style="margin-top:24px">© 2026 Icecube Event Management Pvt. Ltd.</p>
   </div>
 </footer>
 
-<a class="fab" href="https://wa.me/919847310015?text=Hi%20Icecube%2C%20I%27m%20planning%20an%20event" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
-<div class="mbar">
-  <a class="btn btn-wa" href="https://wa.me/919847310015?text=Hi%20Icecube%2C%20I%27m%20planning%20an%20event" target="_blank" rel="noopener">WhatsApp</a>
-  <a class="btn btn-ghost" href="tel:+919847310015">Call</a>
-  <a class="btn btn-ice" href="#home-form">Plan event</a>
+<img class="peek" id="peek" alt="" aria-hidden="true">
+<a class="wa" href="https://wa.me/919847310015?text=Hi%20Icecube%2C%20I%27m%20planning%20an%20event" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3a.5.5 0 0 0 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.4.8 3.2.6a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>
+  WhatsApp
+</a>
+<div class="dock">
+  <a class="btn w" href="https://wa.me/919847310015?text=Hi%20Icecube%2C%20I%27m%20planning%20an%20event" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="btn" href="#brief">Plan an event</a>
 </div>
 
 <script>
-const IMG = f => `img/${f.replace(/\.webp$/,".jpg")}`;
-
-const SERVICES = [
-  {s:'corporate', n:'Corporate Events & Conferences', d:'Conferences, dealer meets, annual days, awards nights and leadership offsites.',
-   inc:['Concept, theme and stage design','Venue sourcing and negotiation','Sound, light, LED and live streaming','Delegate registration and badges','Speaker and VIP management','Hospitality, travel and logistics'], cat:'Government'},
-  {s:'government', n:'Government Events', d:'VIP and ministerial visits, public programmes, PSU events with full protocol.',
-   inc:['Protocol and VIP movement planning','Coordination with district administration and security','Stage, seating and public address','Permissions and safety compliance','Media and press area setup','Large crowd management'], cat:'Government'},
-  {s:'international', n:'International Events & Conferences', d:'Global congresses, seminars and delegations hosted in India.',
-   inc:['Delegate travel and visa support letters','Multi-day agenda and session management','Interpretation and AV','Gala dinners and cultural evenings','Partner and sponsor management','Post-event reporting'], cat:'International'},
-  {s:'inaugurations', n:'Inaugurations', d:'Openings for factories, offices, centres and public facilities.',
-   inc:['Ceremony flow and protocol','Dignitary invitations and liaison','Plaque, ribbon and lamp-lighting setup','Stage, seating and canopy','Photography and video','Guest hospitality'], cat:'Inaugurations'},
-  {s:'launch', n:'Launch Events', d:'Product and brand launches that get people talking.',
-   inc:['Launch concept and reveal moment','Stage, screens and special effects','Media and influencer management','Guest list and RSVPs','Content capture for social','Dealer and partner launches'], cat:'Launch'},
-  {s:'exhibitions', n:'Stalls & Exhibitions', d:'Exhibition stalls, pavilions and expos, designed and built.',
-   inc:['Stall design and 3D visuals','Fabrication and installation','Branding and graphics','Lead capture at the stall','Staffing and hosts','Dismantling'], cat:'Exhibitions'},
-  {s:'roadshows', n:'Roadshows', d:'Multi-city roadshows and brand caravans across India.',
-   inc:['Route and city planning','Vehicle branding and fabrication','Local permissions in each city','Crew and hosts','Daily reporting','Lead capture'], cat:'Exhibitions'},
-  {s:'mall', n:'Mall Activations', d:'In-mall brand activations, sampling and engagement zones.',
-   inc:['Activation concept','Mall booking and approvals','Kiosk and set fabrication','Promoters and hosts','Contests and engagement','Footfall and lead reports'], cat:'Launch'},
-  {s:'team', n:'Team Building & Sport Events', d:'Team bonding days, sports meets and offsites.',
-   inc:['Activity design for your goals','Facilitators and trainers','Venue and resort booking','Sports equipment and referees','Food and transport','Awards and photos'], cat:'Team'},
-  {s:'fashion', n:'Fashion Shows', d:'Runway shows and fashion events, end to end.',
-   inc:['Ramp and stage design','Choreography and models','Lighting and sound','Backstage management','Guest and media management','Photo and video'], cat:'Launch'}
+const WORK = [
+ {id:'pm-lakshadweep', t:"Prime Minister's Visit", place:'Lakshadweep', c:'Government', svc:'government', img:'1785322384_featured.jpg',
+  sum:"One of our flagship events, staged on the shores of Lakshadweep to mark the Prime Minister's inauguration of five projects.",
+  body:"With the island separated from the mainland, two teams worked at the same time across both locations on production, technical infrastructure and on-ground execution. We ran the full event environment: stage, AV, branding, protocol, dignitary movement and public areas, so that the Prime Minister's address and the inaugurations ran without a hitch.",
+  tags:['Prime Ministerial visit coordination','Island event production','Stage design & fabrication','Audio visual production','VIP & protocol management','Dignitary movement','Scriptwriting & voice-over','Video production']},
+ {id:'iocl-petrolex', t:'IOCL PETROLEX Conference', place:'Ramada, Kochi', c:'Corporate', svc:'corporate', img:'1784792236_featured.jpg', client:'Indian Oil',
+  sum:'A full conference production for Indian Oil: leadership addresses, technical sessions and panels.',
+  body:'We turned Ramada Kochi into a conference venue with a custom stage, high-resolution LED walls, professional sound and intelligent lighting. Delegate registration, branding, speaker coordination, technical rehearsals and live show calling were all run by our team.',
+  tags:['Conference production','Stage design & fabrication','LED video wall','Intelligent lighting','Delegate registration','Speaker & panel coordination','Live show calling']},
+ {id:'iaa-gala', t:'44th IAA World Congress Gala', place:'International delegates', c:'International', svc:'international', img:'1785492541_featured.jpg',
+  sum:'A Chinese-inspired gala evening for delegates of the 44th IAA World Congress.',
+  body:'We washed the venue in red to signal celebration and togetherness, with themed décor, an elegant stage, ambient lighting and curated branding. The programme mixed international hospitality, cultural entertainment and networking beyond the formal congress sessions.',
+  tags:['International gala production','Cultural event management','Themed venue styling','Stage design','Ambient & intelligent lighting','International delegate management']},
+ {id:'milma-inauguration', t:'Malabar Milma Factory Inauguration', place:'Malabar, Kerala', c:'Inauguration', svc:'inaugurations', img:'1785321545_featured.jpg', client:'Malabar Milma',
+  sum:'Three days of ceremonies, public engagement and a statewide exhibition at the new dairy and milk powder factory.',
+  body:'We turned the factory premises into a large inauguration and exhibition venue, with stalls representing different parts of Kerala for dairy institutions, farmers, stakeholders and visitors. Stage production, exhibition areas, branding, crowd coordination and security support ran across all three days.',
+  tags:['Three-day event production','Government event coordination','Exhibition & stall management','Stage design & fabrication','VIP & protocol management','Crowd management']},
+ {id:'kobelco-roadshow', t:'Kobelco Roadshow', place:'Ernakulam, 30 days', c:'Roadshow', svc:'roadshows', img:'1784792522_featured.jpg', client:'Kobelco',
+  sum:'A mobile brand experience: 30 days of continuous customer engagement across Ernakulam.',
+  body:'We built and branded the campaign vehicle, planned the route, set up product displays and ran daily activations, with promotional staff, audio announcements, customer interactions and lead generation every day of the 30-day run.',
+  tags:['Roadshow campaign management','Vehicle branding','Route planning','Product display setup','Lead generation','Daily operations']},
+ {id:'sncf-conference', t:"SNCF Co-operative Leaders' Conference", place:'Multi-day conference', c:'International', svc:'international', img:'1785487747_featured.jpg', client:'Singapore National Co-operative Federation',
+  sum:'A multi-day leadership conference for the Singapore National Co-operative Federation.',
+  body:'Keynotes, leadership sessions, panels, workshops and networking, on a contemporary stage with high-resolution displays and professional audio. We handled registration, branding, speaker coordination, presentations, rehearsals and live show calling throughout.',
+  tags:['Conference production','International delegates','Speaker coordination','Presentation management','Technical rehearsals','Live show calling']},
+ {id:'viksit-bharat', t:"Petroleum Minister's Visit", place:'Palakkad Fort Maidan', c:'Government', svc:'government', img:'1784716542_featured.jpg',
+  sum:'A large open-air ministerial programme during the Viksit Bharat Sankalp Yatra.',
+  body:'We equipped Palakkad Fort Maidan as a public venue with a custom stage, large-format LED displays, professional sound and intelligent lighting for clear sight lines across the ground. VIP movement, protocol, rehearsals, security coordination and live show calling were run by our team.',
+  tags:['Government event management','Open-air venue production','Large-format LED','VIP movement','Protocol management','Security coordination']},
+ {id:'iocl-parliamentary', t:'IOCL Parliamentary Committee Meet', place:'Grand Hyatt, Kochi', c:'Government', svc:'government', img:'1784792839_featured.jpg', client:'Indian Oil',
+  sum:'A protocol-compliant meeting for a parliamentary committee, hosted by Indian Oil.',
+  body:'We set up Grand Hyatt Kochi for committee proceedings, leadership presentations and official interactions, with a custom meeting layout, AV, branding and lighting. Delegate arrival, VIP coordination, protocol, hospitality and logistics were planned to the minute.',
+  tags:['Protocol & hospitality','Meeting venue setup','Audio visual production','VIP & delegate management','Arrival & movement coordination']},
+ {id:'kied-inauguration', t:'KIED Enterprise Centre Inauguration', place:'Kerala', c:'Inauguration', svc:'inaugurations', img:'1784792720_featured.jpg', client:'Kerala Institute for Entrepreneurship Development',
+  sum:"Inauguration of KIED's Enterprise Development Centre.",
+  body:'Ceremony, ribbon cutting, leadership addresses and a facility presentation, with institutional branding, professional sound and a carefully planned ceremony flow for dignitaries, entrepreneurs and invited guests.',
+  tags:['Inauguration management','Ceremony flow','Institutional branding','Protocol management','Guest coordination']},
+ {id:'cccs-seminar', t:'CCCS Hybrid Seminar', place:'Trident, Chennai', c:'International', svc:'international', img:'1785488368_featured.jpg', client:'Centre for Contemporary China Studies',
+  sum:'A hybrid seminar connecting in-person and virtual delegates at Trident Hotel, Chennai.',
+  body:'Expert presentations, research discussions and moderated sessions, with remote speakers, presentation sharing, audio feeds and live interaction run by our technical team so online and in-room delegates got the same experience.',
+  tags:['Hybrid conference management','Remote speaker coordination','Seminar production','Stage & AV','Live conference operations']},
+ {id:'iocl-csr-inauguration', t:'IOCL Prison Inauguration', place:'Kerala', c:'Inauguration', svc:'inaugurations', img:'1784716638_featured.jpg', client:'Indian Oil',
+  sum:"A dignified ceremony for Indian Oil's community-focused initiative.",
+  body:'Inaugural ceremony, official addresses, ribbon cutting and project presentation, with stage, branding, sound, protocol coordination, photography and video.',
+  tags:['CSR event production','Ceremonial setup','VIP & protocol management','Photography & videography']},
+ {id:'iocl-team-bonding', t:'IOCL Team Bonding', place:'Kerala', c:'Corporate', svc:'team', img:'1784792789_featured.jpg', client:'Indian Oil',
+  sum:'An energetic team engagement day for Indian Oil teams.',
+  body:'Icebreakers, group challenges and competitive games designed for communication and problem-solving, guided by professional facilitators, with sound, branding and logistics handled end to end.',
+  tags:['Team bonding programme','Activity design','Professional facilitation','Event branding','On-ground logistics']}
 ];
 
-const WORKS = [
-  {id:'pm-lakshadweep', t:"Prime Minister's Visit at Lakshadweep", c:'Government', svc:'government', img:'1785322384_featured.jpg', client:'Government of India'},
-  {id:'iocl-petrolex', t:'IOCL PETROLEX Conference', c:'Government', svc:'corporate', img:'1784792236_featured.webp', client:'Indian Oil'},
-  {id:'iaa-world-congress', t:'44th IAA World Congress – Chinese Gala Meet', c:'International', svc:'international', img:'1785492541_featured.jpg', client:'IAA'},
-  {id:'milma-inauguration', t:'Malabar Milma Dairy & Milk Powder Factory Inauguration', c:'Inaugurations', svc:'inaugurations', img:'1785321545_featured.jpg', client:'Malabar Milma'},
-  {id:'kobelco-roadshow', t:'Kobelco Roadshow', c:'Exhibitions', svc:'roadshows', img:'1784792522_featured.webp', client:'Kobelco'},
-  {id:'sncf-conference', t:"Annual Co-operative Leaders' Conference (SNCF)", c:'International', svc:'international', img:'1785487747_featured.jpg', client:'Singapore National Co-operative Federation'},
-  {id:'viksit-bharat', t:"Petroleum Minister's Visit, Viksit Bharat Sankalp Yatra", c:'Government', svc:'government', img:'1784716542_featured.webp', client:'Indian Oil'},
-  {id:'iocl-parliamentary', t:'IOCL Parliamentary Committee Meet', c:'Government', svc:'government', img:'1784792839_featured.webp', client:'Indian Oil'},
-  {id:'kied-inauguration', t:'KIED Enterprise Centre Inauguration', c:'Inaugurations', svc:'inaugurations', img:'1784792720_featured.webp', client:'KIED'},
-  {id:'cccs-seminar', t:'Centre for Contemporary China Studies Seminar', c:'International', svc:'international', img:'1785488368_featured.jpg', client:'CCCS'},
-  {id:'iocl-prison', t:'IOCL Prison Inauguration', c:'Inaugurations', svc:'inaugurations', img:'1784716638_featured.webp', client:'Indian Oil'},
-  {id:'iocl-team', t:'IOCL Team Bonding', c:'Team', svc:'team', img:'1784792789_featured.webp', client:'Indian Oil'}
+const SVC = [
+ {s:'government', n:'Government events', d:'VIP visits, ministerial and public programmes', inc:['Protocol and VIP movement plans','Coordination with administration and security','Stage, LED and public address','Permissions and safety compliance','Media and press areas','Crowd management']},
+ {s:'corporate', n:'Corporate conferences', d:'Conferences, dealer meets, awards nights', inc:['Concept and stage design','Venue sourcing','LED walls, sound and lighting','Delegate registration','Speaker and panel coordination','Live show calling']},
+ {s:'international', n:'International conferences', d:'Congresses, seminars, hybrid events', inc:['International delegate management','Multi-day agenda operations','Hybrid and remote speakers','Gala and cultural evenings','Presentation management','Technical rehearsals']},
+ {s:'inaugurations', n:'Inaugurations', d:'Factories, offices, institutions', inc:['Ceremony flow and protocol','Dignitary liaison','Ribbon, plaque and lamp setup','Stage and seating','Photography and video','Guest hospitality']},
+ {s:'launch', n:'Launch events', d:'Product and brand reveals', inc:['Reveal concept','Stage, screens and effects','Media and guest management','Content capture','Dealer launches','Branding']},
+ {s:'exhibitions', n:'Stalls & exhibitions', d:'Stalls, pavilions and expos', inc:['Stall design and 3D visuals','Fabrication and installation','Branding and graphics','Lead capture','Hosts and staffing','Dismantling']},
+ {s:'roadshows', n:'Roadshows', d:'Multi-day, multi-city campaigns', inc:['Route planning','Vehicle branding','Local permissions','Daily activations','Promotional staff','Lead generation']},
+ {s:'mall', n:'Mall activations', d:'In-mall engagement and sampling', inc:['Activation concept','Mall approvals','Kiosk fabrication','Promoters','Contests','Footfall reports']},
+ {s:'team', n:'Team building', d:'Team days, sports meets, offsites', inc:['Activity design','Professional facilitators','Venue booking','Equipment','Food and transport','Awards and photos']},
+ {s:'fashion', n:'Fashion shows', d:'Runway shows, end to end', inc:['Ramp and stage','Choreography and models','Lighting and sound','Backstage management','Guests and media','Photo and video']}
 ];
-const CATS = {Government:'Government', International:'International', Inaugurations:'Inaugurations', Exhibitions:'Exhibitions & Roadshows', Team:'Team Building'};
 
-const CLIENTS = [
-  {g:'Government & Public Sector', l:['Government of India','Indian Oil','Malabar Milma','KIED']},
-  {g:'International institutions', l:['IAA','Singapore National Co-operative Federation','CCCS']},
-  {g:'Brands & corporates', l:['Asian Paints','Agappe','Dynabook','Kobelco']}
-];
+const ART = {"government": "a government event", "corporate": "a corporate conference", "international": "an international conference", "inaugurations": "an inauguration", "launch": "a launch", "exhibitions": "an exhibition", "roadshows": "a roadshow", "mall": "a mall activation", "team": "a team day", "fashion": "a fashion show"};
+const CLIENTS = ['Indian Oil','Asian Paints','Agappe','Dynabook','Kobelco','Malabar Milma','KIED','SNCF Singapore','IAA World Congress','CCCS'];
 
 const FAQ = [
-  ['How much does an event cost?', 'It depends on guests, venue and production. As a guide, a <span class="ph">200-guest one-day corporate conference in Kochi typically costs ₹X–Y lakh</span>. Share your basics and we\'ll send a clear estimate within 48 hours.'],
-  ['How early should we book?', 'Ideally <span class="ph">6–8 weeks</span> for events with 300+ guests. We have delivered events at much shorter notice when needed.'],
-  ['Do you work outside Kerala?', 'Yes. We are based in Kochi and run events across India, including Lakshadweep and multi-city roadshows.'],
-  ['Can you handle government protocol and VIP visits?', 'Yes. We have managed ministerial and Prime Minister-level visits, coordinating with administration and security agencies.'],
-  ['Who will be our point of contact?', 'One named event manager from first call to the end of the event.']
-];
-
-const REVIEWS = [
-  ['Short real Google review about a corporate conference: what went well, how the team handled pressure.', 'Name', 'HR Head, Company'],
-  ['Short real review from a government or PSU client about protocol and timing.', 'Name', 'Officer, Department'],
-  ['Short real review about a launch or exhibition stall and the response it got.', 'Name', 'Marketing Manager, Brand']
-];
-
-const BLOG = [
-  ['Event Planning','Event Planning Quotes To Inspire Event Planners'],['Virtual Events','How to Run a Successful Virtual Event'],
-  ['Event Management','Women in the Event Management Industry'],['Event Management','Different Types of Seating Arrangements for Events'],
-  ['Marketing','Guerrilla Marketing'],['Event Management','Importance of Casual Staff in Events'],
-  ['Event Management','Team Building Activities in Kochi, Kerala'],['Design','Event Badge Ideas: Designing, Printing, Distributing']
+ ['What does an event cost?','It depends on guests, venue and production, so every event is costed line by line. Send the four basics and we\'ll come back with a clear estimate.'],
+ ['How early should we book?','For large events, as early as you can: venues, permissions and protocol take time. We have also delivered at short notice.'],
+ ['Do you work outside Kerala?','Yes. Our recent work includes Lakshadweep, Chennai and international delegations.'],
+ ['Can you handle VIP and government protocol?','Yes. We have run Prime Ministerial and ministerial programmes and parliamentary committee meetings, working with administration and security.']
 ];
 
 const $ = s => document.querySelector(s);
-const svcBy = s => SERVICES.find(x => x.s === s);
+const img = f => 'img/' + f;
 
-function storyCard(w){
-  return `<a class="story" href="#case-${w.id}">
-    <img loading="lazy" src="${IMG(w.img)}" alt="${w.t}">
-    <div class="body"><span class="tag">${CATS[w.c]}</span><h3>${w.t}</h3>
-    <div class="meta"><span>👥 <span class="ph">000 guests</span></span><span>📍 <span class="ph">City</span></span><span>🗓 <span class="ph">Year</span></span></div></div></a>`;
+function row(w){
+  return `<a class="row" href="#case-${w.id}" data-img="${img(w.img)}">
+    <img class="thumb" src="${img(w.img)}" alt="" loading="lazy">
+    <span class="t">${w.t}</span><span class="muted">${w.place}</span><span class="cue">${w.c}</span><span class="go" aria-hidden="true">→</span></a>`;
 }
-function faqHTML(list){ return list.map(([q,a]) => `<details><summary>${q}</summary><p>${a}</p></details>`).join(''); }
+const svcRow = s => `<a href="#service-${s.s}"><b>${s.n}</b><span>${s.d}</span></a>`;
+const faq = () => FAQ.map(([q,a]) => `<details><summary>${q}</summary><p>${a}</p></details>`).join('');
 
-function formHTML(type){
-  const months = []; const d = new Date();
-  for (let i=0;i<12;i++){ const m = new Date(d.getFullYear(), d.getMonth()+i, 1); months.push(m.toLocaleString('en-IN',{month:'long',year:'numeric'})); }
-  return `<span class="eyebrow">Plan my event</span><h2>Tell us 4 things</h2>
-  <p class="muted">That's all we need to start. A named event manager calls you within 2 working hours.</p>
-  <form onsubmit="event.preventDefault();location.hash='thanks'">
-    <label>Event type<select required>${SERVICES.map(s=>`<option ${s.s===type?'selected':''}>${s.n}</option>`).join('')}<option>Something else</option></select></label>
-    <label>Number of guests<select required><option value="">Choose…</option><option>Under 100</option><option>100 – 300</option><option>300 – 1,000</option><option>1,000+</option></select></label>
-    <label>Month<select required><option value="">Choose…</option>${months.map(m=>`<option>${m}</option>`).join('')}<option>Not decided yet</option></select></label>
-    <label>Phone (WhatsApp)<input type="tel" required inputmode="tel" autocomplete="tel" placeholder="+91 98xxx xxxxx"></label>
-    <button class="btn btn-ice full" type="submit">Get a call back</button>
+function briefHTML(pre){
+  const now = new Date(), months = [];
+  for (let i=0;i<12;i++) months.push(new Date(now.getFullYear(), now.getMonth()+i, 1).toLocaleString('en-IN',{month:'long'}));
+  const uid = Math.random().toString(36).slice(2,7);
+  return `<p class="cue" style="margin-bottom:28px" id="brief">Plan an event · takes 20 seconds</p>
+  <form class="sentence" data-form>
+    I'm planning
+    <label for="t-${uid}">Event type</label><select id="t-${uid}" required>${SVC.map(s=>`<option ${s.s===pre?'selected':''}>${ART[s.s]}</option>`).join('')}</select>
+    for <label for="g-${uid}">Guests</label><select id="g-${uid}" required><option>under 100</option><option selected>100 to 300</option><option>300 to 1,000</option><option>1,000+</option></select> guests
+    in <label for="m-${uid}">Month</label><select id="m-${uid}" required>${months.map(m=>`<option>${m}</option>`).join('')}</select>.
+    Call me on <label for="p-${uid}">Phone number</label><input id="p-${uid}" type="tel" inputmode="tel" autocomplete="tel" placeholder="+91 …" required pattern="[0-9+ ]{10,}">.
   </form>
-  <div class="promise"><span>✓ No spam</span><span>✓ Free estimate</span><span>✓ Reply in 2 working hours</span></div>`;
+  <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+    <button class="btn arrow" type="button" data-send>Send brief</button>
+    <span class="muted" style="font-size:15px">An event manager calls you within 2 working hours.</span>
+  </div>
+  <div class="alt-contact"><span>Or WhatsApp <b>+91 98473 10015</b></span><span>Office <b>+91 484 2320 200</b></span><span><b>mail@icecubeevents.com</b></span></div>`;
+}
+function wireBriefs(scope){
+  scope.querySelectorAll('[data-send]').forEach(b => b.onclick = () => {
+    const f = b.closest('.wrap').querySelector('[data-form]');
+    if (f.reportValidity()) location.hash = 'thanks';
+  });
+  scope.querySelectorAll('[data-form]').forEach(f => f.onsubmit = e => { e.preventDefault(); if (f.reportValidity()) location.hash='thanks'; });
 }
 
 function renderStatic(){
-  $('#home-stories').innerHTML = WORKS.slice(0,6).map(storyCard).join('');
-  $('#home-logos').innerHTML = CLIENTS.flatMap(g=>g.l).map(n=>`<div>${n}</div>`).join('');
-  $('#home-reviews').innerHTML = REVIEWS.map(([t,n,r])=>`<div class="card review phbox"><div class="stars">★★★★★</div><p class="ph" style="border:0">"${t}"</p><div class="who"><span class="av">${n[0]}</span><div><b class="ph" style="border:0">${n}</b><br><span class="muted">${r}</span></div></div></div>`).join('');
-  $('#home-faq').innerHTML = faqHTML(FAQ);
-  $('#svc-grid').innerHTML = SERVICES.map(s=>`<a class="card story" style="padding:24px" href="#service-${s.s}"><h3>${s.n}</h3><p class="muted" style="margin:0">${s.d}</p><span style="color:var(--ice);font-weight:800;margin-top:14px">Details →</span></a>`).join('');
-  $('#foot-svc').innerHTML = SERVICES.map(s=>`<li><a href="#service-${s.s}">${s.n}</a></li>`).join('');
-  const cats = ['All', ...Object.keys(CATS)];
-  $('#work-chips').innerHTML = cats.map((c,i)=>`<button class="chip ${i?'':'on'}" aria-pressed="${!i}" data-c="${c}">${c==='All'?'All':CATS[c]}</button>`).join('');
-  $('#work-chips').onclick = e => {
-    const b = e.target.closest('.chip'); if(!b) return;
-    document.querySelectorAll('#work-chips .chip').forEach(x=>{x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b)});
-    drawWork(b.dataset.c);
-  };
+  $('#home-index').innerHTML = WORK.slice(0,6).map(row).join('');
+  $('#home-svc').innerHTML = SVC.map(svcRow).join('');
+  $('#svc-all').innerHTML = SVC.map(svcRow).join('');
+  $('#foot-svc').innerHTML = SVC.slice(0,6).map(s=>`<li><a href="#service-${s.s}">${s.n}</a></li>`).join('');
+  const names = CLIENTS.map(c=>`<span>${c}</span>`).join('');
+  $('#track').innerHTML = names + names.replace(/<span>/g,'<span aria-hidden="true">');
+  document.querySelectorAll('[data-brief]').forEach(el => el.innerHTML = briefHTML('corporate'));
+  wireBriefs(document);
+  const cats = ['All', ...new Set(WORK.map(w=>w.c))];
+  $('#chips').innerHTML = cats.map((c,i)=>`<button class="chip" aria-pressed="${i===0}" data-c="${c}">${c}</button>`).join('');
+  $('#chips').onclick = e => { const b = e.target.closest('.chip'); if(!b) return;
+    $('#chips').querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed', x===b)); drawWork(b.dataset.c); };
   drawWork('All');
-  $('#clients-list').innerHTML = CLIENTS.map(g=>`<h2 style="margin-top:10px">${g.g}</h2><div class="grid g3" style="margin:20px 0 50px">${g.l.map(n=>{
-      const ws = WORKS.filter(w=>w.client===n);
-      return `<div class="card"><h3 style="margin:0 0 8px">${n}</h3>${ws.length?ws.map(w=>`<a href="#case-${w.id}" style="display:block;color:var(--ice);text-decoration:none;font-weight:700;margin-top:6px">${w.t} →</a>`).join(''):'<span class="muted ph" style="border:0">Add one-line summary of work done</span>'}</div>`;
-    }).join('')}</div>`).join('');
-  $('#blog-list').innerHTML = BLOG.map(([c,t])=>`<a class="card story" style="padding:24px" href="https://www.icecubeevents.com/blogs" target="_blank" rel="noopener"><span class="tag">${c}</span><h3 style="margin-top:8px">${t}</h3></a>`).join('');
-  document.querySelectorAll('[data-form]').forEach(el=>el.innerHTML = formHTML());
 }
-function drawWork(c){ $('#work-grid').innerHTML = WORKS.filter(w=>c==='All'||w.c===c).map(storyCard).join(''); }
-
-function renderService(s){
-  const svc = svcBy(s) || SERVICES[0];
-  const related = WORKS.filter(w=>w.svc===svc.s).concat(WORKS.filter(w=>w.svc!==svc.s && w.c===svc.cat)).slice(0,3);
-  const rel = related.length ? related : WORKS.slice(0,3);
-  $('#svc-detail').innerHTML = `
-  <div class="phead"><div class="wrap">
-    <div class="crumb"><a href="#home">Home</a> / <a href="#services">Services</a> / ${svc.n}</div>
-    <h1>${svc.n}</h1>
-    <p class="answer">Icecube Events plans and runs ${svc.n.toLowerCase()} in Kochi, across Kerala and India. ${svc.d} One event manager handles everything from concept to the last guest out.</p>
-    <p style="margin-top:24px"><a class="btn btn-ice" href="#svc-form">Get a free estimate</a> <a class="btn btn-ghost" href="https://wa.me/919847310015" target="_blank" rel="noopener">WhatsApp us</a></p>
-  </div></div>
-  <section><div class="wrap split">
-    <div><h2>What's included</h2><ul class="ticks">${svc.inc.map(i=>`<li>${i}</li>`).join('')}</ul></div>
-    <div class="card"><h3>At a glance</h3><table>
-      <tr><th>Typical size</th><td class="ph">50 – 5,000 guests</td></tr>
-      <tr><th>Typical budget</th><td class="ph">₹X – ₹Y lakh</td></tr>
-      <tr><th>Lead time</th><td class="ph">4 – 8 weeks</td></tr>
-      <tr><th>Where</th><td>Kerala &amp; across India</td></tr>
-      <tr><th>Point of contact</th><td>One named event manager</td></tr>
-    </table></div>
-  </div></section>
-  <section class="alt"><div class="wrap">
-    <h2>Similar events we've delivered</h2>
-    <div class="grid g3" style="margin-top:24px">${rel.map(storyCard).join('')}</div>
-  </div></section>
-  <section id="svc-form"><div class="wrap split">
-    <div class="formbox">${formHTML(svc.s)}</div>
-    <div><h2>Questions</h2>${faqHTML(FAQ.slice(0,4))}</div>
-  </div></section>`;
-}
+function drawWork(c){ $('#work-index').innerHTML = WORK.filter(w=>c==='All'||w.c===c).map(row).join(''); }
 
 function renderCase(id){
-  const w = WORKS.find(x=>x.id===id) || WORKS[0];
-  const svc = svcBy(w.svc);
-  const more = WORKS.filter(x=>x.c===w.c && x.id!==w.id).slice(0,3);
-  $('#case-detail').innerHTML = `
-  <div class="phead"><div class="wrap">
-    <div class="crumb"><a href="#home">Home</a> / <a href="#work">Our Work</a> / ${w.t}</div>
-    <span class="tag">${CATS[w.c]}</span>
-    <h1 style="margin-top:10px">${w.t}</h1>
+  const i = Math.max(0, WORK.findIndex(w=>w.id===id)), w = WORK[i], next = WORK[(i+1)%WORK.length];
+  const s = SVC.find(x=>x.s===w.svc);
+  $('#case').innerHTML = `
+  <div class="ph" style="padding-bottom:48px"><div class="wrap">
+    <p class="cue crumbs"><a href="#home">Home</a> / <a href="#work">Work</a> / ${w.c}</p>
+    <h1 class="display">${w.t}</h1>
+    <p class="lede">${w.sum}</p>
   </div></div>
-  <section style="padding-top:40px"><div class="wrap">
-    <img src="${IMG(w.img)}" alt="${w.t}" style="width:100%;aspect-ratio:21/9;object-fit:cover;border-radius:var(--radius);margin-bottom:40px">
-    <div class="split">
-      <div>
-        <h2>The brief</h2><p class="muted ph" style="border:0">What the client needed, in 2–3 sentences. Include the constraint: deadline, VIP protocol, scale or location.</p>
-        <h2>What we did</h2><ul class="ticks"><li class="ph" style="border:0">Key thing delivered #1</li><li class="ph" style="border:0">Key thing delivered #2</li><li class="ph" style="border:0">Key thing delivered #3</li></ul>
-        <h2 style="margin-top:30px">The result</h2><p class="muted ph" style="border:0">Numbers: guests, days, on-time start, media coverage, feedback score.</p>
-        <p class="quote phbox" style="outline:0">"One line from the client about the event." <br><span class="muted" style="font:400 15px Nunito">— Name, Designation, ${w.client}</span></p>
-      </div>
-      <div class="card"><h3>Event facts</h3><table>
-        <tr><th>Client</th><td>${w.client}</td></tr>
-        <tr><th>Type</th><td><a href="#service-${svc.s}" style="color:var(--ice)">${svc.n}</a></td></tr>
-        <tr><th>Guests</th><td class="ph">000</td></tr>
-        <tr><th>Venue / City</th><td class="ph">Venue, City</td></tr>
-        <tr><th>Year</th><td class="ph">20XX</td></tr>
-        <tr><th>Duration</th><td class="ph">X days</td></tr>
-      </table>
-      <a class="btn btn-ice" style="width:100%;margin-top:20px" href="#service-${svc.s}">Plan a similar event</a></div>
+  <img class="casehero" src="${img(w.img)}" alt="${w.t}">
+  <section><div class="wrap split">
+    <div>
+      <p class="cue" style="margin-bottom:18px">What we did</p>
+      <p class="big">${w.body}</p>
+      <p class="cue" style="margin:44px 0 18px">Delivered</p>
+      <ul class="tags">${w.tags.map(t=>`<li>${t}</li>`).join('')}</ul>
+    </div>
+    <div>
+      <dl class="facts">
+        ${w.client?`<div><dt>Client</dt><dd>${w.client}</dd></div>`:''}
+        <div><dt>Where</dt><dd>${w.place}</dd></div>
+        <div><dt>Type</dt><dd><a href="#service-${s.s}">${s.n}</a></dd></div>
+      </dl>
+      <a class="btn arrow" style="margin-top:28px" href="#brief">Plan a show like this</a>
     </div>
   </div></section>
-  ${more.length?`<section class="alt"><div class="wrap"><h2>More ${CATS[w.c].toLowerCase()} work</h2><div class="grid g3" style="margin-top:24px">${more.map(storyCard).join('')}</div></div></section>`:''}`;
+  <a href="#case-${next.id}" style="display:block;text-decoration:none;border-top:1px solid var(--line);padding:56px 0">
+    <div class="wrap"><p class="cue">Next show</p><p class="display" style="font-size:clamp(40px,6vw,84px);max-width:none">${next.t} →</p></div></a>`;
 }
 
-const TITLES = {home:'Event Management Company in Kochi, Kerala | Icecube Events', services:'Event Services in Kochi & Kerala | Icecube Events', work:'Our Work: Events Delivered | Icecube Events', clients:'Clients | Icecube Events', about:'About Icecube Events, Kochi (since 2009)', insights:'Event Planning Guides for Kerala | Icecube Events', contact:'Contact Icecube Events, Kochi', thanks:'Thank you | Icecube Events'};
+function renderService(slug){
+  const s = SVC.find(x=>x.s===slug) || SVC[0];
+  let rel = WORK.filter(w=>w.svc===s.s); if (rel.length<3) rel = rel.concat(WORK.filter(w=>w.svc!==s.s)).slice(0,3);
+  $('#service').innerHTML = `
+  <div class="ph"><div class="wrap">
+    <p class="cue crumbs"><a href="#home">Home</a> / <a href="#services">Services</a></p>
+    <h1 class="display">${s.n}</h1>
+    <p class="lede">Icecube Events plans and runs ${s.n.toLowerCase()} in Kochi, across Kerala and India: ${s.d.toLowerCase()}. One event manager handles everything from the brief to the last guest out.</p>
+  </div></div>
+  <section><div class="wrap split">
+    <div><p class="cue" style="margin-bottom:18px">What's included</p><ul class="ticks">${s.inc.map(x=>`<li>${x}</li>`).join('')}</ul></div>
+    <div><p class="cue" style="margin-bottom:18px">Questions</p>${faq()}</div>
+  </div></section>
+  <section style="padding-top:0"><div class="wrap">
+    <div class="head"><div><p class="cue">From the record</p><h2 class="display" style="font-size:clamp(36px,5vw,64px)">Shows like this</h2></div></div>
+    <div class="index">${rel.map(row).join('')}</div>
+  </div></section>
+  <section class="brief"><div class="wrap">${briefHTML(s.s)}</div></section>`;
+  wireBriefs($('#service'));
+}
 
+/* routing: plain #names only */
+const PAGES = ['home','work','services','about','contact','thanks'];
 function route(){
-  const h = location.hash.replace('#','') || 'home';
-  if (h === 'home-form' || h === 'svc-form') { showPage(h==='home-form'?'home':'service', false); document.getElementById(h)?.scrollIntoView(); return; }
-  let p = h, arg;
-  if (h.startsWith('service-')) { p='service'; arg=h.slice(8); }
-  else if (h.startsWith('case-')) { p='case'; arg=h.slice(5); }
-  if (p === 'service') renderService(arg);
-  if (p === 'case') renderCase(arg);
-  showPage(p in TITLES || p==='service' || p==='case' ? p : 'home', true);
+  const h = location.hash.slice(1) || 'home';
+  if (h === 'brief') {
+    const cur = document.querySelector('[data-page].show');
+    const target = cur && cur.querySelector('[data-brief],#service .brief .wrap, .brief .wrap');
+    if (!cur || !target) { show('home'); }
+    (document.querySelector('[data-page].show .brief') || $('#brief-sec')).scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+    return;
+  }
+  if (h.startsWith('case-')) { renderCase(h.slice(5)); show('case'); }
+  else if (h.startsWith('service-')) { renderService(h.slice(8)); show('service'); }
+  else show(PAGES.includes(h) ? h : 'home');
 }
-function showPage(p, top){
-  document.querySelectorAll('[data-page]').forEach(el=>el.classList.toggle('show', el.dataset.page===p));
-  document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on', a.getAttribute('href')==='#'+p || (p==='service'&&a.getAttribute('href')==='#services') || (p==='case'&&a.getAttribute('href')==='#work')));
-  $('#menu').classList.remove('open');
-  if (top) window.scrollTo(0,0);
+function show(p){
+  document.querySelectorAll('[data-page]').forEach(el => el.classList.toggle('show', el.dataset.page===p));
+  document.querySelectorAll('nav.main a').forEach(a => {
+    const k = a.getAttribute('href').slice(1);
+    a.classList.toggle('on', k===p || (p==='case'&&k==='work') || (p==='service'&&k==='services'));
+  });
+  $('#nav').classList.remove('open'); $('#burger').setAttribute('aria-expanded','false');
+  window.scrollTo(0,0); onScroll(); hero.toggle(p==='home');
 }
-function toggleMenu(b){ const m=$('#menu'); m.classList.toggle('open'); b.setAttribute('aria-expanded', m.classList.contains('open')); }
+$('#burger').onclick = () => { const o = $('#nav').classList.toggle('open'); $('#burger').setAttribute('aria-expanded', o); };
+
+/* header + hover peek */
+function onScroll(){ $('#top').classList.toggle('solid', scrollY > 40 || !document.querySelector('[data-page="home"].show')); }
+addEventListener('scroll', onScroll, {passive:true});
+const peek = $('#peek');
+if (matchMedia('(hover:hover) and (min-width:901px)').matches){
+  document.addEventListener('mousemove', e => {
+    const r = e.target.closest && e.target.closest('.row');
+    if (r){ if (peek.getAttribute('src')!==r.dataset.img) peek.src = r.dataset.img;
+      peek.style.left = (e.clientX + 200) + 'px'; peek.style.top = e.clientY + 'px'; peek.classList.add('on'); }
+    else peek.classList.remove('on');
+  });
+  addEventListener('scroll', () => peek.classList.remove('on'), {passive:true});
+}
+
+/* show clock (IST) */
+function tick(){ $('#clock').textContent = new Date().toLocaleTimeString('en-GB',{timeZone:'Asia/Kolkata',hour12:false}); }
+tick(); setInterval(tick, 1000);
+
+/* stage beams */
+const hero = (() => {
+  const cv = $('#beams'), ctx = cv.getContext('2d'), still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let w, h, dpr, raf = null, t = 0, mx = .5, active = true;
+  const beams = [{x:.18,a:.35,s:.00042,p:0},{x:.5,a:-.1,s:.00031,p:2},{x:.82,a:-.38,s:.00037,p:4}];
+  function size(){ dpr = Math.min(devicePixelRatio||1, 2); w = cv.clientWidth; h = cv.clientHeight; cv.width = w*dpr; cv.height = h*dpr; ctx.setTransform(dpr,0,0,dpr,0,0); }
+  function draw(){
+    ctx.clearRect(0,0,w,h); ctx.globalCompositeOperation = 'lighter';
+    beams.forEach((b,i) => {
+      const sway = still ? 0 : Math.sin(t*b.s*16 + b.p)*.22 + (i===1 ? (mx-.5)*.5 : 0);
+      const ang = b.a + sway, x0 = b.x*w, y0 = -20, len = h*1.35, spread = .11;
+      ctx.save(); ctx.translate(x0,y0); ctx.rotate(ang);
+      const g = ctx.createLinearGradient(0,0,0,len);
+      g.addColorStop(0,'rgba(200,232,255,.38)'); g.addColorStop(.55,'rgba(169,220,255,.07)'); g.addColorStop(1,'rgba(169,220,255,0)');
+      ctx.fillStyle = g; ctx.beginPath(); ctx.moveTo(-6,0); ctx.lineTo(6,0);
+      ctx.lineTo(Math.tan(spread)*len,len); ctx.lineTo(-Math.tan(spread)*len,len); ctx.closePath(); ctx.fill(); ctx.restore();
+      const r = ctx.createRadialGradient(x0,0,0,x0,0,70); r.addColorStop(0,'rgba(234,243,255,.55)'); r.addColorStop(1,'rgba(234,243,255,0)');
+      ctx.fillStyle = r; ctx.fillRect(x0-70,-70,140,140);
+    });
+  }
+  function loop(ts){ t = ts; draw(); raf = active && !still ? requestAnimationFrame(loop) : null; }
+  addEventListener('resize', () => { size(); draw(); });
+  addEventListener('pointermove', e => { mx = e.clientX / innerWidth; }, {passive:true});
+  new IntersectionObserver(([e]) => { active = e.isIntersecting && document.querySelector('[data-page="home"].show'); if (active && !raf && !still) raf = requestAnimationFrame(loop); }).observe(cv);
+  size(); draw();
+  return { toggle(on){ active = on; if (on){ size(); draw(); if (!raf && !still) raf = requestAnimationFrame(loop); } } };
+})();
 
 renderStatic();
-window.addEventListener('hashchange', route);
+addEventListener('hashchange', route);
 route();
 </script>
