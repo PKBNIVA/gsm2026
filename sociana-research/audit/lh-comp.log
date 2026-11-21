@@ -1,0 +1,5 @@
+c-dreamcast {'performance': 82, 'accessibility': 100, 'best-practices': 100, 'seo': 100} LCP 3.6 s TBT 200 ms CLS 0 FCP 2.3 s MB 0.99
+c-hubilo {'performance': 48, 'accessibility': 94, 'best-practices': 54, 'seo': 100} LCP 5.9 s TBT 920 ms CLS 0 FCP 2.9 s MB 7.24
+c-samaaro {'performance': 24, 'accessibility': 89, 'best-practices': 71, 'seo': 92} LCP 30.1 s TBT 2,000 ms CLS 0.111 FCP 10.9 s MB 8.11
+c-konfhub {'performance': 50, 'accessibility': 82, 'best-practices': 96, 'seo': 77} LCP 10.5 s TBT 860 ms CLS 0 FCP 2.3 s MB 20.55
+c-eventify {'performance': 52, 'accessibility': 98, 'best-practices': 57, 'seo': 85} LCP 3.8 s TBT 1,410 ms CLS 0 FCP 3.4 s MB 5.77

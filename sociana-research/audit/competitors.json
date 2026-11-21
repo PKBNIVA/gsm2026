@@ -1,0 +1,157 @@
+{
+ "Sociana": {
+  "url": "https://sociana.in/",
+  "bytes": 142217,
+  "words": 1845,
+  "schema": [
+   "AggregateOffer",
+   "Answer",
+   "Brand",
+   "ContactPoint",
+   "Country",
+   "EntryPoint",
+   "FAQPage",
+   "ImageObject",
+   "Organization",
+   "Person",
+   "PostalAddress",
+   "PropertyValue",
+   "Question",
+   "SearchAction",
+   "WebPage",
+   "WebSite"
+  ],
+  "title": "Sociana \u2014 Branded event apps, run by our team",
+  "h1": [
+   "Every partner lands in Goa knowing their pickup, room and tonight\u2019s plan."
+  ],
+  "faq": true,
+  "price": true,
+  "pricing_link": true,
+  "reviews": false,
+  "llms": "200"
+ },
+ "Dreamcast": {
+  "url": "https://www.dreamcast.in/",
+  "bytes": 569439,
+  "words": 1148,
+  "schema": [
+   "AggregateRating",
+   "Answer",
+   "ContactPoint",
+   "Country",
+   "FAQPage",
+   "Organization",
+   "Person",
+   "PostalAddress",
+   "Question",
+   "SoftwareApplication",
+   "WebPage",
+   "WebSite"
+  ],
+  "title": "Dreamcast | Enterprise Event Registration Software India",
+  "h1": [
+   "Enterprise Event RegistrationPlatform That Adapts To Your Event"
+  ],
+  "faq": true,
+  "price": false,
+  "pricing_link": true,
+  "reviews": true,
+  "llms": "200"
+ },
+ "Hubilo": {
+  "url": "https://www.hubilo.com/",
+  "bytes": 355376,
+  "words": 588,
+  "schema": [
+   "Audience",
+   "Organization",
+   "SoftwareApplication"
+  ],
+  "title": "Virtual PRO",
+  "h1": [
+   "deliver WOW",
+   "deliver WOW"
+  ],
+  "faq": false,
+  "price": false,
+  "pricing_link": false,
+  "reviews": false,
+  "llms": "200"
+ },
+ "Samaaro": {
+  "url": "https://samaaro.com/",
+  "bytes": 633388,
+  "words": 935,
+  "schema": [
+   "AggregateRating",
+   "BreadcrumbList",
+   "ContactPoint",
+   "Country",
+   "EntryPoint",
+   "ImageObject",
+   "ListItem",
+   "Offer",
+   "Organization",
+   "Place",
+   "PropertyValueSpecification",
+   "Rating",
+   "ReadAction",
+   "Review",
+   "SearchAction",
+   "SoftwareApplication",
+   "WebPage",
+   "WebSite"
+  ],
+  "title": "Samaaro - Event Marketing Platform | Event Management Software",
+  "h1": [
+   "AI-Powered Event Marketing platform"
+  ],
+  "faq": false,
+  "price": false,
+  "pricing_link": true,
+  "reviews": false,
+  "llms": "200"
+ },
+ "KonfHub": {
+  "url": "https://konfhub.com/",
+  "bytes": 166499,
+  "words": 1124,
+  "schema": [
+   "ContactPoint",
+   "Organization"
+  ],
+  "title": "KonfHub - AI Event Management Platform for Planning & Tickets",
+  "h1": [
+   "AI-Powered Event Platform"
+  ],
+  "faq": true,
+  "price": true,
+  "pricing_link": true,
+  "reviews": true,
+  "llms": "200"
+ },
+ "Eventify": {
+  "url": "https://eventify.io/",
+  "bytes": 286104,
+  "words": 1872,
+  "schema": [
+   "AggregateRating",
+   "ContactPoint",
+   "ImageObject",
+   "Offer",
+   "Organization",
+   "SoftwareApplication",
+   "VideoObject"
+  ],
+  "title": "Popular Event Management Software With AI Agents in 2026",
+  "h1": [
+   "All-in-One Event Management Software With AI\u00a0AgentsFor In-Person, Hybrid &amp; V"
+  ],
+  "faq": true,
+  "price": false,
+  "pricing_link": true,
+  "reviews": true,
+  "llms": "200"
+ }
+}

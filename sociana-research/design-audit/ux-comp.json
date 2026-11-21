@@ -1,0 +1,158 @@
+{
+ "mobile:home": {
+  "h1Text": "Every partner lands in Goa knowing their pickup, room and tonight’s pl",
+  "h1InFold": true,
+  "h1Top": 192,
+  "foldCta": 2,
+  "foldCtaLabels": [
+   "Book a demo"
+  ],
+  "foldWords": 64,
+  "screens": 15,
+  "overflow": false,
+  "actions": 105,
+  "smallTargets": 8,
+  "under14": 2,
+  "upper": 3,
+  "families": [
+   "Inter 90%",
+   "Anek Latin 10%"
+  ],
+  "sizeCount": 13,
+  "pMedian": 14.4,
+  "charsPerLine": 32,
+  "imgs": 51,
+  "videos": 0,
+  "axe": []
+ },
+ "mobile:c-dreamcast": {
+  "h1Text": "Enterprise Event Registration\nPlatform That Adapts To Your Event",
+  "h1InFold": true,
+  "h1Top": 133,
+  "foldCta": 4,
+  "foldCtaLabels": [
+   "Book A Demo",
+   "Talk To An Expert",
+   "Call Now"
+  ],
+  "foldWords": 44,
+  "screens": 16.3,
+  "overflow": false,
+  "actions": 120,
+  "smallTargets": 60,
+  "under14": 30,
+  "upper": 1,
+  "families": [
+   "googleSansFlex 100%"
+  ],
+  "sizeCount": 9,
+  "pMedian": 14,
+  "charsPerLine": 40,
+  "imgs": 38,
+  "videos": 0
+ },
+ "mobile:c-hubilo": {
+  "h1Text": "DELIVER\nWOW",
+  "h1InFold": true,
+  "h1Top": 256,
+  "foldCta": 0,
+  "foldCtaLabels": [],
+  "foldWords": 11,
+  "screens": 7,
+  "overflow": false,
+  "actions": 10,
+  "smallTargets": 10,
+  "under14": 5,
+  "upper": 15,
+  "families": [
+   "Libre Franklin 85%",
+   "Stratos SemiBold 10%",
+   "Stratos ExtraBold 3%",
+   "Stratos Bold 2%",
+   "Stratos Black 1%"
+  ],
+  "sizeCount": 6,
+  "pMedian": 16,
+  "charsPerLine": 41,
+  "imgs": 6,
+  "videos": 1
+ },
+ "mobile:c-konfhub": {
+  "h1Text": "AI-Powered Event Platform",
+  "h1InFold": true,
+  "h1Top": 141,
+  "foldCta": 2,
+  "foldCtaLabels": [
+   "Book a Demo"
+  ],
+  "foldWords": 31,
+  "screens": 24,
+  "overflow": false,
+  "actions": 89,
+  "smallTargets": 82,
+  "under14": 1,
+  "upper": 0,
+  "families": [
+   "__Figtree_57cccf 100%"
+  ],
+  "sizeCount": 13,
+  "pMedian": 16,
+  "charsPerLine": 36,
+  "imgs": 189,
+  "videos": 1
+ },
+ "mobile:c-eventify": {
+  "h1Text": "All-in-One Event Management Software With AI Agents\nFor In-Person, Hyb",
+  "h1InFold": true,
+  "h1Top": 161,
+  "foldCta": 3,
+  "foldCtaLabels": [
+   "Pricing",
+   "Request Demo",
+   "Request A Free Trial"
+  ],
+  "foldWords": 5,
+  "screens": 31.2,
+  "overflow": false,
+  "actions": 124,
+  "smallTargets": 105,
+  "under14": 0,
+  "upper": 3,
+  "families": [
+   "Outfit 100%"
+  ],
+  "sizeCount": 11,
+  "pMedian": 14,
+  "charsPerLine": null,
+  "imgs": 275,
+  "videos": 2
+ },
+ "desktop:home": {
+  "h1Text": "Every partner lands in Goa knowing their pickup, room and tonight’s pl",
+  "h1InFold": true,
+  "h1Top": 289,
+  "foldCta": 4,
+  "foldCtaLabels": [
+   "Pricing",
+   "WhatsApp\n(opens WhatsApp",
+   "Book a demo"
+  ],
+  "foldWords": 103,
+  "screens": 12.5,
+  "overflow": false,
+  "actions": 109,
+  "smallTargets": 74,
+  "under14": 13,
+  "upper": 2,
+  "families": [
+   "Inter 92%",
+   "Anek Latin 8%"
+  ],
+  "sizeCount": 13,
+  "pMedian": 15,
+  "charsPerLine": 56,
+  "imgs": 51,
+  "videos": 0,
+  "axe": []
+ }
+}
