@@ -1,0 +1,902 @@
+[
+ {
+  "url": "https://www.icecubeevents.com/",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 1,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/about-us",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 4,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/services",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/our-works",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/our-clients",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blogs",
+  "qheads": 2,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 24,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/careers",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 8,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/contact-us",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 13,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/service/government-event-management-icecube-events",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/service/corporate-event-management-company-icecube-events",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 3,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/service/international-conference-management-icecube-events",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 1,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/service/inauguration-event-management-icecube-events",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/service/launch-event-company-icecube-events",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/service/stalls-exhibitions-icecube-events",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/service/mall-activation-agency-icecube-events",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/service/corporate-team-building-events-icecube-events",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 3,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/service/fashion-shows-icecube-events",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/kobelco-roadshow",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 2,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/kied-enterprise-centre-inauguration",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/petroleum-ministers-visit-at-viksit-bharat-sankalp-yatra",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/iocl-prison-inauguration",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/iocl-parliamentary-committee-meet",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/iocl-team-bonding",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/iocl-petrolex-conference",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/wurth-kick-off-conference",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/volvo-showroom-launch",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/dance-affair",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/alan-truman-fashion-show",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/vaan-e-bike-inauguration",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/perfect-event-management-company-in-kochi-kerala-icecube-e",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 3,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/women-in-the-event-management-industry-icecube-events",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 1,
+  "faq": false,
+  "date": true,
+  "nums": 9,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/event-management-planners-kochi-kerala-icecube-events",
+  "qheads": 3,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/event-badge-ideas-designing-printing-distributing-ice",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/guerrilla-marketing-icecube-events",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 3,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/safe-event-management-company-in-kochi-kerala-icecube-even",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/importance-of-casual-staff-in-events-icecube-events",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/know-the-5-ps-which-creates-value-for-your-clients-in-event",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 11,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/team-building-activities-kochi-kerala-icecube-events",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 12,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/different-types-of-seating-arrangements-for-events-icecube",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 12,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/event-photography-preserve-the-memories-for-your-client",
+  "qheads": 3,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/how-can-we-use-social-media-for-the-success-of-an-event-i",
+  "qheads": 3,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 11,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/dynabook-partners-meet",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/dhanam-family-business-conclave",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/bpcl-business-excellence-awards-2026",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 2,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/485th-board-meeting-gail-india-limited",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/arohan-foundation-day-celebration-2025-by-agappe-diagnostics",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 2,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/agapmeet-and-agapcon-by-agappe-diagnostics",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 1,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/transporters-meet-2025-by-totalenergies",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 2,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/50th-anniversary-celebration-for-nitta-gelatin",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/onam-celebration-nri-meet-2025",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/dynabook-customers-meet-2025",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 2,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/asian-paints-annual-day-celebration-2025",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 1,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/stihl-maharaja-2025",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 2,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/winners-royal-agm-2025",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 1,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/indian-coast-guard-commissioning-ceremony-of-835-squadron",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 2,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/iocl-mega-conference-2025",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 2,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/iocl-apex-meet-2025",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 1,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/npol-annual-day-2025",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 1,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/touracle-office-inauguration",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/noatum-csm-crew-conference-2026",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 2,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/giz-deutsche-gesellschaft-fur-internationale-zusammenarbeit-gmbh",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/kfri-world-teak-conference-2025",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 1,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/8th-session-of-the-codex-committee",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/ase-rosatum-80-years-of-russias-nuclear-industry",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 1,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/soti-team-bonding",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/iocl-swachhatha-pakwatha",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": false,
+  "nums": 0,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/manorama-summit-2025",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 2,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/works/asian-paints-managers-meet-kollam-2025",
+  "qheads": 0,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 1,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/types-of-corporate-event-planners-in-kochi-kerala-icecube",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 12,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/licenses-and-permissions-required-for-conducting-an-event",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 1,
+  "faq": false,
+  "date": true,
+  "nums": 9,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/top-event-management-companies-in-kochi-kerala-icecube",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/how-to-create-unforgettable-themed-events",
+  "qheads": 3,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/ten-moments-every-event-manager-has-experienced-icecube-ev",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 9,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/ideas-for-alcohol-free-events-icecube-events",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 9,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/engagement-is-old-news-involvement-is-the-future-of-the-wor",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/self-note-to-event-planners-be-the-avengers-icecube-even",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 9,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/product-launch-event-management-company-in-kochi-icecube-e",
+  "qheads": 3,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/corporate-event-production-companies-kochi-icecube-events",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/how-creative-av-design-keeps-your-audiences-engaged",
+  "qheads": 3,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 9,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/venue-finding-event-company-in-kochi-kerala-icecube-events",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 11,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/onam-magic-and-creativity-at-icecube-events",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/event-planning-planner-kochi-kerala-icecube-events",
+  "qheads": 4,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/embracing-sustainability-in-event-management-the-icecube-ev",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/the-blueprint-for-success-pre-event-planning",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/event-venue-planner-kochi-kerala-icecube-events",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/navigating-event-entertainment-choices",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/the-future-of-cashless-event-icecube-events-kochi",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/hire-an-event-planner-in-kochi-kerala-icecube-events",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/working-from-home-vs-productivity-icecube-events",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 0,
+  "faq": false,
+  "date": true,
+  "nums": 9,
+  "author": false
+ },
+ {
+  "url": "https://www.icecubeevents.com/blog/discover-multi-faceted-kerala-as-a-mice-destination-icecub",
+  "qheads": 1,
+  "tables": 0,
+  "lists": 1,
+  "faq": false,
+  "date": true,
+  "nums": 8,
+  "author": false
+ }
+]
