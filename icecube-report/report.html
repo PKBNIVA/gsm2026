@@ -58,7 +58,8 @@ ul{margin:0 0 8pt;padding-left:14pt}li{margin-bottom:3pt}
 <tr><td>Share image</td><td>Broken on all 90 pages</td><td>Working image</td><td><span class="pill fail">Fail</span></td></tr>
 <tr><td>Answer-ready content (AEO)</td><td>0 pages with FAQs; 0 service pages with question headings</td><td>Watermark, Melodia, Executive Events have FAQs</td><td><span class="pill fail">Fail</span></td></tr>
 <tr><td>AI answers, own knowledge (GEO)</td><td>Named in 0 of 24</td><td>Any mention</td><td><span class="pill fail">Fail</span></td></tr>
-<tr><td>AI answers, with web search</td><td>Named in 21 of 36</td><td>Named for every service</td><td><span class="pill part">Partial</span></td></tr>
+<tr><td>ChatGPT answers, with web search</td><td>Named in 21 of 36</td><td>Named for every service</td><td><span class="pill part">Partial</span></td></tr>
+<tr><td>Gemini answers, with web search</td><td>Named in 1 of 12</td><td>Named for every service</td><td><span class="pill fail">Fail</span></td></tr>
 <tr><td>AI answers citing an Icecube event</td><td>0 of 21</td><td>Events cited as proof</td><td><span class="pill fail">Fail</span></td></tr>
 <tr><td>Google top 10</td><td>7 of 15 searches; best position 5</td><td>Top 3 for core searches</td><td><span class="pill part">Below</span></td></tr>
 <tr><td>llms.txt</td><td>Present, lists all services and events</td><td>Present</td><td><span class="pill pass">Pass</span></td></tr></table>
@@ -141,8 +142,18 @@ ul{margin:0 0 8pt;padding-left:14pt}li{margin-bottom:3pt}
 <tr><td>ChatGPT, own knowledge</td><td>12 questions × 2 runs</td><td>Icecube named in 0 of 24</td></tr>
 <tr><td>ChatGPT, with web search</td><td>12 questions × 3 runs</td><td>Icecube named in 21 of 36</td></tr>
 <tr><td>Claude, own knowledge</td><td>12 questions × 1 run, 21 Nov 2026</td><td>Icecube named in 0 of 12. Claude named Executive Events, Tamarind, Impresario and Intersight, and named no company at all for government, protocol, roadshow, mall activation or exhibition stalls</td></tr>
-<tr><td>Gemini, Microsoft Copilot</td><td>Not tested: no access from our test setup</td><td>To be run with the same 12 questions</td></tr></table>
-<p>Two different AI models agree: neither knows Icecube from training. Both know Executive Events and Impresario. For government and protocol work, where Icecube is strongest, Claude knows no company in Kerala at all, so that position is unclaimed.</p>
+<tr><td>Gemini, with web search</td><td>12 questions × 1 run in a signed-in browser, 21 Nov 2026</td><td>Icecube named in 1 of 12: first for "best event management company in Kochi for corporate events", with icecubeevents.com as a source. Absent from the other 11</td></tr>
+<tr><td>Microsoft Copilot</td><td>Not yet tested</td><td>To be run with the same 12 questions</td></tr></table>
+<h3>What Gemini showed</h3>
+<table><tr><th>Finding</th><th>Evidence</th></tr>
+<tr><td>Watermark is Gemini's default for government work</td><td>Named first for both "government event or VIP visit in Kerala" and "has handled ministers and protocol". Icecube was not named for either</td></tr>
+<tr><td>Companies Gemini names most</td><td>Watermark Event Solutions 5 of 12 · Impresario 4 · The Event People 3 · Dream Maker Events 3 · Icecube 1</td></tr>
+<tr><td>Gemini cites company web pages, not Google Maps</td><td>Its sources for the protocol question were Watermark's site, The Event People's "governments and institutional" service page, and UNSO Global's "government events" page</td></tr>
+<tr><td>Dedicated pages earn the citation</td><td>Product launch: Red Q's and Seraphic's product launch pages. Mall activation: Touchvane's mall activation page, cited four times</td></tr>
+<tr><td>Icecube's only citation is its homepage</td><td>icecubeevents.com, for the general Kochi corporate question</td></tr>
+<tr><td>The cost question names no company</td><td>Gemini gave Rs 3.95 lakh to Rs 29.97 lakh and listed venues only</td></tr></table>
+<div class="box"><b>Why this matters.</b> ChatGPT leans on Google Maps, where Icecube is strong. Gemini leans on company websites, where Icecube is weak: competitors with a page for each service get cited, and Icecube's government and inauguration pages do not. Fixing the service pages is therefore the main way to win Gemini. Gemini is also built into Google Search, so this affects ordinary Google results as well.</div>
+<p>ChatGPT and Claude agree: neither knows Icecube from training, and both know Executive Events and Impresario. For government and protocol work, where Icecube's record is strongest, Claude names no company at all and Gemini names Watermark first.</p>
 <table><tr><th>GEO signal</th><th>Result</th></tr>
 <tr><td>AI crawlers reaching the site</td><td>4 of 5 succeed; GPTBot refused</td></tr>
 <tr><td>Content readable without JavaScript</td><td>Yes: event text is in the page source</td></tr>
@@ -212,10 +223,11 @@ ul{margin:0 0 8pt;padding-left:14pt}li{margin-bottom:3pt}
 <tr><td>Speed</td><td>Google Lighthouse 12.2, mobile setting, 20 Nov 2026</td><td>4 Icecube pages, 5 competitor homepages</td></tr>
 <tr><td>AI visibility</td><td>ChatGPT (gpt-4.1) through the OpenAI API, web search set to Kochi, 20 Nov 2026</td><td>12 questions, 60 answers</td></tr>
 <tr><td>AI visibility, Claude</td><td>The same 12 questions answered by Claude from its own knowledge, no web search, 21 Nov 2026</td><td>12 answers</td></tr>
+<tr><td>AI visibility, Gemini</td><td>The same 12 questions typed into gemini.google.com in a signed-in browser, one new chat each, 21 Nov 2026</td><td>12 answers, 1 run</td></tr>
 <tr><td>AI crawler access</td><td>Page requests identifying as each AI crawler, 21 Nov 2026</td><td>5 crawlers</td></tr>
 <tr><td>Google rankings</td><td>Google top 10 results located in Kochi, 20 Nov 2026</td><td>15 searches</td></tr>
 <tr><td>Buyer questions</td><td>Google autocomplete suggestions for India, 19 and 21 Nov 2026</td><td>20 search stems</td></tr>
 <tr><td>Competitors</td><td>Homepage content and Lighthouse, 19 and 20 Nov 2026</td><td>6 homepages</td></tr></table>
-<h3>Limits</h3><ul><li>AI answers vary between runs and days; positions are indicative.</li><li>Google results vary by device, location and history; Lighthouse scores vary by a few points.</li><li>The GPTBot result comes from our test location; the hosting provider should confirm how real GPTBot traffic is treated.</li><li>Not tested: Gemini, Microsoft Copilot, Perplexity and Google AI Mode; exact search volumes; Icecube's own Search Console and Analytics data.</li><li>Section 6 and the timing expectations are recommendations, not measurements.</li></ul>
+<h3>Limits</h3><ul><li>AI answers vary between runs and days; positions are indicative.</li><li>Google results vary by device, location and history; Lighthouse scores vary by a few points.</li><li>The GPTBot result comes from our test location; the hosting provider should confirm how real GPTBot traffic is treated.</li><li>Gemini and Claude were tested with one run per question, so their results are less certain than ChatGPT's three runs.</li><li>Not tested: Microsoft Copilot, Perplexity and Google AI Mode; exact search volumes; Icecube's own Search Console and Analytics data.</li><li>Section 6 and the timing expectations are recommendations, not measurements.</li></ul>
 <p>The full crawl results, Lighthouse reports and all 60 ChatGPT answers are available on request.</p></section>
 </body></html>
