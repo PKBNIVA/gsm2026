@@ -1,0 +1,505 @@
+{
+ "mobile:home": {
+  "h1Text": "Every partner lands in Goa knowing their pickup, room and tonight’s pl",
+  "h1InFold": true,
+  "h1Top": 192,
+  "foldCta": 2,
+  "foldCtaLabels": [
+   "Book a demo"
+  ],
+  "foldWords": 64,
+  "screens": 15,
+  "overflow": false,
+  "actions": 105,
+  "smallTargets": 8,
+  "under14": 2,
+  "upper": 3,
+  "families": [
+   "Inter 90%",
+   "Anek Latin 10%"
+  ],
+  "sizeCount": 13,
+  "pMedian": 14.4,
+  "charsPerLine": 32,
+  "imgs": 51,
+  "videos": 0,
+  "axe": []
+ },
+ "mobile:pricing": {
+  "h1Text": "Simple packages. Our team included.",
+  "h1InFold": true,
+  "h1Top": 187,
+  "foldCta": 1,
+  "foldCtaLabels": [
+   "Book a demo"
+  ],
+  "foldWords": 63,
+  "screens": 16.1,
+  "overflow": false,
+  "actions": 81,
+  "smallTargets": 8,
+  "under14": 0,
+  "upper": 1,
+  "families": [
+   "Inter 96%",
+   "Anek Latin 4%"
+  ],
+  "sizeCount": 10,
+  "pMedian": 15,
+  "charsPerLine": 40,
+  "imgs": 2,
+  "videos": 0,
+  "axe": []
+ },
+ "mobile:occasion-dealer": {
+  "h1Text": "Partner meets where nobody asks “where do I go?”",
+  "h1InFold": true,
+  "h1Top": 187,
+  "foldCta": 3,
+  "foldCtaLabels": [
+   "Book a demo",
+   "See pricing"
+  ],
+  "foldWords": 64,
+  "screens": 22.4,
+  "overflow": false,
+  "actions": 97,
+  "smallTargets": 16,
+  "under14": 0,
+  "upper": 3,
+  "families": [
+   "Inter 92%",
+   "Anek Latin 8%"
+  ],
+  "sizeCount": 11,
+  "pMedian": 15,
+  "charsPerLine": 39,
+  "imgs": 20,
+  "videos": 0,
+  "axe": []
+ },
+ "mobile:feature-stay": {
+  "h1Text": "Flights, rooms and pickups, sorted for every guest.",
+  "h1InFold": true,
+  "h1Top": 187,
+  "foldCta": 3,
+  "foldCtaLabels": [
+   "Book a demo",
+   "See pricing"
+  ],
+  "foldWords": 58,
+  "screens": 17.5,
+  "overflow": false,
+  "actions": 84,
+  "smallTargets": 8,
+  "under14": 1,
+  "upper": 4,
+  "families": [
+   "Inter 90%",
+   "Anek Latin 10%"
+  ],
+  "sizeCount": 13,
+  "pMedian": 15,
+  "charsPerLine": null,
+  "imgs": 12,
+  "videos": 0,
+  "axe": []
+ },
+ "mobile:platform-ticketing": {
+  "h1Text": "Ticketing that ends at the gate, not the payment page.",
+  "h1InFold": true,
+  "h1Top": 187,
+  "foldCta": 2,
+  "foldCtaLabels": [
+   "Book a demo"
+  ],
+  "foldWords": 77,
+  "screens": 21.4,
+  "overflow": false,
+  "actions": 84,
+  "smallTargets": 8,
+  "under14": 15,
+  "upper": 7,
+  "families": [
+   "Inter 88%",
+   "Anek Latin 12%"
+  ],
+  "sizeCount": 18,
+  "pMedian": 15,
+  "charsPerLine": 36,
+  "imgs": 2,
+  "videos": 0,
+  "axe": [
+   [
+    "color-contrast",
+    "serious",
+    3
+   ]
+  ]
+ },
+ "mobile:case-hccb": {
+  "h1Text": "HCCB Partners Meet 2026\n:\nA film-premiere app for partners and employe",
+  "h1InFold": true,
+  "h1Top": 187,
+  "foldCta": 1,
+  "foldCtaLabels": [
+   "Book a demo"
+  ],
+  "foldWords": 73,
+  "screens": 23.5,
+  "overflow": false,
+  "actions": 89,
+  "smallTargets": 8,
+  "under14": 0,
+  "upper": 3,
+  "families": [
+   "Inter 94%",
+   "Anek Latin 6%"
+  ],
+  "sizeCount": 10,
+  "pMedian": 15,
+  "charsPerLine": 38,
+  "imgs": 15,
+  "videos": 0,
+  "axe": []
+ },
+ "mobile:cases": {
+  "h1Text": "Real events. Real screens from the app.",
+  "h1InFold": true,
+  "h1Top": 187,
+  "foldCta": 1,
+  "foldCtaLabels": [
+   "Book a demo"
+  ],
+  "foldWords": 53,
+  "screens": 19.2,
+  "overflow": false,
+  "actions": 92,
+  "smallTargets": 8,
+  "under14": 1,
+  "upper": 14,
+  "families": [
+   "Inter 94%",
+   "Anek Latin 6%"
+  ],
+  "sizeCount": 8,
+  "pMedian": 14,
+  "charsPerLine": null,
+  "imgs": 34,
+  "videos": 0,
+  "axe": []
+ },
+ "mobile:guide": {
+  "h1Text": "How to make a wedding app for guests without building one yourself",
+  "h1InFold": true,
+  "h1Top": 187,
+  "foldCta": 1,
+  "foldCtaLabels": [
+   "Book a demo"
+  ],
+  "foldWords": 57,
+  "screens": 18.6,
+  "overflow": false,
+  "actions": 97,
+  "smallTargets": 15,
+  "under14": 0,
+  "upper": 1,
+  "families": [
+   "Inter 92%",
+   "Anek Latin 8%"
+  ],
+  "sizeCount": 10,
+  "pMedian": 17,
+  "charsPerLine": 39,
+  "imgs": 2,
+  "videos": 0,
+  "axe": []
+ },
+ "mobile:contact": {
+  "h1Text": "Tell us about your event. We’ll show you the app.",
+  "h1InFold": true,
+  "h1Top": 187,
+  "foldCta": 1,
+  "foldCtaLabels": [
+   "Book a demo"
+  ],
+  "foldWords": 64,
+  "screens": 9.3,
+  "overflow": false,
+  "actions": 71,
+  "smallTargets": 9,
+  "under14": 1,
+  "upper": 3,
+  "families": [
+   "Inter 95%",
+   "Anek Latin 5%"
+  ],
+  "sizeCount": 8,
+  "pMedian": 15,
+  "charsPerLine": 44,
+  "imgs": 10,
+  "videos": 0,
+  "axe": []
+ },
+ "desktop:home": {
+  "h1Text": "Every partner lands in Goa knowing their pickup, room and tonight’s pl",
+  "h1InFold": true,
+  "h1Top": 289,
+  "foldCta": 4,
+  "foldCtaLabels": [
+   "Pricing",
+   "WhatsApp\n(opens WhatsApp",
+   "Book a demo"
+  ],
+  "foldWords": 103,
+  "screens": 12.5,
+  "overflow": false,
+  "actions": 109,
+  "smallTargets": 74,
+  "under14": 13,
+  "upper": 2,
+  "families": [
+   "Inter 92%",
+   "Anek Latin 8%"
+  ],
+  "sizeCount": 13,
+  "pMedian": 15,
+  "charsPerLine": 56,
+  "imgs": 51,
+  "videos": 0,
+  "axe": []
+ },
+ "desktop:pricing": {
+  "h1Text": "Simple packages. Our team included.",
+  "h1InFold": true,
+  "h1Top": 225,
+  "foldCta": 3,
+  "foldCtaLabels": [
+   "Pricing",
+   "WhatsApp\n(opens WhatsApp",
+   "Book a demo"
+  ],
+  "foldWords": 135,
+  "screens": 7.8,
+  "overflow": false,
+  "actions": 84,
+  "smallTargets": 68,
+  "under14": 14,
+  "upper": 1,
+  "families": [
+   "Inter 96%",
+   "Anek Latin 4%"
+  ],
+  "sizeCount": 12,
+  "pMedian": 15,
+  "charsPerLine": 51,
+  "imgs": 2,
+  "videos": 0,
+  "axe": []
+ },
+ "desktop:occasion-dealer": {
+  "h1Text": "Partner meets where nobody asks “where do I go?”",
+  "h1InFold": true,
+  "h1Top": 225,
+  "foldCta": 5,
+  "foldCtaLabels": [
+   "Pricing",
+   "WhatsApp\n(opens WhatsApp",
+   "Book a demo",
+   "See pricing"
+  ],
+  "foldWords": 83,
+  "screens": 12.7,
+  "overflow": false,
+  "actions": 100,
+  "smallTargets": 74,
+  "under14": 9,
+  "upper": 3,
+  "families": [
+   "Inter 92%",
+   "Anek Latin 8%"
+  ],
+  "sizeCount": 14,
+  "pMedian": 15,
+  "charsPerLine": 85,
+  "imgs": 20,
+  "videos": 0,
+  "axe": []
+ },
+ "desktop:feature-stay": {
+  "h1Text": "Flights, rooms and pickups, sorted for every guest.",
+  "h1InFold": true,
+  "h1Top": 295,
+  "foldCta": 5,
+  "foldCtaLabels": [
+   "Pricing",
+   "WhatsApp\n(opens WhatsApp",
+   "Book a demo",
+   "See pricing"
+  ],
+  "foldWords": 73,
+  "screens": 9.2,
+  "overflow": false,
+  "actions": 87,
+  "smallTargets": 61,
+  "under14": 12,
+  "upper": 4,
+  "families": [
+   "Inter 90%",
+   "Anek Latin 10%"
+  ],
+  "sizeCount": 16,
+  "pMedian": 15,
+  "charsPerLine": null,
+  "imgs": 12,
+  "videos": 0,
+  "axe": []
+ },
+ "desktop:platform-ticketing": {
+  "h1Text": "Ticketing that ends at the gate, not the payment page.",
+  "h1InFold": true,
+  "h1Top": 312,
+  "foldCta": 4,
+  "foldCtaLabels": [
+   "Pricing",
+   "WhatsApp\n(opens WhatsApp",
+   "Book a demo"
+  ],
+  "foldWords": 135,
+  "screens": 10.1,
+  "overflow": false,
+  "actions": 87,
+  "smallTargets": 64,
+  "under14": 23,
+  "upper": 7,
+  "families": [
+   "Inter 88%",
+   "Anek Latin 12%"
+  ],
+  "sizeCount": 18,
+  "pMedian": 15,
+  "charsPerLine": 89,
+  "imgs": 2,
+  "videos": 0,
+  "axe": [
+   [
+    "color-contrast",
+    "serious",
+    3
+   ]
+  ]
+ },
+ "desktop:case-hccb": {
+  "h1Text": "HCCB Partners Meet 2026\n:\nA film-premiere app for partners and employe",
+  "h1InFold": true,
+  "h1Top": 225,
+  "foldCta": 3,
+  "foldCtaLabels": [
+   "Pricing",
+   "WhatsApp\n(opens WhatsApp",
+   "Book a demo"
+  ],
+  "foldWords": 142,
+  "screens": 12.5,
+  "overflow": false,
+  "actions": 92,
+  "smallTargets": 61,
+  "under14": 14,
+  "upper": 3,
+  "families": [
+   "Inter 94%",
+   "Anek Latin 6%"
+  ],
+  "sizeCount": 12,
+  "pMedian": 15,
+  "charsPerLine": 72,
+  "imgs": 15,
+  "videos": 0,
+  "axe": []
+ },
+ "desktop:cases": {
+  "h1Text": "Real events. Real screens from the app.",
+  "h1InFold": true,
+  "h1Top": 225,
+  "foldCta": 3,
+  "foldCtaLabels": [
+   "Pricing",
+   "WhatsApp\n(opens WhatsApp",
+   "Book a demo"
+  ],
+  "foldWords": 109,
+  "screens": 6.2,
+  "overflow": false,
+  "actions": 95,
+  "smallTargets": 67,
+  "under14": 30,
+  "upper": 14,
+  "families": [
+   "Inter 94%",
+   "Anek Latin 6%"
+  ],
+  "sizeCount": 10,
+  "pMedian": 14,
+  "charsPerLine": null,
+  "imgs": 34,
+  "videos": 0,
+  "axe": []
+ },
+ "desktop:guide": {
+  "h1Text": "How to make a wedding app for guests without building one yourself",
+  "h1InFold": true,
+  "h1Top": 225,
+  "foldCta": 3,
+  "foldCtaLabels": [
+   "Pricing",
+   "WhatsApp\n(opens WhatsApp",
+   "Book a demo"
+  ],
+  "foldWords": 105,
+  "screens": 9.1,
+  "overflow": false,
+  "actions": 109,
+  "smallTargets": 83,
+  "under14": 5,
+  "upper": 1,
+  "families": [
+   "Inter 93%",
+   "Anek Latin 7%"
+  ],
+  "sizeCount": 13,
+  "pMedian": 17,
+  "charsPerLine": 77,
+  "imgs": 2,
+  "videos": 0,
+  "axe": []
+ },
+ "desktop:contact": {
+  "h1Text": "Tell us about your event. We’ll show you the app.",
+  "h1InFold": true,
+  "h1Top": 225,
+  "foldCta": 4,
+  "foldCtaLabels": [
+   "Pricing",
+   "WhatsApp\n(opens WhatsApp",
+   "Book a demo",
+   "Talk on WhatsApp\n(opens "
+  ],
+  "foldWords": 146,
+  "screens": 4.5,
+  "overflow": false,
+  "actions": 74,
+  "smallTargets": 62,
+  "under14": 21,
+  "upper": 3,
+  "families": [
+   "Inter 95%",
+   "Anek Latin 5%"
+  ],
+  "sizeCount": 10,
+  "pMedian": 15,
+  "charsPerLine": 110,
+  "imgs": 10,
+  "videos": 0,
+  "axe": []
+ }
+}
