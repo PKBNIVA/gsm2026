@@ -34,6 +34,9 @@ ul{margin:0 0 8pt;padding-left:14pt}li{margin-bottom:3pt}
 .concept .h{display:flex;justify-content:space-between;align-items:baseline;margin:0 0 4pt}.concept .h b{font-size:12.5pt}
 .pc{display:grid;grid-template-columns:1fr 1fr;gap:10pt;font-size:9pt;margin-top:5pt}.pc b{font-size:8pt;letter-spacing:.1em;text-transform:uppercase}
 .pc .p b{color:var(--green)}.pc .c b{color:var(--red)}
+.ov{display:grid;grid-template-columns:repeat(3,1fr);gap:10pt;margin:10pt 0}.ov .crop{height:150pt;overflow:hidden;border:1px solid var(--line);border-radius:6pt}.ov img{width:100%;display:block}.ov b{display:block;margin-top:5pt;font-size:10.5pt}.ov span{font-size:8.4pt;color:var(--mute)}
+.cp h1{margin-bottom:8pt}.cgrid{display:grid;grid-template-columns:118mm 1fr;gap:8mm;align-items:start}.big img{width:100%;max-height:232mm;object-fit:contain;object-position:top left;border:1px solid var(--line);border-radius:5pt;display:block}
+.notes{font-size:8.9pt}.notes h3{font-size:8pt;letter-spacing:.1em;text-transform:uppercase;margin:8pt 0 2pt}.notes p{margin:0 0 3pt}.notes ol{margin:0;padding-left:13pt}.notes li{margin-bottom:1.5pt}.mob{width:30mm;border:1px solid var(--line);border-radius:6pt;display:block;margin-top:3pt}
 </style></head><body>
 
 <section class="cover"><div><div class="k">Website audit and plan · November 2026</div></div>
@@ -172,18 +175,63 @@ ul{margin:0 0 8pt;padding-left:14pt}li{margin-bottom:3pt}
 <div class="box"><b>Where to start.</b> The AI search is the best first addition: it is the feature visitors now expect, it reuses content the site already has, and the answers it gives double as the FAQ content AEO needs. It must answer only from Icecube's own pages and say so when it doesn't know.</div></section>
 
 <section class="sec"><div class="k">7 · Look and feel</div><h1>Six homepage directions</h1>
-<p class="lead">Each direction was built as a working page using Icecube's real event photography. They differ in tone, not in substance: all six carry the same facts, answers and structured data.</p>
-<div class="concept"><div class="h"><b>1. The Record</b><span class="small">Light · factual · trustworthy</span></div><img src="shots/1-record.jpg"><div class="pc"><div class="p"><b>Strengths</b><br>Puts facts and proof first; the strongest for Google and AI; suits government and PSU buyers.</div><div class="c"><b>Trade-offs</b><br>Calm rather than spectacular; depends on complete facts for each event.</div></div></div>
-<div class="concept"><div class="h"><b>2. Occasions of State</b><span class="small">Dark · ceremonial · premium</span></div><img src="shots/2-ceremony.jpg"><div class="pc"><div class="p"><b>Strengths</b><br>Makes flagship events feel as important as they are; strong first impression.</div><div class="c"><b>Trade-offs</b><br>Photo quality must be high; little text on the first screen, so answers must follow quickly below.</div></div></div></section>
-<section class="sec">
-<div class="concept"><div class="h"><b>3. Control Room</b><span class="small">Dark · technical · futuristic</span></div><img src="shots/3-control.jpg"><div class="pc"><div class="p"><b>Strengths</b><br>The most "2027" of the six; a planner prompt and map make it feel like a live operation.</div><div class="c"><b>Trade-offs</b><br>Can feel cold to traditional buyers; the live elements need real data to stay honest.</div></div></div>
-<div class="concept"><div class="h"><b>4. Editorial</b><span class="small">Light · magazine · story-led</span></div><img src="shots/4-editorial.jpg"><div class="pc"><div class="p"><b>Strengths</b><br>Each event becomes a story worth reading; gives AI original text to quote.</div><div class="c"><b>Trade-offs</b><br>Needs good writing for every event; slower to produce.</div></div></div></section>
-<section class="sec">
-<div class="concept"><div class="h"><b>5. Concierge</b><span class="small">Light · conversational · AI-first</span></div><img src="shots/5-concierge.jpg"><div class="pc"><div class="p"><b>Strengths</b><br>The homepage is the AI search; answers come with proof from real events; unlike any competitor.</div><div class="c"><b>Trade-offs</b><br>Depends on the assistant working well; the classic menu must stay for those who prefer to browse.</div></div></div>
-<div class="concept"><div class="h"><b>6. Big Days</b><span class="small">Bright · bold · energetic</span></div><img src="shots/6-bold.jpg"><div class="pc"><div class="p"><b>Strengths</b><br>Stands out from every dark, formal competitor; clear routes by buyer type; good for brand and launch clients.</div><div class="c"><b>Trade-offs</b><br>Less formal than government buyers may expect; a bigger change from the current brand.</div></div></div>
-<div class="box"><b>Our recommendation.</b> Take the structure of <b>The Record</b> (facts and proof first), the flagship-event treatment of <b>Occasions of State</b> for the top of the page, and the AI search from <b>Concierge</b> as a feature. Sample content in these mock-ups, such as "2 events in production" in Control Room and the assistant's answer in Concierge, is illustrative.</div></section>
-
-<section class="sec"><div class="k">8 · Method and limits</div><h1>How we tested</h1>
+<p class="lead">Each direction was built as a complete, working homepage using Icecube's real event photography, then captured at full length on desktop and on a phone. They differ in tone, not substance: all six carry the same services, buyer questions, cost guide and enquiry.</p>
+<div class="ov"><div><div class="crop"><img src="shots/1-record.jpg"></div><b>1. The Record</b><span>Light · factual · trustworthy</span></div><div><div class="crop"><img src="shots/2-ceremony.jpg"></div><b>2. Occasions of State</b><span>Dark · ceremonial · premium</span></div><div><div class="crop"><img src="shots/3-control.jpg"></div><b>3. Control Room</b><span>Dark · technical · futuristic</span></div><div><div class="crop"><img src="shots/4-editorial.jpg"></div><b>4. Editorial</b><span>Light · magazine · story-led</span></div><div><div class="crop"><img src="shots/5-concierge.jpg"></div><b>5. Concierge</b><span>Light · conversational · AI-first</span></div><div><div class="crop"><img src="shots/6-bold.jpg"></div><b>6. Big Days</b><span>Bright · bold · energetic</span></div></div>
+<div class="box"><b>Our recommendation.</b> Take the structure of <b>The Record</b> (facts and proof first), the flagship-event treatment of <b>Occasions of State</b> at the top of the page, and the AI search from <b>Concierge</b> as a feature. Sample content in the mock-ups, such as "2 events in production" in Control Room, the assistant's answer in Concierge and the cost guide rows, is illustrative until Icecube supplies real figures.</div></section><section class="sec cp"><div class="k">Direction 1 of 6 · Light · factual · trustworthy</div><h1>The Record</h1>
+<div class="cgrid"><div class="big"><img src="shots/1-record.jpg"></div>
+<div class="notes"><p>A factual, document-like page. The headline states who trusts Icecube, the hero photo is captioned with the event's facts, and a table lists events like a public record.</p>
+<h3>On the page</h3><ol><li>Headline with proof in the first sentence</li><li>Captioned flagship photo</li><li>Four key numbers</li><li>Event record as a table: event, type, venue</li><li>Services, buyer questions, cost guide, enquiry</li></ol>
+<h3>Style</h3><p>Inter Tight, near-black on cool white, one blue accent</p>
+<h3>Best for</h3><p>Government, PSU and institutional buyers</p>
+<h3>Search and AI fit</h3><p>Strongest of the six. Facts sit in text and tables that Google and AI can lift directly.</p>
+<h3 style="color:var(--green)">Strengths</h3><p>Puts proof first; easy to keep updated; fastest to load.</p>
+<h3 style="color:var(--red)">Trade-offs</h3><p>Calm rather than spectacular; needs complete facts for every event.</p>
+<h3>On a phone</h3><img class="mob" src="shots/1-record-m.jpg"></div></div></section><section class="sec cp"><div class="k">Direction 2 of 6 · Dark · ceremonial · premium</div><h1>Occasions of State</h1>
+<div class="cgrid"><div class="big"><img src="shots/2-ceremony.jpg"></div>
+<div class="notes"><p>A full-screen photograph of a flagship event with a serif headline and almost no text, followed by three large event panels. It treats Icecube's work as national occasions.</p>
+<h3>On the page</h3><ol><li>Full-screen flagship photo</li><li>Serif headline and one button</li><li>Three tall event panels</li><li>One-line statement of record</li><li>Services, buyer questions, cost guide, enquiry</li></ol>
+<h3>Style</h3><p>Cormorant Garamond with Manrope, ivory on black, brass accent</p>
+<h3>Best for</h3><p>Flagship government, international and premium corporate work</p>
+<h3>Search and AI fit</h3><p>Good, provided the answers and facts follow directly below the hero, as they do here.</p>
+<h3 style="color:var(--green)">Strengths</h3><p>Strong first impression; makes the PM visit and IAA gala feel as important as they are.</p>
+<h3 style="color:var(--red)">Trade-offs</h3><p>Depends on high-quality photography; little text on the first screen.</p>
+<h3>On a phone</h3><img class="mob" src="shots/2-ceremony-m.jpg"></div></div></section><section class="sec cp"><div class="k">Direction 3 of 6 · Dark · technical · futuristic</div><h1>Control Room</h1>
+<div class="cgrid"><div class="big"><img src="shots/3-control.jpg"></div>
+<div class="notes"><p>The homepage as an operations desk: a planner prompt, a map of where Icecube has delivered, live-style numbers and a feed of recent events.</p>
+<h3>On the page</h3><ol><li>Planner prompt: describe your event</li><li>Map of delivery locations</li><li>Four operating numbers</li><li>Feed of recent events with venue and duration</li><li>Services, buyer questions, cost guide, enquiry</li></ol>
+<h3>Style</h3><p>Space Grotesk with IBM Plex Mono, dark grid, cyan accent</p>
+<h3>Best for</h3><p>Corporate and technology clients; a brand that wants to look ahead</p>
+<h3>Search and AI fit</h3><p>Good. The planner prompt gives a natural home to AI search; numbers and locations are in text.</p>
+<h3 style="color:var(--green)">Strengths</h3><p>The most forward-looking of the six; shows scale at a glance.</p>
+<h3 style="color:var(--red)">Trade-offs</h3><p>Can feel cold to traditional buyers; live elements need real data to stay honest.</p>
+<h3>On a phone</h3><img class="mob" src="shots/3-control-m.jpg"></div></div></section><section class="sec cp"><div class="k">Direction 4 of 6 · Light · magazine · story-led</div><h1>Editorial</h1>
+<div class="cgrid"><div class="big"><img src="shots/4-editorial.jpg"></div>
+<div class="notes"><p>A magazine front page. The lead story tells how one event was delivered, with three more stories below, each a route into a service.</p>
+<h3>On the page</h3><ol><li>Cover story with headline and standfirst</li><li>Large editorial photograph</li><li>Three further event stories</li><li>Links from each story to its service</li><li>Services, buyer questions, cost guide, enquiry</li></ol>
+<h3>Style</h3><p>Fraunces with Inter, warm paper white, red accent</p>
+<h3>Best for</h3><p>Buyers who read before they call; press and partners</p>
+<h3>Search and AI fit</h3><p>Very good for AI: original stories are text nobody else has, which is what AI assistants quote.</p>
+<h3 style="color:var(--green)">Strengths</h3><p>Turns each event into something worth reading and sharing.</p>
+<h3 style="color:var(--red)">Trade-offs</h3><p>Needs good writing for every event; slower to produce.</p>
+<h3>On a phone</h3><img class="mob" src="shots/4-editorial-m.jpg"></div></div></section><section class="sec cp"><div class="k">Direction 5 of 6 · Light · conversational · AI-first</div><h1>Concierge</h1>
+<div class="cgrid"><div class="big"><img src="shots/5-concierge.jpg"></div>
+<div class="notes"><p>The homepage is the AI search. A visitor asks a question in plain language and gets an answer drawn from Icecube's own events, with the event pages shown as sources.</p>
+<h3>On the page</h3><ol><li>Question box as the hero</li><li>Suggested questions as one-tap chips</li><li>Sample answer with three source events</li><li>Statement that answers come only from Icecube's content</li><li>Services, buyer questions, cost guide, enquiry</li></ol>
+<h3>Style</h3><p>Plus Jakarta Sans, soft blue-white, blue accent</p>
+<h3>Best for</h3><p>Visitors arriving from ChatGPT or Google AI who expect a direct answer</p>
+<h3>Search and AI fit</h3><p>Very good. Every answer the assistant gives can also be published as FAQ content.</p>
+<h3 style="color:var(--green)">Strengths</h3><p>Unlike any competitor; turns 39 events into a live knowledge base.</p>
+<h3 style="color:var(--red)">Trade-offs</h3><p>Depends on the assistant working well; a normal menu must remain for browsing.</p>
+<h3>On a phone</h3><img class="mob" src="shots/5-concierge-m.jpg"></div></div></section><section class="sec cp"><div class="k">Direction 6 of 6 · Bright · bold · energetic</div><h1>Big Days</h1>
+<div class="cgrid"><div class="big"><img src="shots/6-bold.jpg"></div>
+<div class="notes"><p>Large colour blocks and heavy type, with four tiles that route each buyer to their kind of event.</p>
+<h3>On the page</h3><ol><li>Short, confident headline</li><li>One question button: what are you planning?</li><li>Flagship photo with caption</li><li>Four colour tiles by buyer type, each with a proof event</li><li>Services, buyer questions, cost guide, enquiry</li></ol>
+<h3>Style</h3><p>Archivo with DM Sans, yellow, teal and coral on cream</p>
+<h3>Best for</h3><p>Brand, launch, retail and roadshow clients</p>
+<h3>Search and AI fit</h3><p>Good. Clear routes by buyer type help each service page get found.</p>
+<h3 style="color:var(--green)">Strengths</h3><p>Stands apart from every dark, formal competitor; very clear navigation.</p>
+<h3 style="color:var(--red)">Trade-offs</h3><p>Less formal than government buyers may expect; a bigger change from the current brand.</p>
+<h3>On a phone</h3><img class="mob" src="shots/6-bold-m.jpg"></div></div></section><section class="sec"><div class="k">8 · Method and limits</div><h1>How we tested</h1>
 <table><tr><th>Test</th><th>Tool and setup</th><th>Scope</th></tr>
 <tr><td>Site crawl and AEO signals</td><td>Automated crawl of every page in the sitemap, 20 and 21 Nov 2026</td><td>90 pages</td></tr>
 <tr><td>Speed</td><td>Google Lighthouse 12.2, mobile setting, 20 Nov 2026</td><td>4 Icecube pages, 5 competitor homepages</td></tr>
