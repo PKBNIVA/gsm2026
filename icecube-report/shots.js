@@ -1,6 +1,6 @@
 const {chromium}=require('playwright');
 (async()=>{const b=await chromium.launch();
-for(const n of ['1-record','2-ceremony','3-control','4-editorial','5-concierge','6-bold']){
+for(const n of ['1-record','2-ceremony','3-control']){
  const p=await b.newPage({viewport:{width:1440,height:900},deviceScaleFactor:1.25});
  await p.goto('file://'+process.cwd()+'/concepts/'+n+'.html');await p.waitForTimeout(2500);
  await p.screenshot({path:'shots/'+n+'.jpg',type:'jpeg',quality:84,fullPage:true});
