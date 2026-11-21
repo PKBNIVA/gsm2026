@@ -1,0 +1,751 @@
+{
+ "mobile:home": {
+  "h1Text": "EVENT MANAGEMENT COMPANY IN KOCHI FOR CORPORATE, GOVERNMENT AND LARGE-",
+  "h1InFold": false,
+  "h1Top": 812,
+  "foldCta": 2,
+  "foldCtaLabels": [
+   "Get In Touch",
+   "WhatsApp"
+  ],
+  "foldWords": 7,
+  "screens": 11,
+  "overflow": false,
+  "actions": 33,
+  "smallTargets": 12,
+  "under14": 7,
+  "upper": 22,
+  "families": [
+   "Nunito 78%",
+   "Rajdhani 22%"
+  ],
+  "sizeCount": 13,
+  "pMedian": 16,
+  "charsPerLine": 36,
+  "imgs": 55,
+  "videos": 2,
+  "axe": [
+   [
+    "color-contrast",
+    "serious",
+    46
+   ],
+   [
+    "link-name",
+    "serious",
+    1
+   ]
+  ]
+ },
+ "mobile:services": {
+  "h1Text": "EVENT SERVICES",
+  "h1InFold": true,
+  "h1Top": 140,
+  "foldCta": 2,
+  "foldCtaLabels": [
+   "Get In Touch",
+   "WhatsApp"
+  ],
+  "foldWords": 35,
+  "screens": 13.2,
+  "overflow": false,
+  "actions": 32,
+  "smallTargets": 22,
+  "under14": 10,
+  "upper": 17,
+  "families": [
+   "Nunito 91%",
+   "Rajdhani 9%"
+  ],
+  "sizeCount": 13,
+  "pMedian": 16,
+  "charsPerLine": 42,
+  "imgs": 13,
+  "videos": 0,
+  "axe": [
+   [
+    "link-name",
+    "serious",
+    1
+   ]
+  ]
+ },
+ "mobile:service-gov": {
+  "h1Text": "GOVERNMENT EVENTS",
+  "h1InFold": true,
+  "h1Top": 132,
+  "foldCta": 2,
+  "foldCtaLabels": [
+   "Get In Touch",
+   "WhatsApp"
+  ],
+  "foldWords": 117,
+  "screens": 8.7,
+  "overflow": false,
+  "actions": 23,
+  "smallTargets": 13,
+  "under14": 3,
+  "upper": 15,
+  "families": [
+   "Nunito 83%",
+   "Rajdhani 17%"
+  ],
+  "sizeCount": 11,
+  "pMedian": 18.4,
+  "charsPerLine": 26,
+  "imgs": 7,
+  "videos": 0,
+  "axe": [
+   [
+    "link-name",
+    "serious",
+    1
+   ]
+  ]
+ },
+ "mobile:works": {
+  "h1Text": "OUR WORKS",
+  "h1InFold": true,
+  "h1Top": 163,
+  "foldCta": 2,
+  "foldCtaLabels": [
+   "Get In Touch",
+   "WhatsApp"
+  ],
+  "foldWords": 23,
+  "screens": 10,
+  "overflow": false,
+  "actions": 47,
+  "smallTargets": 32,
+  "under14": 34,
+  "upper": 80,
+  "families": [
+   "Rajdhani 82%",
+   "Nunito 18%"
+  ],
+  "sizeCount": 10,
+  "pMedian": 14.4,
+  "charsPerLine": null,
+  "imgs": 15,
+  "videos": 0,
+  "axe": [
+   [
+    "link-name",
+    "serious",
+    1
+   ]
+  ]
+ },
+ "mobile:event-pm": {
+  "h1Text": "PRIME MINISTER’S VISIT AT LAKSHADWEEP",
+  "h1InFold": true,
+  "h1Top": 372,
+  "foldCta": 2,
+  "foldCtaLabels": [
+   "Get In Touch",
+   "WhatsApp"
+  ],
+  "foldWords": 63,
+  "screens": 5.9,
+  "overflow": false,
+  "actions": 21,
+  "smallTargets": 11,
+  "under14": 1,
+  "upper": 25,
+  "families": [
+   "Nunito 73%",
+   "Rajdhani 27%"
+  ],
+  "sizeCount": 10,
+  "pMedian": 16,
+  "charsPerLine": 33,
+  "imgs": 15,
+  "videos": 0,
+  "axe": [
+   [
+    "link-name",
+    "serious",
+    1
+   ]
+  ]
+ },
+ "mobile:clients": {
+  "h1Text": "OUR CLIENTS",
+  "h1InFold": true,
+  "h1Top": 140,
+  "foldCta": 2,
+  "foldCtaLabels": [
+   "Get In Touch",
+   "WhatsApp"
+  ],
+  "foldWords": 40,
+  "screens": 8.9,
+  "overflow": false,
+  "actions": 25,
+  "smallTargets": 12,
+  "under14": 10,
+  "upper": 20,
+  "families": [
+   "Nunito 74%",
+   "Rajdhani 26%"
+  ],
+  "sizeCount": 9,
+  "pMedian": 15.2,
+  "charsPerLine": null,
+  "imgs": 27,
+  "videos": 0,
+  "axe": [
+   [
+    "link-name",
+    "serious",
+    1
+   ]
+  ]
+ },
+ "mobile:about": {
+  "h1Text": "ABOUT US",
+  "h1InFold": true,
+  "h1Top": 163,
+  "foldCta": 2,
+  "foldCtaLabels": [
+   "Get In Touch",
+   "WhatsApp"
+  ],
+  "foldWords": 26,
+  "screens": 6.7,
+  "overflow": false,
+  "actions": 24,
+  "smallTargets": 12,
+  "under14": 8,
+  "upper": 12,
+  "families": [
+   "Nunito 79%",
+   "Rajdhani 21%"
+  ],
+  "sizeCount": 12,
+  "pMedian": 15.2,
+  "charsPerLine": 25,
+  "imgs": 14,
+  "videos": 0,
+  "axe": [
+   [
+    "link-name",
+    "serious",
+    1
+   ]
+  ]
+ },
+ "mobile:contact": {
+  "h1Text": "CONTACT",
+  "h1InFold": true,
+  "h1Top": 163,
+  "foldCta": 2,
+  "foldCtaLabels": [
+   "Get In Touch",
+   "WhatsApp"
+  ],
+  "foldWords": 38,
+  "screens": 7,
+  "overflow": false,
+  "actions": 32,
+  "smallTargets": 21,
+  "under14": 17,
+  "upper": 14,
+  "families": [
+   "Nunito 74%",
+   "Rajdhani 26%"
+  ],
+  "sizeCount": 12,
+  "pMedian": 16.8,
+  "charsPerLine": null,
+  "imgs": 3,
+  "videos": 0,
+  "axe": [
+   [
+    "link-name",
+    "serious",
+    1
+   ]
+  ]
+ },
+ "mobile:blog": {
+  "h1Text": "GUERRILLA MARKETING",
+  "h1InFold": true,
+  "h1Top": 132,
+  "foldCta": 2,
+  "foldCtaLabels": [
+   "Get In Touch",
+   "WhatsApp"
+  ],
+  "foldWords": 21,
+  "screens": 8.5,
+  "overflow": false,
+  "actions": 27,
+  "smallTargets": 14,
+  "under14": 2,
+  "upper": 2,
+  "families": [
+   "Nunito 84%",
+   "Outfit 9%",
+   "Rajdhani 7%"
+  ],
+  "sizeCount": 11,
+  "pMedian": 16.8,
+  "charsPerLine": 40,
+  "imgs": 7,
+  "videos": 0,
+  "axe": [
+   [
+    "color-contrast",
+    "serious",
+    3
+   ],
+   [
+    "link-name",
+    "serious",
+    1
+   ]
+  ]
+ },
+ "mobile:c-watermark": {
+  "h1Text": "Home",
+  "h1InFold": false,
+  "h1Top": 0,
+  "foldCta": 0,
+  "foldCtaLabels": [],
+  "foldWords": 58,
+  "screens": 21.9,
+  "overflow": false,
+  "actions": 40,
+  "smallTargets": 23,
+  "under14": 0,
+  "upper": 1,
+  "families": [
+   "Josefin Sans 100%",
+   "-apple-system 0%"
+  ],
+  "sizeCount": 12,
+  "pMedian": 16,
+  "charsPerLine": 44,
+  "imgs": 66,
+  "videos": 0
+ },
+ "mobile:c-melodia": {
+  "h1Text": "Partner with Melodia Event Management in Kerala",
+  "h1InFold": true,
+  "h1Top": 234,
+  "foldCta": 1,
+  "foldCtaLabels": [
+   "Whatsapp Us"
+  ],
+  "foldWords": 9,
+  "screens": 27,
+  "overflow": false,
+  "actions": 49,
+  "smallTargets": 27,
+  "under14": 9,
+  "upper": 3,
+  "families": [
+   "Montserrat 53%",
+   "Trustindex Poppins 25%",
+   "Jost 22%"
+  ],
+  "sizeCount": 11,
+  "pMedian": 14,
+  "charsPerLine": 41,
+  "imgs": 126,
+  "videos": 0
+ },
+ "mobile:c-xes": {
+  "h1Text": "XES Events: a full-service event management company in Kerala, headqua",
+  "h1InFold": true,
+  "h1Top": 624,
+  "foldCta": 1,
+  "foldCtaLabels": [
+   "Chat on WhatsApp"
+  ],
+  "foldWords": 26,
+  "screens": 29.7,
+  "overflow": false,
+  "actions": 85,
+  "smallTargets": 56,
+  "under14": 11,
+  "upper": 18,
+  "families": [
+   "Inter 72%",
+   "Bricolage Grotesque 19%",
+   "JetBrains Mono 9%"
+  ],
+  "sizeCount": 18,
+  "pMedian": 16,
+  "charsPerLine": 38,
+  "imgs": 539,
+  "videos": 0
+ },
+ "mobile:c-executive": {
+  "h1Text": "Event Services",
+  "h1InFold": false,
+  "h1Top": 1226,
+  "foldCta": 0,
+  "foldCtaLabels": [],
+  "foldWords": 47,
+  "screens": 14.2,
+  "overflow": false,
+  "actions": 51,
+  "smallTargets": 35,
+  "under14": 3,
+  "upper": 3,
+  "families": [
+   "Muli 100%"
+  ],
+  "sizeCount": 15,
+  "pMedian": 16,
+  "charsPerLine": 40,
+  "imgs": 107,
+  "videos": 0
+ },
+ "mobile:c-eventpeople": {
+  "h1Text": null,
+  "h1InFold": false,
+  "h1Top": null,
+  "foldCta": 1,
+  "foldCtaLabels": [
+   "+91 99467 88664"
+  ],
+  "foldWords": 3,
+  "screens": 30.2,
+  "overflow": false,
+  "actions": 71,
+  "smallTargets": 16,
+  "under14": 62,
+  "upper": 13,
+  "families": [
+   "Montserrat 65%",
+   "Vidaloka 25%",
+   "Crimson Text 10%"
+  ],
+  "sizeCount": 11,
+  "pMedian": 15,
+  "charsPerLine": 42,
+  "imgs": 138,
+  "videos": 0
+ },
+ "desktop:home": {
+  "h1Text": "EVENT MANAGEMENT COMPANY IN KOCHI FOR CORPORATE, GOVERNMENT AND LARGE-",
+  "h1InFold": false,
+  "h1Top": 1040,
+  "foldCta": 4,
+  "foldCtaLabels": [
+   "CONTACT",
+   "Get In Touch",
+   "WhatsApp"
+  ],
+  "foldWords": 19,
+  "screens": 5.6,
+  "overflow": false,
+  "actions": 49,
+  "smallTargets": 27,
+  "under14": 1,
+  "upper": 18,
+  "families": [
+   "Nunito 76%",
+   "Rajdhani 24%"
+  ],
+  "sizeCount": 12,
+  "pMedian": 16,
+  "charsPerLine": 44,
+  "imgs": 55,
+  "videos": 2,
+  "axe": [
+   [
+    "color-contrast",
+    "serious",
+    46
+   ],
+   [
+    "link-name",
+    "serious",
+    1
+   ]
+  ]
+ },
+ "desktop:services": {
+  "h1Text": "EVENT SERVICES",
+  "h1InFold": true,
+  "h1Top": 265,
+  "foldCta": 4,
+  "foldCtaLabels": [
+   "CONTACT",
+   "Get In Touch",
+   "WhatsApp"
+  ],
+  "foldWords": 47,
+  "screens": 8.1,
+  "overflow": false,
+  "actions": 50,
+  "smallTargets": 39,
+  "under14": 9,
+  "upper": 17,
+  "families": [
+   "Nunito 90%",
+   "Rajdhani 10%"
+  ],
+  "sizeCount": 13,
+  "pMedian": 16,
+  "charsPerLine": 63,
+  "imgs": 13,
+  "videos": 0,
+  "axe": [
+   [
+    "link-name",
+    "serious",
+    1
+   ]
+  ]
+ },
+ "desktop:service-gov": {
+  "h1Text": "GOVERNMENT EVENTS",
+  "h1InFold": true,
+  "h1Top": 265,
+  "foldCta": 4,
+  "foldCtaLabels": [
+   "CONTACT",
+   "Get In Touch",
+   "WhatsApp"
+  ],
+  "foldWords": 129,
+  "screens": 3.5,
+  "overflow": false,
+  "actions": 41,
+  "smallTargets": 30,
+  "under14": 2,
+  "upper": 16,
+  "families": [
+   "Nunito 82%",
+   "Rajdhani 18%"
+  ],
+  "sizeCount": 12,
+  "pMedian": 18.4,
+  "charsPerLine": 84,
+  "imgs": 7,
+  "videos": 0,
+  "axe": [
+   [
+    "link-name",
+    "serious",
+    1
+   ]
+  ]
+ },
+ "desktop:works": {
+  "h1Text": "OUR WORKS",
+  "h1InFold": true,
+  "h1Top": 265,
+  "foldCta": 4,
+  "foldCtaLabels": [
+   "CONTACT",
+   "Get In Touch",
+   "WhatsApp"
+  ],
+  "foldWords": 40,
+  "screens": 3.5,
+  "overflow": false,
+  "actions": 52,
+  "smallTargets": 28,
+  "under14": 6,
+  "upper": 49,
+  "families": [
+   "Rajdhani 54%",
+   "Nunito 46%"
+  ],
+  "sizeCount": 10,
+  "pMedian": 14.4,
+  "charsPerLine": null,
+  "imgs": 15,
+  "videos": 0,
+  "axe": [
+   [
+    "link-name",
+    "serious",
+    1
+   ]
+  ]
+ },
+ "desktop:event-pm": {
+  "h1Text": "PRIME MINISTER’S VISIT AT LAKSHADWEEP",
+  "h1InFold": true,
+  "h1Top": 722,
+  "foldCta": 4,
+  "foldCtaLabels": [
+   "CONTACT",
+   "Get In Touch",
+   "WhatsApp"
+  ],
+  "foldWords": 75,
+  "screens": 3.8,
+  "overflow": false,
+  "actions": 38,
+  "smallTargets": 27,
+  "under14": 1,
+  "upper": 25,
+  "families": [
+   "Nunito 73%",
+   "Rajdhani 27%"
+  ],
+  "sizeCount": 10,
+  "pMedian": 16,
+  "charsPerLine": 127,
+  "imgs": 15,
+  "videos": 0,
+  "axe": [
+   [
+    "link-name",
+    "serious",
+    1
+   ]
+  ]
+ },
+ "desktop:clients": {
+  "h1Text": "OUR CLIENTS",
+  "h1InFold": true,
+  "h1Top": 265,
+  "foldCta": 4,
+  "foldCtaLabels": [
+   "CONTACT",
+   "Get In Touch",
+   "WhatsApp"
+  ],
+  "foldWords": 52,
+  "screens": 2.8,
+  "overflow": false,
+  "actions": 42,
+  "smallTargets": 28,
+  "under14": 7,
+  "upper": 20,
+  "families": [
+   "Nunito 75%",
+   "Rajdhani 25%"
+  ],
+  "sizeCount": 10,
+  "pMedian": 15.2,
+  "charsPerLine": null,
+  "imgs": 27,
+  "videos": 0,
+  "axe": [
+   [
+    "link-name",
+    "serious",
+    1
+   ]
+  ]
+ },
+ "desktop:about": {
+  "h1Text": "ABOUT US",
+  "h1InFold": true,
+  "h1Top": 265,
+  "foldCta": 4,
+  "foldCtaLabels": [
+   "CONTACT",
+   "Get In Touch",
+   "WhatsApp"
+  ],
+  "foldWords": 129,
+  "screens": 4,
+  "overflow": false,
+  "actions": 41,
+  "smallTargets": 28,
+  "under14": 7,
+  "upper": 12,
+  "families": [
+   "Nunito 79%",
+   "Rajdhani 21%"
+  ],
+  "sizeCount": 13,
+  "pMedian": 15.2,
+  "charsPerLine": 26,
+  "imgs": 14,
+  "videos": 0,
+  "axe": [
+   [
+    "link-name",
+    "serious",
+    1
+   ]
+  ]
+ },
+ "desktop:contact": {
+  "h1Text": "CONTACT",
+  "h1InFold": true,
+  "h1Top": 265,
+  "foldCta": 4,
+  "foldCtaLabels": [
+   "CONTACT",
+   "Get In Touch",
+   "WhatsApp"
+  ],
+  "foldWords": 50,
+  "screens": 3.9,
+  "overflow": false,
+  "actions": 49,
+  "smallTargets": 37,
+  "under14": 14,
+  "upper": 15,
+  "families": [
+   "Nunito 74%",
+   "Rajdhani 26%"
+  ],
+  "sizeCount": 14,
+  "pMedian": 16.8,
+  "charsPerLine": null,
+  "imgs": 3,
+  "videos": 0,
+  "axe": [
+   [
+    "link-name",
+    "serious",
+    1
+   ]
+  ]
+ },
+ "desktop:blog": {
+  "h1Text": "GUERRILLA MARKETING",
+  "h1InFold": true,
+  "h1Top": 265,
+  "foldCta": 5,
+  "foldCtaLabels": [
+   "CONTACT",
+   "Get In Touch",
+   "Quotes To Inspire Event ",
+   "WhatsApp"
+  ],
+  "foldWords": 40,
+  "screens": 4.5,
+  "overflow": false,
+  "actions": 44,
+  "smallTargets": 30,
+  "under14": 2,
+  "upper": 3,
+  "families": [
+   "Nunito 84%",
+   "Outfit 8%",
+   "Rajdhani 8%"
+  ],
+  "sizeCount": 12,
+  "pMedian": 16.8,
+  "charsPerLine": 84,
+  "imgs": 7,
+  "videos": 0,
+  "axe": [
+   [
+    "color-contrast",
+    "serious",
+    3
+   ],
+   [
+    "link-name",
+    "serious",
+    1
+   ]
+  ]
+ }
+}
