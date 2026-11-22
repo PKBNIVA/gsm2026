@@ -57,7 +57,7 @@ Each step says what happens, who does it, and how we will know it is done. Sizes
 - **Proof:** for every fact I keep the web address, the date, and a saved picture of the page, in a folder you can open. If a competitor ever complains, the evidence is there.
 - **One date:** each competitor gets a single "checked on" date. Today some pages show three different dates.
 - **Fix the disagreements:** the contradictions found in the review (for example a price stated four different ways on one page) are settled here, because each fact now has one source.
-- **Cost note:** this needs about 150 to 200 web page visits. I will tell you the cost before starting and ask for your go-ahead, as your rules require.
+- **Cost:** none. I open each page directly, which is free; it is about 150 to 200 page visits. If a site refuses automated visitors, you send me a screenshot or the page says "not published: ask them". A paid tool is used only if you approve it first.
 - **Who:** I check. You spot-check any five competitors you choose.
 - **Done when:** all 40 fact sheets have a fresh date, a proof file, and no fact marked "not verified".
 
