@@ -1,6 +1,68 @@
 # Plan to fix the comparison pages
 
-Written in plain language, for approval before any fixing starts. Nothing has been changed yet.
+Written in plain language. The first version of this plan was written before any fixing started; the section below records what has now been done.
+
+## Where this stands (22 November 2026)
+
+Steps 0 to 5 are done on a private working copy of the website (branch `claude/comparison-pages-corrections`), except the legal read, which is yours. **Nothing is live.** All 162 pages still carry the "do not list me" instruction for search engines, and the one switch that hides them was not touched. The live site shows the old pages until the working copy is merged.
+
+The four decisions at the top of this plan were applied as suggested, because you asked for the corrections to go ahead. Each can be reversed:
+
+1. Sources are named in plain words; only a competitor's price page is linked, and that link passes no search benefit.
+2. "Best of" guides keep "best" in the title but have no numbered ranking; they are organised by the buyer's situation.
+3. No competitor-vs-competitor page was retired. All 42 were corrected. Eight pages now have little left to say (see "Your decisions").
+4. Sociana is described the same way everywhere: what it is, 300+ events over six years, and its "from" prices.
+
+### What changed, measured on the built pages
+
+| Check | Live site today | Corrected copy |
+|---|---|---|
+| Pages that talk about how they were researched ("we checked", "our research") | 143 | 0 |
+| Pages that say "not verified" | 106 | 0 |
+| Pages with a date inside a sentence ("as of 19 Oct 2026") | 120 | 0 (one date line at the top of each page) |
+| Pages with review-site data (Capterra, G2, Trustpilot) | 47 | 0 |
+| Pages that name an analyst (Gartner) | 12 | 0 |
+| Pages saying a competitor was sold, bought or discontinued | 11 | 0 (three vendors carry only what their own sites state) |
+| Pages naming a competitor's owner or parent | 18 | 0 |
+| "Best of" guides with a self-made numbered ranking | 13 | 0 |
+| Links to other companies' sites | 3,304, of which 1,337 passed search value | 451, none passing search value |
+| Pages showing Sociana's own price | 15 | 161 |
+| Pages with exactly one "Published by Sociana" line | 92 | 162 |
+| Headings written as a buyer's question | 488 of 2,410 | 1,096 of 2,256 |
+| Pages with question-and-answer data for search engines and AI assistants | 153 | 161 |
+| Descriptions within 155 characters | 145 | 162 |
+| Words in total | 231,000 | 193,000 |
+
+### What was done
+
+- **Made safe.** Claims about a competitor's ownership, funding, staff, finances and reviews were removed from all 40 fact sheets and every article. Opinions ("overbuilt", "thin") were removed or replaced by what the vendor's own pages list.
+- **Made true.** On 22 November each of the 40 competitors' own pricing page and home page was opened and saved as text and a picture (folder `research/competitors/evidence/2026-11-22/` in the website's files). 39 of 40 pricing pages were readable; Zoom refused the visit, so its October figures were kept with their October date. Prices that differed from the vendor's page were corrected, for example KonfHub's Lite fee (2% on our page, 2.5% on theirs), Kahoot's lowest plan (19 dollars, now 15), EventMobi's badge price, Eventify's plan prices, and Slido's prices, which had come from a review site. Figures we had worked out ourselves were removed. Eight more vendors that are quoted in articles had their pricing pages read too: seven matched and one figure (Zola) was removed.
+- **Three special cases.**
+  - *Townscript*: its own site now carries a notice that its services are no longer operational. The pages quote that notice and no longer offer Townscript as an option.
+  - *Hubilo*: the pages state only that the hubilo.com address redirects to virtualpro.com. They no longer name an owner or successor and no longer show another company's features or prices as Hubilo's.
+  - *Webex Events*: the pages quote Cisco's own end-of-sale notice (last day to order 29 April 2024, last date of support 30 April 2025) and nothing from the press.
+- **Changed the moulds.** One ownership line and one date line per page; sources as one plain list; a short "main differences" table above the long one; Sociana's price beside every competitor's price; rows that were never checked are hidden (276 of 1,328); empty tables removed.
+- **Rewrote the words.** Titles and headings use the words buyers type; the opening lines say who should pick what; every page talks to the buyer.
+- **Checked.** A new automatic checker runs over every built page (hidden from search engines, no links that help competitors, no risky wording, one ownership line, prices that match the fact sheets). It can be re-run at any time. Four fresh readers then read all 162 corrected pages in full and reported about 130 findings, which came down to about 40 separate issues; all were fixed and the pages rebuilt. The final build passes the checker with no errors and no warnings, and the website's own content, type, wording and tone checks pass.
+
+### What was not done, and why
+
+- **The long feature tables were not re-verified row by row.** They keep their October date, which each page shows ("other facts checked 19 Oct 2026"). Where a competitor's page read on 22 November contradicted a row, the row was corrected. A full row-by-row check is step 7's three-monthly re-check.
+- **Statements about vendors that have no fact sheet** (Stova, Explara, Luma, Grip, The Knot, Zola and a few named once in a "best of" guide) were cut back to what their own pages showed on 22 November. Vendors named only once (for example Eventdex, Jublia, ITILITE) keep a plain one-line description and no price; those lines were not checked against their sites.
+- **The legal read** is yours, as the plan says.
+- **Nothing was opened to Google, merged or deployed.**
+
+### Two things to know about the live site
+
+- The live pages still recommend Townscript, which has closed.
+- One comparison page is visible to Google today: the Hubilo alternatives page. Live, it names an owner and successor for Hubilo and shows that company's prices as Hubilo's. The corrected version is in the working copy and reaches the live site only when it is merged.
+
+### Your decisions
+
+1. **Merge the working copy** (or ask for a pull request first, which gives you a private preview address to click through). This is the only way the two live problems above get fixed.
+2. **Retire eight pages?** Five compare a product with Hubilo, two with Townscript, and one is "Hubilo pricing". After the corrections they have little to say. My suggestion: hide them and point their addresses at the matching "alternatives" page.
+3. **The legal read**, in the order of step 6, before any page is opened to Google.
+
 
 ## The plan in one minute
 
@@ -26,7 +88,7 @@ Written in plain language, for approval before any fixing starts. Nothing has be
 | 3 | What about the 42 pages that compare two competitors with each other (for example Cvent vs Whova)? | Keep only the ones where Sociana is a sensible third option; retire the rest | They carry the most mistakes, and Sociana is not offered as a priced choice on any of them |
 | 4 | Which Sociana facts may appear on every page? | "From ₹65,000 + GST per occasion; from ₹1,40,000 with stay and travel; 300+ events in six years; your own app on both stores; our team runs it" | The same short description everywhere, so buyers and AI assistants hear one consistent story |
 
-Until you answer these, I will not start steps 3 to 6.
+(Applied as suggested on 22 November; see "Where this stands" above. Each can be reversed.)
 
 ## The steps
 
