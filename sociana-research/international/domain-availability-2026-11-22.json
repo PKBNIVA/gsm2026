@@ -1,0 +1,406 @@
+{
+ "checked": "2026-11-22",
+ "method": "Registry lookups (RDAP) plus DNS; sale listing read once with a paid page-read (1 Firecrawl credit) because the listing blocked a direct visit.",
+ "prices": "Porkbun public price list, USD, 22 Nov 2026 (first year / renewal): com 11.81/11.81; net 12.52/12.52; org 7.98/11.84; app 8.75/14.93; co 15.76/31.20; ai 82.70/82.70; io 28.12/51.80; events 9.78/52.01; global 31.41/87.02; live 2.57/31.41; world 2.57/37.59",
+ "results": [
+  {
+   "name": "sociana.com",
+   "rdap": "200",
+   "rdap_server": "rdap.verisign.com",
+   "created": "2015-10-19",
+   "expires": "2027-10-19",
+   "registrar": "GoDaddy.com, LLC",
+   "ns": [
+    "ns1.atom.com",
+    "ns2.atom.com"
+   ],
+   "status": [
+    "client delete prohibited",
+    "client renew prohibited",
+    "client transfer prohibited"
+   ],
+   "dns_status": 0,
+   "dns_ns": [
+    "ns2.atom.com.",
+    "ns1.atom.com."
+   ],
+   "note": "Registered 2015 (GoDaddy); name servers at atom.com. Listed for sale on Atom marketplace: $5,099 one-time or $468/month x 12, read from the listing on 22 Nov 2026."
+  },
+  {
+   "name": "sociana.net",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "sociana.org",
+   "rdap": "404",
+   "rdap_server": "rdap.publicinterestregistry.org",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "sociana.io",
+   "rdap": "404",
+   "rdap_server": "rdap.org",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "REGISTERED by another party (OVH SAS), created 2024-09-07, expired 2026-09-07, status 'pending delete' + 'client hold' on 22 Nov 2026. Not available today; due to be released."
+  },
+  {
+   "name": "sociana.app",
+   "rdap": "404",
+   "rdap_server": "pubapi.registry.google",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "sociana.co",
+   "rdap": "404",
+   "rdap_server": "rdap.org",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry lookup not reachable; no DNS record. Probably not registered; confirm at a registrar."
+  },
+  {
+   "name": "sociana.ai",
+   "rdap": "429",
+   "rdap_server": "rdap.identitydigital.services",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Verified at the registry (Identity Digital): not found."
+  },
+  {
+   "name": "sociana.events",
+   "rdap": "429",
+   "rdap_server": "rdap.identitydigital.services",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Verified at the registry: not found."
+  },
+  {
+   "name": "sociana.live",
+   "rdap": "404",
+   "rdap_server": "rdap.identitydigital.services",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "sociana.global",
+   "rdap": "429",
+   "rdap_server": "rdap.identitydigital.services",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Verified at the registry: not found."
+  },
+  {
+   "name": "sociana.world",
+   "rdap": "404",
+   "rdap_server": "rdap.identitydigital.services",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "sociana.tech",
+   "rdap": "404",
+   "rdap_server": "rdap.radix.host",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "sociana.cloud",
+   "rdap": "404",
+   "rdap_server": "rdap.registry.cloud",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "sociana.one",
+   "rdap": "404",
+   "rdap_server": "rdap.nic.one",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "sociana.online",
+   "rdap": "404",
+   "rdap_server": "rdap.radix.host",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "sociana.digital",
+   "rdap": "404",
+   "rdap_server": "rdap.identitydigital.services",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "sociana.software",
+   "rdap": "404",
+   "rdap_server": "rdap.identitydigital.services",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "sociana.asia",
+   "rdap": "429",
+   "rdap_server": "rdap.identitydigital.services",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Verified at the registry: not found."
+  },
+  {
+   "name": "sociana.international",
+   "rdap": "429",
+   "rdap_server": "rdap.identitydigital.services",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Verified at the registry: not found."
+  },
+  {
+   "name": "sociana.xyz",
+   "rdap": "403",
+   "rdap_server": "rdap.centralnic.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry lookup refused; no DNS record. Probably not registered."
+  },
+  {
+   "name": "sociana.team",
+   "rdap": "404",
+   "rdap_server": "rdap.identitydigital.services",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "sociana.studio",
+   "rdap": "404",
+   "rdap_server": "rdap.identitydigital.services",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "sociana.so",
+   "rdap": "404",
+   "rdap_server": "rdap.org",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "No registry lookup; no DNS record. Probably not registered."
+  },
+  {
+   "name": "sociana.me",
+   "rdap": "404",
+   "rdap_server": "rdap.org",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry lookup refused; no DNS record. Probably not registered."
+  },
+  {
+   "name": "getsociana.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "trysociana.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "usesociana.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "joinsociana.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "gosociana.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "heysociana.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "mysociana.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "socianaapp.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "socianaapps.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "socianaevents.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "socianahq.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "socianaglobal.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "socianaworld.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "socianaplay.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "socianalive.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "thesociana.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "wearesociana.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "socianaplatform.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "sociana-app.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "socianatech.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "getsociana.app",
+   "rdap": "404",
+   "rdap_server": "pubapi.registry.google",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "sociana-events.com",
+   "rdap": "404",
+   "rdap_server": "rdap.verisign.com",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "socianaplay.app",
+   "rdap": "404",
+   "rdap_server": "pubapi.registry.google",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Registry says not found (not registered)."
+  },
+  {
+   "name": "getsociana.io",
+   "rdap": "404",
+   "rdap_server": "rdap.org",
+   "dns_status": 3,
+   "dns_ns": [],
+   "note": "Verified at the registry: not found."
+  }
+ ]
+}
