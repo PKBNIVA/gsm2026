@@ -1,0 +1,258 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sociana: Comparison Pages Review</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+@page{size:A4;margin:16mm 15mm 17mm}
+:root{--ink:#0b1626;--mute:#5a6678;--line:#dfe5ee;--soft:#f3f6fa;--blue:#1f5fd6;--ice:#e6f0ff;--red:#c0392b;--green:#1e8a5a;--amber:#b7791f}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);font:400 10.2pt/1.5 "Inter Tight",sans-serif;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+h1{font-size:25pt;line-height:1.08;letter-spacing:-.02em;margin:0 0 6pt;font-weight:700}
+h2{font-size:14pt;margin:16pt 0 6pt;letter-spacing:-.01em;break-after:avoid}
+h3{font-size:11pt;margin:12pt 0 4pt;break-after:avoid}
+p{margin:0 0 7pt}.lead{font-size:12pt;color:#27364a}
+.k{font:500 7.6pt "JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.sec{break-before:page}.muted{color:var(--mute)}.small{font-size:8.6pt;color:var(--mute)}
+table{width:100%;border-collapse:collapse;margin:5pt 0 8pt;font-size:8.8pt}
+th{text-align:left;background:var(--ink);color:#fff;padding:5pt 7pt;font-weight:600}
+td{padding:3.8pt 7pt;border-bottom:1px solid var(--line);vertical-align:top}tr{break-inside:avoid}
+tr:nth-child(even) td{background:#fafbfd}
+.pill{display:inline-block;padding:1.5pt 7pt;border-radius:99px;font-weight:700;font-size:8pt}
+.fail{background:#fde8e6;color:var(--red)}.pass{background:#e3f5ec;color:var(--green)}.part{background:#fdf1dc;color:var(--amber)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:8pt;margin:10pt 0}
+.card{background:var(--soft);border-radius:8pt;padding:10pt}.card b{display:block;font-size:21pt;letter-spacing:-.02em;line-height:1.05;color:var(--blue)}.card span{font-size:8.6pt;color:var(--mute)}
+.box{background:var(--ice);border-left:3pt solid var(--blue);padding:9pt 11pt;border-radius:0 6pt 6pt 0;margin:8pt 0;break-inside:avoid}
+.warn{background:#fff3e8;border-color:#e67e22}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12pt}
+ul{margin:0 0 8pt;padding-left:14pt}li{margin-bottom:3pt}
+.bar{display:grid;grid-template-columns:170pt 1fr 92pt;gap:8pt;align-items:center;font-size:8.8pt;margin:2.5pt 0}
+.bar i{display:block;height:10pt;background:#b9c4d4;border-radius:2pt}.bar .z{color:var(--red);font-weight:700}
+.cover{height:262mm;display:flex;flex-direction:column;justify-content:space-between;background:var(--ink);color:#fff;margin:-16mm -15mm -17mm;padding:22mm 18mm;break-after:page}
+.cover h1{font-size:44pt;line-height:1;margin:10pt 0 12pt}.cover .k{color:#8fc0ff}.cover p{color:#c4d2e6;font-size:13pt;max-width:130mm}
+.cover .meta{display:flex;justify-content:space-between;font-size:9.5pt;color:#9fb1ca;border-top:1px solid #2a3b55;padding-top:10pt}
+.phase{display:grid;grid-template-columns:26pt 1fr;gap:10pt;padding:9pt 0;border-bottom:1px solid var(--line);break-inside:avoid}
+.phase .n{width:24pt;height:24pt;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;display:grid;place-items:center}
+.phase b{font-size:11.5pt}.phase p{margin:2pt 0 0}
+.concept{break-inside:avoid;margin:0 0 12pt}.concept img{width:100%;border:1px solid var(--line);border-radius:6pt;display:block}
+.concept .h{display:flex;justify-content:space-between;align-items:baseline;margin:0 0 4pt}.concept .h b{font-size:12.5pt}
+.pc{display:grid;grid-template-columns:1fr 1fr;gap:10pt;font-size:9pt;margin-top:5pt}.pc b{font-size:8pt;letter-spacing:.1em;text-transform:uppercase}
+.pc .p b{color:var(--green)}.pc .c b{color:var(--red)}
+.ov{display:grid;grid-template-columns:repeat(3,1fr);gap:10pt;margin:10pt 0}.ov .crop{height:190pt;overflow:hidden;border:1px solid var(--line);border-radius:6pt}.ov img{width:100%;display:block}.ov b{display:block;margin-top:5pt;font-size:10.5pt}.ov span{font-size:8.4pt;color:var(--mute)}
+.cp h1{margin-bottom:8pt}.cgrid{display:grid;grid-template-columns:118mm 1fr;gap:8mm;align-items:start}.big img{width:100%;max-height:232mm;object-fit:contain;object-position:top left;border:1px solid var(--line);border-radius:5pt;display:block}
+.notes{font-size:8.9pt}.notes h3{font-size:8pt;letter-spacing:.1em;text-transform:uppercase;margin:8pt 0 2pt}.notes p{margin:0 0 3pt}.notes ol{margin:0;padding-left:13pt}.notes li{margin-bottom:1.5pt}.mob{width:30mm;border:1px solid var(--line);border-radius:6pt;display:block;margin-top:3pt}
+.tree .root{background:var(--ink);color:#fff;font-weight:700;text-align:center;padding:6pt;border-radius:5pt;width:90pt;margin:4pt auto 8pt}
+.tree .lvl{display:grid;grid-template-columns:repeat(6,1fr);gap:5pt;border-top:1.5pt solid var(--ink);padding-top:8pt}.tree .lvl>div{background:var(--soft);border-radius:5pt;padding:6pt;font-size:7.8pt}
+.tree b{display:block;background:var(--blue);color:#fff;padding:3pt 5pt;border-radius:3pt;margin-bottom:4pt;font-size:8.6pt}.tree span{display:block;padding:2pt 0;border-bottom:1px solid var(--line)}
+td.z{color:var(--red);font-weight:700}</style></head><body>
+<section class="cover"><div><div class="k">Comparison pages review · November 2026</div></div>
+<div><h1>162 comparison pages: read in full, with the SEO, AEO and GEO plan</h1><p>Every comparison, alternatives, pricing and best-of page on sociana.in read line by line and measured, with what to fix before any of them is opened to Google. Findings and recommendations only: no page was edited.</p></div>
+<div class="meta"><span>Prepared by Sociana for Sociana (Alien Brains Private Limited)</span><span>Pages read 22 November 2026</span></div></section>
+
+<div class="k">Contents</div><h1>What is in this report</h1>
+<table><tr><th>#</th><th>Section</th><th>What it covers</th></tr>
+<tr><td>1</td><td>Conclusion and scorecard</td><td>The answer in one page</td></tr>
+<tr><td>2</td><td>Fix before publishing</td><td>Statements about competitors that could be disputed, and facts that contradict each other</td></tr>
+<tr><td>3</td><td>Who the pages speak to</td><td>Writing addressed to the founder instead of the buyer</td></tr>
+<tr><td>4</td><td>SEO</td><td>Titles, headings, descriptions and openings, measured on all 162</td></tr>
+<tr><td>5</td><td>AEO</td><td>Direct answers, question headings, tables and FAQs</td></tr>
+<tr><td>6</td><td>GEO</td><td>Whether AI assistants can find, trust and quote the pages</td></tr>
+<tr><td>7</td><td>What the pages say about Sociana</td><td>Under-sold, over-sold and unfair passages</td></tr>
+<tr><td>8</td><td>Sources and links</td><td>Citing without strengthening competitors</td></tr>
+<tr><td>9</td><td>Improvement plan</td><td>Five steps in order, and the order in which to open pages</td></tr>
+<tr><td>10</td><td>Method and limits</td><td>How the pages were read and measured</td></tr></table>
+<div class="box"><b>The review in five numbers.</b> 162 pages read in full · 217,430 words · 2,653 table rows · 3,304 links to other sites · about 2,000 passages written to the founder, not the buyer.</div>
+
+<section class="sec"><div class="k">1 · Conclusion</div><h1>Well built, carefully hedged, and not yet safe or useful to publish</h1>
+<p class="lead">The 162 pages are technically sound and the research behind them is real. But they are written as an account of how the research was done, they contradict each other on prices and facts, they print claims about competitors that the pages themselves call unverified, and they leave out Sociana's own price. They should be fixed in the order below before any more are opened to Google.</p>
+<div class="cards"><div class="card"><b>161 / 162</b><span>pages hidden from Google today</span></div><div class="card"><b>0 / 40</b><span>"Sociana vs" pages that show Sociana's ₹65,000 starting price</span></div><div class="card"><b>1,337</b><span>links to other sites with no nofollow mark</span></div><div class="card"><b>6 / 162</b><span>titles that say "India"</span></div></div>
+<div class="two"><div><h3>What works</h3><ul><li>Every page has one main heading, a unique title and a unique description; no title is over 60 characters.</li><li>159 pages carry article markup with a named author and a date; 153 carry FAQ markup.</li><li>Every page has a comparison table; facts carry a check date.</li><li>The "Pick X when" lists and "where Sociana is not the right pick" blocks are honest and useful.</li><li>The alternatives pages open with a real answer.</li></ul></div>
+<div><h3>What holds them back</h3><ul><li>Claims about competitors that could be disputed: discontinued products, ownership, unverified prices, tiny review samples.</li><li>Facts that disagree within a page or between pages.</li><li>About 2,000 passages about method, checking and disclosure.</li><li>Titles and headings in phrases nobody searches.</li><li>Sociana's price, record and main difference missing or buried.</li><li>3,304 links, mostly to competitor homepages, 1,337 passing link value.</li></ul></div></div>
+<h2>Scorecard</h2>
+<table><tr><th>Area</th><th>Measured result</th><th>Status</th></tr>
+<tr><td>Structured data, author, date</td><td>Article markup on 159; author and date on 159; FAQ markup on 153</td><td><span class="pill pass">Pass</span></td></tr>
+<tr><td>Title length and uniqueness</td><td>28 to 60 characters; 0 duplicates</td><td><span class="pill pass">Pass</span></td></tr>
+<tr><td>Title wording</td><td>"India" in 6 of 162; 38 say "where each fits"; 111 end in the brand only</td><td><span class="pill fail">Fail</span></td></tr>
+<tr><td>Descriptions</td><td>17 over 155 characters; the description is repeated as the opening on 68 pages</td><td><span class="pill part">Partial</span></td></tr>
+<tr><td>Direct answer first</td><td>Disclosure sits in the first 60 words on 50 pages</td><td><span class="pill part">Partial</span></td></tr>
+<tr><td>Question headings</td><td>Typical "Sociana vs" page has 1; hubs have 1 or none</td><td><span class="pill fail">Fail</span></td></tr>
+<tr><td>Visible to Google and AI</td><td>161 noindex; all left out of the sitemap and the AI reference file</td><td><span class="pill fail">Hidden</span></td></tr>
+<tr><td>Consistency of facts</td><td>Contradictions found in every batch (section 2)</td><td><span class="pill fail">Fail</span></td></tr>
+<tr><td>Claims about competitors</td><td>Disputable statements on dozens of pages (section 2)</td><td><span class="pill fail">Fail</span></td></tr>
+<tr><td>Sociana's price shown</td><td>0 of 40 "Sociana vs"; 3 of 40 alternatives; 0 of 13 best-of tables</td><td><span class="pill fail">Fail</span></td></tr>
+<tr><td>Outbound links</td><td>3,304; 1,967 nofollow; 1,337 not</td><td><span class="pill fail">Fail</span></td></tr></table></section>
+
+<section class="sec"><div class="k">2 · Fix before publishing</div><h1>Statements that could be disputed</h1>
+<p class="lead">These are an editor's findings for the founder's legal read, not legal advice. Each quote is taken from the live page. No competitor fact was re-checked against its source in this review.</p>
+<h2>A. Claims about competitors</h2>
+<table><tr><th>Claim</th><th>Where</th><th>Why it is a risk</th><th>Recommendation</th></tr>
+<tr><td>"Hubilo no longer sells under its own name"; "now VirtualPro by Brandlive"</td><td>Compare hub, Hubilo pricing, Hubilo alternatives, and 6 "vs Hubilo" pages</td><td>Rests on a website redirect seen twice. The same pages say the acquisition reports "have not been independently verified", and fill Hubilo's column with VirtualPro's prices</td><td>Say only what was seen: "hubilo.com redirected to virtualpro.com when checked on [date]". Remove VirtualPro's prices from Hubilo's column. Re-check before publishing</td></tr>
+<tr><td>"Webex Events (Socio) has been discontinued as a standalone product: support ended on 30 Apr 2025"</td><td>Sociana vs Webex Events; Webex Events alternatives; hub</td><td>The sources are named but not shown; the page says webex.com could not be read</td><td>Cite the vendor's own notice by title and date, or remove</td></tr>
+<tr><td>"A derived benchmark from revenue and customer counts is about 25,000 to 28,000 US dollars per customer per year"</td><td>vFairs (2 pages, and in the FAQ)</td><td>A price worked out by Sociana and printed as the rival's</td><td>Remove</td></tr>
+<tr><td>Third-party or unverified prices: Whova "low-to-mid four figures"; Cvent "above 20,000 dollars a year"; Guidebook "from 1,999 dollars"; Kwikpic from "a coupon site"; Townscript from Capterra and "a 2015 report"</td><td>12 or more pages</td><td>Each carries "we have not verified this". Printing it is still publishing it</td><td>Remove. Say "does not publish prices; ask for a written quote"</td></tr>
+<tr><td>Slido prices shown under a link to Slido's pricing page</td><td>Slido pricing, alternatives and "vs" pages</td><td>The page says the figures came from Capterra, not Slido</td><td>Name the real source or remove the figures</td></tr>
+<tr><td>Ownership and corporate claims: Eventbrite "became a private company on 10 Mar 2026"; Townscript "a BookMyShow group company since a 75 percent stake in Feb 2017"; Slido "Cisco-owned"; Cvent acquisitions of Goldcast and ON24</td><td>20 or more pages</td><td>No source, or sourced to a homepage that would not say it; one cites a page it says "could not be read"</td><td>Give a real source and date, or remove. They are not needed to choose an event app</td></tr>
+<tr><td>Negative claims from tiny samples: Whova "Trustpilot, four reviews, 2.6 average"; Zuddl "two reviews at 2.9"; Airmeet "1.8 from 15 reviews"; Hubilo "two one-star reviews"</td><td>8 or more pages</td><td>Used as reasons to switch</td><td>Remove, or one neutral line with the larger rating beside it</td></tr>
+<tr><td>Accusations: Guidebook "Some case studies quote the wrong customer"; Glue Up "go-live is also described inconsistently"; Brella "The security page is thin"; Cvent "overbuilt for one Indian meet"</td><td>5 pages</td><td>Opinion or accusation stated as fact</td><td>Remove</td></tr>
+<tr><td>Remarks on a rival's finances or staffing: Eventbrite revenue "…we draw no conclusion from that"; Airmeet "headcount lower than in 2023, which we do not rely on"</td><td>2 pages</td><td>Innuendo, with unnamed sources</td><td>Remove</td></tr>
+<tr><td>Unnamed analyst notes: "Gartner's 2026 note cautions…"; "Gartner moved it from Leader to Visionary"</td><td>Cvent, Bizzabo, vFairs, Accelevents pages</td><td>No title, date or link</td><td>Give the report's title and date, or remove</td></tr></table>
+<h2>B. Facts that contradict each other</h2>
+<table><tr><th>Page</th><th>What disagrees</th></tr>
+<tr><td>EventX vs Hubilo</td><td>The opening gives EventX prices; the table says "Pricing: Not verified"; the budget section says "shows no figure"; the FAQ says "Both publish prices"</td></tr>
+<tr><td>Sociana vs EventX</td><td>"zero-commission ticketing" in the opening; "a 5 percent ticketing platform fee" in the table</td></tr>
+<tr><td>Townscript (4 pages)</td><td>Pricing is "Commission-based", "shows no figure", "published" and "could not be read", all on one page</td></tr>
+<tr><td>Sociana vs Zoho Backstage</td><td>Prices "we have not verified" in the table; stated as read from zoho.com in the pricing block</td></tr>
+<tr><td>Brella (3 pages)</td><td>"Pricing: Not published" in the table; "Brella publishes prices" in the FAQ. "Forty success stories" against "an empty success-story hub in our check"</td></tr>
+<tr><td>Whova</td><td>Managed delivery team is "Partial" on Sociana vs Whova and "included" on six other pages. "A weak abstract submission tool" against "abstract submission… inside the same platform"</td></tr>
+<tr><td>Zoho Backstage</td><td>"No games, WhatsApp or hospitality features found" on three best-of guides; "Zoho describes WhatsApp event messaging on its site" on two others</td></tr>
+<tr><td>vFairs, Swapcard, Zuddl</td><td>The text says no WhatsApp is listed; the table on the same page says WhatsApp is listed</td></tr>
+<tr><td>10 or more "X vs Y" pages</td><td>"Only X lists an attendee app" beneath a table showing both on iOS, Android and web. This drives wrong "choose X" advice</td></tr>
+<tr><td>Bizzabo (5 pages)</td><td>"about 17,999 dollars a year"; 499 × 3 × 12 is 17,964</td></tr>
+<tr><td>Kahoot (3 pages)</td><td>Two different plans both shown at 79</td></tr>
+<tr><td>KonfHub pricing</td><td>"Estimates exclude GST", but the rupee estimates include 18% GST</td></tr>
+<tr><td>Best event app companies in India</td><td>Title says nine vendors; the page lists ten. Explara's fee and features differ from another guide</td></tr>
+<tr><td>Best-of guides</td><td>Eventify's overage fee is "$1.25 to $1.75" on one and "$1 to $1.75" on another</td></tr>
+<tr><td>Dates</td><td>Banners say "as of 19 Oct 2026" while rows on the same page cite 23 or 24 Oct, on 30 or more pages. A "13 Nov 2026" date on two pages has now passed</td></tr>
+<tr><td>Sociana's own proof</td><td>"Is there proof Sociana works for Indian weddings? Yes. The Tanvi &amp; Rutwik wedding app, in preparation and not yet run"</td></tr></table>
+<h2>C. Broken or unfinished text</h2>
+<table><tr><th>Fault</th><th>Where</th></tr>
+<tr><td>A sentence spliced into a table cell: "(checked 19 Oct 2026). and the Sherlock assistant are core to the app."</td><td>5 or more Swapcard pages</td></tr>
+<tr><td>"from 499 per user US dollars a month"</td><td>3 Bizzabo pages</td></tr>
+<tr><td>"not affiliated with the Whova" (a stray "the" before the name)</td><td>All 40 "Sociana vs" pages</td></tr>
+<tr><td>Description cut off: "a domain from 17."; typo "hubilo. com domain"</td><td>WithJoy vs Zola; Hubilo alternatives</td></tr>
+<tr><td>A stray heading: "It served"</td><td>Airmeet vs Hubilo, EventX vs Hubilo</td></tr>
+<tr><td>Wrong cell contents: "Rupee billing: The India site lists 80,000+ wedding professionals"; "Managed or account support: Indian company"</td><td>The Knot vs WithJoy; Stridekick pages</td></tr>
+<tr><td>The second product missing from "Pick… when" and from the sources list</td><td>Brella vs Grip, Cvent vs Stova, Eventbrite vs Explara, Eventbrite vs Luma</td></tr>
+<tr><td>Descriptions promising cost views "at 100, 500 and 2,000 guests" that the page does not contain</td><td>4 concept comparison pages</td></tr>
+<tr><td>Three identical "Not derivable" rows in a cost table</td><td>Cvent, Guidebook, Whova, Swapcard, Zuddl pricing</td></tr></table></section>
+
+<section class="sec"><div class="k">3 · Who the pages speak to</div><h1>Written to the founder, not the buyer</h1>
+<p class="lead">Across the 162 pages the readers counted about 2,000 passages that describe how the page was made, checked or defended. A buyer who arrives from Google or an AI assistant wants to know which product to pick, what it costs and what to ask.</p>
+<table><tr><th>Pattern</th><th>Example</th><th>Scale</th></tr>
+<tr><td>One sentence pasted into many cells</td><td>"Not verified… this row was not checked page by page"</td><td>About 235 cells on 12 "Sociana vs" pages; up to 24 cells on one page</td></tr>
+<tr><td>Check date repeated</td><td>"source, 19 Oct 2026" on every row of a 38-row table</td><td>145 pages</td></tr>
+<tr><td>Ownership disclosure repeated</td><td>"Published by Sociana, which sells one of the two", then a closing "Disclosure" block</td><td>All 162; in the first 60 words on 50</td></tr>
+<tr><td>Method statements</td><td>"We compiled it… without hands-on testing, and nobody paid for a place."</td><td>110 pages</td></tr>
+<tr><td>Site errors reported to the reader</td><td>"several sub-pages returned 503 errors during our 19 Oct 2026 check"; "the /pricing path returned 404 in our check"; "theknot.com returned 403 to our checks"</td><td>6 or more pages</td></tr>
+<tr><td>Notes about competitors' marketing</td><td>"The best comparison-page engine among Indian vendors… which also makes it the main rival for alternatives searches"; "The most use-case-rich Indian site"</td><td>4 pages</td></tr>
+<tr><td>Editor's log</td><td>"What changed (19 Oct 2026)… again on 24 Oct 2026"</td><td>10 to 15 pages</td></tr>
+<tr><td>Admissions about the page itself</td><td>"so this page is thin on cost"</td><td>EventX vs Hubilo</td></tr></table>
+<h3>Rewrites, with every fact kept</h3>
+<table><tr><th>Before</th><th>After</th></tr>
+<tr><td>"'Not listed' means we could not find it on the vendor's pages that day, not that it does not exist. 'Not verified' means the row was not checked page by page, so we make no claim either way."</td><td>"'Not listed' means Whova's website does not mention it. If a row matters to you, ask Whova to confirm it in writing."</td></tr>
+<tr><td>A three-row cost table in which each row reads "Not derivable from published pricing"</td><td>"Cvent does not publish licence or per-registration rates, so we cannot give a cost for 300, 1,000 or 3,000 attendees. Ask Cvent for a written quote at your attendee count, with every add-on listed."</td></tr>
+<tr><td>"Disclosure. Sociana publishes this guide and is listed once, at position 1 of 7, labelled as our product. We compiled it on 19 Oct 2026 from public vendor pages linked below, without hands-on testing, and nobody paid for a place."</td><td>"Sociana is one of the seven apps listed, and we say so in the table. Details come from each vendor's own pages, not from trials, and prices were current on 19 Oct 2026."</td></tr></table>
+<p><b>Keep:</b> one price-check date beside each price or table; one ownership line near the top; the correction route; "Pick X when" lists; "ask for a written quote" tips; migration steps.</p></section>
+
+<section class="sec"><div class="k">4 · SEO</div><h1>Search wording, measured on all 162 pages</h1>
+<table><tr><th>Page type</th><th>Pages</th><th>Median words</th><th>"India" in title</th><th>Year in title</th><th>Description over 155</th><th>FAQ markup</th><th>Median question headings</th><th>Sociana from-price shown</th></tr>
+<tr><td>Sociana vs a competitor</td><td>40</td><td>2,016</td><td>0</td><td>39</td><td>1</td><td>40</td><td>1</td><td>0</td></tr>
+<tr><td>Competitor vs competitor</td><td>42</td><td>1,046</td><td>0</td><td>38</td><td>4</td><td>42</td><td>5</td><td>0</td></tr>
+<tr><td>Concept comparisons</td><td>12</td><td>921</td><td>0</td><td>0</td><td>5</td><td>12</td><td>5</td><td>0</td></tr>
+<tr><td>Competitor pricing</td><td>12</td><td>1,257</td><td>1</td><td>12</td><td>0</td><td>12</td><td>2</td><td>8</td></tr>
+<tr><td>Alternatives</td><td>40</td><td>1,103</td><td>0</td><td>0</td><td>0</td><td>34</td><td>2</td><td>3</td></tr>
+<tr><td>Best-of lists</td><td>13</td><td>1,244</td><td>4</td><td>13</td><td>6</td><td>13</td><td>5</td><td>0</td></tr>
+<tr><td>Hubs</td><td>3</td><td>798</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td></tr></table>
+<table><tr><th>Finding</th><th>Evidence</th><th>Recommendation</th></tr>
+<tr><td>Titles miss the words buyers add</td><td>"India" in 6 of 162 titles and in none of the 40 alternatives titles, though 38 of their headings say "for Indian organisers". 111 titles end with the brand only</td><td>Title formula: intent word, India, year. "Cvent alternatives in India (2026): 12 options compared"</td></tr>
+<tr><td>One vague formula on 38 titles</td><td>"Sociana vs Whova (2026): where each fits"</td><td>"Sociana vs Whova (2026): features, pricing, India fit"</td></tr>
+<tr><td>Pricing titles miss the typed question</td><td>9 of 12 read "…pricing 2026: real costs, fees, is it worth it?"</td><td>"How much does Whova cost? Pricing 2026"</td></tr>
+<tr><td>Main headings are labels</td><td>40 read "…an honest comparison for [occasion]"; 40 read "…which fits your 2026 programme?"</td><td>Repeat the buyer's phrase and add the deciding factors</td></tr>
+<tr><td>Section headings carry no search words</td><td>"Fair is fair", "Fit at a glance", "Who should pick which" on 81 pages</td><td>Use the question headings in section 5</td></tr>
+<tr><td>Description reused as the opening</td><td>68 pages</td><td>Description invites the click; the opening gives the answer</td></tr>
+<tr><td>17 descriptions over 155 characters</td><td>156 to 159 characters</td><td>Trim</td></tr>
+<tr><td>Hidden from search</td><td>161 of 162 noindex and out of the sitemap</td><td>Open in the order in section 9, after the fixes</td></tr>
+<tr><td>Long pages with one long table</td><td>"Sociana vs" pages have a median of 36 table rows</td><td>A short table of the deciding rows first; the full table below</td></tr></table>
+<p class="small">No search volumes were available. The phrases come from Google's suggestions collected for the main audit: "cvent alternatives", "best cvent alternatives", "whova alternatives", "how much does whova cost", "cvent cost", "event management software like cvent".</p></section>
+
+<section class="sec"><div class="k">5 · AEO</div><h1>Being the direct answer</h1>
+<p class="lead">Answer boxes and voice results lift a short passage that answers the question by itself. These pages have the tables and FAQ markup for it, but the answer is often behind a disclosure or framed as a description of the other vendor.</p>
+<table><tr><th>Finding</th><th>Evidence</th><th>Recommendation</th></tr>
+<tr><td>The first words are not the answer</td><td>50 pages put "Published by Sociana…" or "Written by Sociana…" in the first 60 words. "Sociana vs" pages open by describing the competitor</td><td>Verdict and two facts in the first 40 to 60 words; ownership line after it</td></tr>
+<tr><td>Few questions as headings where they matter</td><td>The typical "Sociana vs" page has 1 question heading; the three hubs have 1 or none</td><td>Five question headings per page, as buyers type them</td></tr>
+<tr><td>FAQ answers start with the check date or a caveat</td><td>"Review themes cited on 19 Oct 2026 include…"</td><td>Answer in the first sentence; date at the end</td></tr>
+<tr><td>Answer slots left empty</td><td>"Not derivable" cost rows on 5 pricing pages; Sociana's price cell reads "see the pricing page" on all 13 best-of tables</td><td>Give a figure or one plain sentence that no figure is published</td></tr>
+<tr><td>9 pages have no FAQ markup</td><td>The three hubs and six alternatives pages (Eventbrite, KonfHub, RingCentral Events, Swapcard, Townscript, Webex Events)</td><td>Add five questions to each</td></tr></table>
+<h3>Answer-first openings, using only facts on the pages</h3>
+<table><tr><th>Page</th><th>Opening</th></tr>
+<tr><td>Sociana vs Whova</td><td>"Pick Whova for conferences and academic or association meetings that want a proven, widely installed attendee app with abstract management. Pick Sociana for hospitality-heavy meets that need per-guest flights, rooms and pickups, WhatsApp, and rupee quotes with GST. Checked 19 Oct 2026."</td></tr>
+<tr><td>Cvent pricing</td><td>"Cvent does not publish prices, so its cost at 300, 1,000 or 3,000 attendees cannot be worked out from public information. Its pricing page lists modules, two tiers and unpriced add-ons."</td></tr>
+<tr><td>Cvent vs Whova</td><td>"Cvent suits global enterprises running large, multi-country event portfolios. Whova suits a single conference that wants a familiar attendee app. Neither publishes prices, so we cannot say which is cheaper."</td></tr></table>
+<h3>Question headings to use</h3>
+<table><tr><th>Page type</th><th>Questions</th></tr>
+<tr><td>Sociana vs X</td><td>Is Sociana better than Whova? · Which is cheaper? · Does Whova work in India? · Where is Whova better than Sociana?</td></tr>
+<tr><td>X vs Y</td><td>Is Cvent cheaper than Whova? · Which is better for a conference? · Does either bill in rupees?</td></tr>
+<tr><td>Pricing</td><td>How much does Cvent cost? · Does Cvent publish its prices? · Does Cvent charge per registration?</td></tr>
+<tr><td>Alternatives</td><td>What is the best Cvent alternative in India? · Which alternative bills in rupees with GST? · When should I stay on Cvent?</td></tr>
+<tr><td>Best-of</td><td>Which event app charges in rupees? · Which Indian event app has published prices?</td></tr></table></section>
+
+<section class="sec"><div class="k">6 · GEO</div><h1>Being found, trusted and quoted by AI assistants</h1>
+<p class="lead">AI assistants answer "what is a good alternative to X in India" from pages they can reach and from facts they see repeated consistently. Today they cannot reach these pages, and where they could, the facts disagree.</p>
+<table><tr><th>GEO signal</th><th>Result</th><th>Recommendation</th></tr>
+<tr><td>Reachable by AI search</td><td>161 of 162 pages are noindex and left out of the sitemap and the AI reference file. AI crawlers are allowed on the site, so this is the only barrier</td><td>Open the fixed pages, and add them to the sitemap and the reference file at the same time</td></tr>
+<tr><td>Facts agree across pages</td><td>Prices, features and ownership differ between pages (section 2B)</td><td>Hold each competitor's facts in one record and render every page from it, so a fact cannot differ between two pages</td></tr>
+<tr><td>Passages that stand alone</td><td>Many sentences depend on a caveat before or after them; verdicts are split across "In one line", the description and the opening</td><td>One self-contained verdict sentence per page, naming both products and the buyer it suits</td></tr>
+<tr><td>Dated, attributed facts</td><td>Present, but dates on one page disagree (19, 23 and 24 Oct)</td><td>One "checked on" date per page, updated when re-checked</td></tr>
+<tr><td>Sociana described consistently</td><td>The from-price is on 11 of 162 pages; "300+ events" on 3</td><td>The same two-line description of Sociana on every page (section 7)</td></tr>
+<tr><td>Words AI is asked</td><td>"alternative" questions and "how much does X cost" are common; titles and headings rarely match them</td><td>Sections 4 and 5</td></tr>
+<tr><td>Unverified claims</td><td>AI repeats what a page states. A wrong or disputed claim about a competitor could be quoted with Sociana named as the source</td><td>Section 2A, before anything is opened</td></tr>
+<tr><td>Markup</td><td>Article, author, date, FAQ and list markup are in place</td><td>Keep</td></tr></table>
+<div class="box"><b>Why the order matters for AI.</b> In the main audit, ChatGPT quoted Sociana's pricing page word for word when it matched the question. The same will happen with these pages once they are open, including whatever they say about competitors. So accuracy has to come before visibility.</div>
+<p class="small">Not tested: how AI assistants answer "alternatives" and "X vs Y" questions today. The pages are hidden, so there is nothing of Sociana's for them to cite yet. Add ten such questions to the monthly test once pages are open.</p></section>
+
+<section class="sec"><div class="k">7 · What the pages say about Sociana</div><h1>Under-sold, and in a few places over-sold</h1>
+<table><tr><th>Where</th><th>Today</th><th>Problem</th><th>Suggested</th></tr>
+<tr><td>All 40 "Sociana vs" pages; all 13 best-of tables</td><td>"Rupee quotes with GST, per occasion or annual programme. See the packages."</td><td>A rival's price on every page, never Sociana's</td><td>"From ₹65,000 + GST per occasion (Launch); from ₹1,40,000 with per-guest stay and travel"</td></tr>
+<tr><td>159 of 162 pages</td><td>No mention of the record</td><td>"300+ events" is on 3 pages</td><td>One line under each "Pick Sociana when" block</td></tr>
+<tr><td>40 pages, 5 to 8 rows each</td><td>"Sociana does not offer this today."</td><td>Bare and apologetic</td><td>"Badge printing and kiosks: not offered. Cvent and Whova both list them; Sociana is often used beside a registration tool."</td></tr>
+<tr><td>Sociana vs Whova, vs Cvent and others</td><td>"You need what Whova is not built for"</td><td>Sociana defined by the rival's gap</td><td>"Pick Sociana when per-guest flights, rooms and pickups matter"</td></tr>
+<tr><td>Competitor vs competitor pages</td><td>"we are the wrong choice", "we are no match", "we have no AI matchmaking"</td><td>Opens with what Sociana lacks; absent from all 54 as a priced option</td><td>Lead with the use case, then the limit, once</td></tr>
+<tr><td>Row 30 of 38</td><td>"Branded app on the client's own store listing: Yes"</td><td>A main difference, buried</td><td>Move to "Where Sociana differs"</td></tr>
+<tr><td>Sociana column</td><td>"Yes" in every row, sourced only to the rival's page</td><td>Sociana's own claims have no stated basis</td><td>"Sociana column: our product documentation and delivered events"</td></tr>
+<tr><td>Best-of guides</td><td>Sociana ranked first on the dealer meet, employee engagement and wedding guides it wrote</td><td>Over-sold: the claim most likely to be challenged</td><td>Present by situation, not by numbered rank</td></tr>
+<tr><td>Hubilo, Cvent alternatives</td><td>"the closest replacement"; "the usual alternative to Cvent is Sociana"</td><td>Over-sold</td><td>"one option for…"</td></tr>
+<tr><td>Sociana vs Cvent</td><td>"Sociana configures the app for you in days; Cvent reviewers on SourceForge describe training and time to learn the suite"</td><td>Unfair: a fact about one against anecdotes about the other</td><td>"Sociana's own team configures and runs the app: Launch goes live in 7–10 days."</td></tr>
+<tr><td>Wedding pages</td><td>Proof offered is an app "in preparation and not yet run", and a real couple is named</td><td>Not proof; possible privacy issue</td><td>Use a delivered wedding, with consent, or remove</td></tr>
+<tr><td>Two pages</td><td>Clients named (Occasion Xperts, Nirvaan)</td><td>Check naming permission</td><td>Confirm or remove</td></tr></table>
+<div class="box"><b>How to describe Sociana, everywhere.</b> The job it does; one proof (300+ events in six years); the from-price wherever a rival's price is shown; limits stated once, as "not offered: use X". No "best", "closest", "usual", "leading" or numbered self-ranking.</div></section>
+
+<section class="sec"><div class="k">8 · Sources and links</div><h1>Citing without strengthening competitors</h1>
+<p>Measured across all 162 pages: 3,304 links to 80 other sites inside page content, on 151 pages. 1,967 are marked nofollow and 1,337 are not. The most-linked sites are whova.com (175), cvent.com (152), eventbrite.com (137), swapcard.com (122) and zoho.com (118).</p>
+<table><tr><th>Pattern</th><th>Scale</th><th>Recommendation</th></tr>
+<tr><td>A "source" link on every table row, to the same competitor homepage</td><td>About 2,740 links</td><td>Remove. One sources list per page</td></tr>
+<tr><td>A bare competitor domain as the link text</td><td>About 300, mostly in "Sources and dates" lists</td><td>Plain text: "Cvent pricing page (checked 19 Oct 2026)"</td></tr>
+<tr><td>A competitor's brand name or domain as the link text on best-of guides, which helps them most</td><td>About 190</td><td>Remove the link; keep the name as text</td></tr>
+<tr><td>A homepage linked as proof that something is absent</td><td>52 for cvent.com alone</td><td>No link; a homepage cannot prove absence</td></tr>
+<tr><td>Links with no nofollow mark</td><td>1,337</td><td>Make nofollow the default for every outside link in page content</td></tr>
+<tr><td>Neutral sources (Wikipedia, DataReportal, news sites)</td><td>Few</td><td>Keep, as nofollow</td></tr></table>
+<div class="box"><b>Proposed citation rule.</b> Name the source and the check date in plain text, with no link by default. One "Sources and dates" list at the bottom of each page. Link only the exact page behind a price or ownership claim a buyer might dispute, marked nofollow, with link text such as "pricing page, checked 19 Oct 2026". Never use a competitor's name or keyword as link text, and never link a competitor's homepage. Keep a dated screenshot on file for anything not linked.</div>
+<p><b>The trade-off.</b> Nofollow is a hint to search engines, not a guarantee. With fewer links a reader cannot check a claim in one click, so the page's credibility rests on the date and the correction route.</p></section>
+
+<section class="sec"><div class="k">9 · Improvement plan</div><h1>Five steps, in order</h1>
+<div class="phase"><div class="n">1</div><div><b>Remove or source the disputable claims</b><p>Everything in section 2A: discontinued and ownership claims, unverified and derived prices, tiny-sample negatives, accusations. <span class="muted">Check: no page contains "we have not verified" beside a price, and every corporate claim has a named source and date.</span></p></div></div>
+<div class="phase"><div class="n">2</div><div><b>Make the facts agree</b><p>One record per competitor (price, platforms, WhatsApp, rupee billing, managed team, ownership, check date), with every page drawing from it. Fix the contradictions and broken text in sections 2B and 2C. <span class="muted">Check: a search for each competitor's price returns one value across all pages.</span></p></div></div>
+<div class="phase"><div class="n">3</div><div><b>Change the page patterns once</b><p>Most faults repeat because the pages share patterns: the disclosure, the per-row source link, the "not verified" sentence, the title and heading formulas, the Sociana price cell, the nofollow default. Changing the pattern fixes them on every page. <span class="muted">Check: disclosure once per page; one date per table; 0 followed links to other sites; Sociana's from-price on every page that shows a rival's.</span></p></div></div>
+<div class="phase"><div class="n">4</div><div><b>Rewrite for the buyer and for answers</b><p>Per page: answer-first opening, question headings, deciding-rows table, FAQ answers that start with the answer, the standard Sociana description. <span class="muted">Check: each page's first 60 words name both products and who each suits.</span></p></div></div>
+<div class="phase"><div class="n">5</div><div><b>Open in stages, then measure</b><p>Open pages in the order below, adding each stage to the sitemap and the AI reference file. Track positions and add ten "alternatives" and "X vs Y" questions to the monthly AI test.</p></div></div>
+<h2>Suggested order for opening pages</h2>
+<table><tr><th>Stage</th><th>Pages</th><th>Why this order</th></tr>
+<tr><td>1</td><td>12 concept comparisons (event app vs WhatsApp group, in-house vs agency, and similar)</td><td>They name no competitor, so the legal risk is lowest. They need titles, the Sociana price and trimmed descriptions</td></tr>
+<tr><td>2</td><td>40 alternatives pages</td><td>The best written, and "alternatives" is the most searched pattern. Fix Hubilo, Webex Events, Townscript, Eventbrite, Kwikpic, vFairs and Slido first</td></tr>
+<tr><td>3</td><td>40 "Sociana vs" pages</td><td>The largest rewrite: the pasted "not verified" cells, the price, the opening</td></tr>
+<tr><td>4</td><td>12 pricing pages</td><td>Only where the competitor publishes prices; otherwise fold into the alternatives page</td></tr>
+<tr><td>5</td><td>13 best-of guides</td><td>Last, after the ranking is presented by situation</td></tr>
+<tr><td>Review</td><td>42 competitor vs competitor pages</td><td>Sociana is not a priced option on any of them, and they carry the most contradictions. Decide whether each earns its place; fix or retire</td></tr></table>
+<div class="box warn"><b>Decisions needed from the founder.</b> (1) Accept the citation rule, with its trade-off. (2) Keep or drop numbered self-ranking on best-of guides. (3) Keep, fix or retire the 42 competitor vs competitor pages. (4) Approve the standard Sociana description and from-prices for use on these pages.</div></section>
+
+<section class="sec"><div class="k">10 · Method and limits</div><h1>How the pages were reviewed</h1>
+<table><tr><th>Step</th><th>How</th><th>Scope</th></tr>
+<tr><td>Full read</td><td>The text of every live page read top to bottom against seven points: founder-facing writing, search wording, Sociana under-sold, Sociana over-sold or unfair, risky competitor statements, contradictions and errors, links. Seven readers, one batch each, 22 Nov 2026</td><td>162 of 162 pages; 217,430 words</td></tr>
+<tr><td>Measurements</td><td>Titles, descriptions, headings, openings, tables, structured data, index setting, prices and links counted from the page code</td><td>162 pages</td></tr>
+<tr><td>Three-lens review</td><td>Reader voice; search and AI answers; Sociana and sources. 12 pages read in full by each reviewer</td><td>12 pages</td></tr>
+<tr><td>Live check</td><td>Each address requested on the live site and its index setting read</td><td>162 pages</td></tr></table>
+<h3>Limits</h3><ul>
+<li>No page and no code was edited. Everything here is a finding or a recommendation.</li>
+<li>No competitor fact was re-checked against its source. The review finds claims that are unsourced, contradictory or unverified by the page's own account; it does not establish which version is true.</li>
+<li>The risk notes are an editor's view, not legal advice. The founder's legal read is still required.</li>
+<li>The count of about 2,000 founder-facing passages adds seven readers' counts, made with slightly different rules, so it is an estimate. Counts marked "or more" list the pages where a reader recorded the issue and may be incomplete.</li>
+<li>An earlier draft of this review said 14 titles were over 60 characters. Measured from the page code, none is.</li>
+<li>Link counts come from the page code; the per-row and brand-name figures are approximate.</li>
+<li>Not tested: search volumes, current Google positions (the pages are hidden), and how AI assistants answer "alternatives" questions.</li></ul>
+<p>The page-by-page findings for all 162 pages are available as a separate file.</p></section>
+</body></html>
