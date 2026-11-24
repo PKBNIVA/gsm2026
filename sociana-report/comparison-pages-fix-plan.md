@@ -2,14 +2,39 @@
 
 Written in plain language. The first version of this plan was written before any fixing started; the section below records what has now been done.
 
-## Where this stands (22 November 2026)
+## Where this stands (24 November 2026)
+
+### Your correction of 24 November, and what changed
+
+You said the corrected pages showed no knowledge of Sociana, listed things Sociana "does not" do when it does most of them, gave search engines and AI assistants reasons to prefer competitors, and linked almost no case studies. All four were true. The cause was mine: I treated the "Sociana: No" cells already in the comparison data as fact. They came from an internal "do not claim until verified" list, which is not the same as "does not exist", and I had not read Sociana's own knowledge base, which says to assume Sociana does more than is documented.
+
+What was changed on the working copy (pull request 4, still not merged, pages still hidden):
+
+| Check, on the 162 built pages | Before your correction | Now |
+|---|---|---|
+| Pages with a sentence saying what Sociana does not do | 128 (398 places) | 0 |
+| Pages with a line arguing for the other product ("better than Sociana", "Stay with X", "Pick X for") | 144 (786 places) | 0 |
+| Sociana cells in comparison tables marked "No" or "Partial" | 21 kinds of row | 0 |
+| Pages that link at least one case study | 35 at most | 162 |
+| Case-study links in total | not counted | 1,945, of which 997 sit in a table row beside the feature they prove |
+
+- **Sociana leads every page.** The first card is "Choose Sociana when", with the price and two case studies. The other product is described by what it is built for.
+- **Removed everywhere:** the "What Sociana does not offer" box, the question "What does X do better than Sociana?", the "Stay with X" section, "Pick X for" verdicts, and "When is Sociana not the right pick?" in the buyer guides.
+- **Buyer guides ("best …"):** the opening table used to send the reader to a competitor for each situation, including situations Sociana handles (rupee billing, tickets paid by UPI, exhibitors, quizzes, photo finder). It now shows what Sociana covers, each row with a case study. Other products are listed below by what they are built for and what they publish on price.
+- **Events not yet run** (the Tanvi & Rutwik wedding app) are never cited as "used at"; they show as "in preparation".
+- **20 capabilities are held back until you answer.** Where a competitor lists something and Sociana's records are unclear, the row is hidden on every page. The questions, with what your records show for each, are in the website repository at `docs/plan/REGISTER_CONFIRMATION_SHEET.md` (last section).
+- **So it does not happen again:** your rules are written into Sociana's knowledge base (section 0) and the repository's working rules, and the automatic checker now fails any page that says what Sociana does not do, argues for another product, marks Sociana "No", or has no case-study link.
+
+Not changed, for your decision: outside the comparison pages, the site's trust page, the file AI assistants read and the chat assistant carry a list of six things "Sociana does not offer today" (SOC 2 or ISO, India-only hosting, an uptime percentage, SAML single sign-on, a public API or Zapier app, direct Fitbit, Garmin or Strava sync). Your answers to the 20 questions decide whether those lines are right.
+
+### Where it stood on 22 November
 
 Steps 0 to 5 are done on a private working copy of the website (branch `claude/comparison-pages-corrections`), except the legal read, which is yours. **Nothing is live.** All 162 pages still carry the "do not list me" instruction for search engines, and the one switch that hides them was not touched. The live site shows the old pages until the working copy is merged.
 
 The four decisions at the top of this plan were applied as suggested, because you asked for the corrections to go ahead. Each can be reversed:
 
 1. Sources are named in plain words; only a competitor's price page is linked, and that link passes no search benefit.
-2. "Best of" guides keep "best" in the title but have no numbered ranking; they are organised by the buyer's situation.
+2. "Best of" guides keep "best" in the title but have no numbered ranking. Since 24 November they open with what Sociana covers, each row with a case study, and list the other products by what each is built for.
 3. No competitor-vs-competitor page was retired. All 42 were corrected. Eight pages now have little left to say (see "Your decisions").
 4. Sociana is described the same way everywhere: what it is, 300+ events over six years, and its "from" prices.
 
@@ -137,7 +162,7 @@ One change to a mould fixes that problem on every page made from it.
 | A short table of the five or six things that decide the choice, above the long table | The answer without scrolling |
 | Remove tables that hold no information | No more rows that all say "cannot be worked out" |
 | Fix words that run together and the stray "the" before competitor names | Clean text |
-| Sociana's gaps written once, plainly: "not offered: use X for this" | No repeated apology |
+| ~~Sociana's gaps written once, plainly~~ Withdrawn on 24 November: no page says what Sociana does not do; unclear capabilities are asked of the founder first | Your correction |
 
 - **Who:** I change the moulds. You look at one finished page of each type (seven pages) and approve the look.
 - **Done when:** the seven sample pages pass your eye, and automatic counts confirm: one disclosure per page, one date per table, zero links that help competitors.
@@ -146,7 +171,7 @@ One change to a mould fixes that problem on every page made from it.
 
 - **Titles:** use the words people type. For example "Cvent alternatives in India (2026)" in place of "Cvent alternatives — Sociana", and "How much does Whova cost?" in place of "Whova pricing 2026: real costs, fees, is it worth it?".
 - **The first two sentences:** give the answer. "Pick X if…, pick Sociana if…". This is what Google and AI assistants lift and quote.
-- **Headings:** written as the questions buyers ask ("Is Whova better than Sociana?", "Does Cvent charge per registration?").
+- **Headings:** written as the questions buyers ask ("How is Sociana different from Whova?", "Does Cvent charge per registration?").
 - **Body:** every sentence talks to "you", the buyer. Sentences about how we researched the page are cut.
 - **Sociana:** the agreed short description (decision 4), stated the same way everywhere. No "best", "closest", "usual" or "leading".
 - **Who:** I write. You read one page of each type first; once you approve the style, I apply it to the rest.
