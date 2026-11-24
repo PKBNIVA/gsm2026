@@ -27,7 +27,18 @@ What was changed on the working copy (pull request 4, still not merged, pages st
 - **Agencies (24 November):** recorded that Sociana also serves the agency side; nothing specific is written until you share the features.
 - **So it does not happen again:** your rules are written into Sociana's knowledge base (section 0) and the repository's working rules, and the automatic checker now fails any page that says what Sociana does not do, argues for another product, marks Sociana "No", or has no case-study link.
 
-Not changed, for your decision: outside the comparison pages, the site's trust page, the file AI assistants read and the chat assistant carry a list of six things "Sociana does not offer today" (SOC 2 or ISO, India-only hosting, an uptime percentage, SAML single sign-on, a public API or Zapier app, direct Fitbit, Garmin or Strava sync). Your answers to the 20 questions decide whether those lines are right.
+- **Site-wide decisions applied (24 November):** 2 to 7 day setup on every package, no rush fee (price book, pricing page, calculators), and the "What Sociana does not offer" list replaced by "What your IT team will ask" in your words. The site's chat assistant now gives the same answers.
+
+### Depth pass (started 24 November)
+
+You asked for pages that are far more descriptive, that list Sociana's version of everything a competitor is said to do, and that each stand on their own merit. The plan, and where it stands:
+
+1. **One library of what Sociana does**, written out in full from your feature pages, case studies and answers. Done: every Sociana cell in every comparison table now carries its description (2,581 cells; a bare "Yes" fails the checker).
+2. **Parity.** Wherever a page describes what the other product does and Sociana does it too, Sociana's version sits beside it. Done in the page moulds for all 162 pages.
+3. **Each page on its own merit.** Each product gets its own opening, "choose Sociana when" points, reasons to choose and to switch, price explanation, case studies and questions, written from what that product is known for. Done for 11 of 40 products: Whova, Slido, Cvent, EventMobi, Swapcard, Bizzabo, Guidebook, Brella, Accelevents, Eventify, Zuddl. The other 29, and the remaining articles and guides, follow family by family.
+4. **Proof.** The 162 pages went from 193,000 words to 369,000. Each family is read in full before it is reported.
+
+Open question for you: Slido and others list audience Q&A with upvoting and moderation. Your site says the town hall app collects questions for leadership; can attendees also upvote questions, and can a moderator approve them?
 
 ### Where it stood on 22 November
 
