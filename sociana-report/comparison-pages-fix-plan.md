@@ -29,16 +29,25 @@ What was changed on the working copy (pull request 4, still not merged, pages st
 
 - **Site-wide decisions applied (24 November):** 2 to 7 day setup on every package, no rush fee (price book, pricing page, calculators), and the "What Sociana does not offer" list replaced by "What your IT team will ask" in your words. The site's chat assistant now gives the same answers.
 
-### Depth pass (started 24 November)
+### Depth pass and "not too alike" (24 November, latest)
 
-You asked for pages that are far more descriptive, that list Sociana's version of everything a competitor is said to do, and that each stand on their own merit. The plan, and where it stands:
+You asked for pages that are far more descriptive, that list Sociana's version of everything a competitor is said to do, that each stand on their own merit, and that are not so alike that search engines or AI engines treat them as spam.
 
-1. **One library of what Sociana does**, written out in full from your feature pages, case studies and answers. Done: every Sociana cell in every comparison table now carries its description (2,581 cells; a bare "Yes" fails the checker).
-2. **Parity.** Wherever a page describes what the other product does and Sociana does it too, Sociana's version sits beside it. Done in the page moulds for all 162 pages.
-3. **Each page on its own merit.** Each product gets its own opening, "choose Sociana when" points, reasons to choose and to switch, price explanation, case studies and questions, written from what that product is known for. Done for 11 of 40 products: Whova, Slido, Cvent, EventMobi, Swapcard, Bizzabo, Guidebook, Brella, Accelevents, Eventify, Zuddl. The other 29, and the remaining articles and guides, follow family by family.
-4. **Proof.** The 162 pages went from 193,000 words to 369,000. Each family is read in full before it is reported.
+1. **Each page on its own merit.** All 37 live products now have their own opening, "choose Sociana when" points, row-by-row descriptions written for that product's buyer, reasons to switch, price explanation, case studies and questions. The 39 two-product articles each have their own "Where does Sociana fit?" section.
+2. **Not alike, and measured.** The automatic checker now measures, for every page, how much of its text appears on no other page. The first depth pass had made pages more alike (the same Sociana sentences on every page). After restructuring and rewriting:
 
-Open question for you: Slido and others list audience Q&A with upvoting and moderation. Your site says the town hall app collects questions for leadership; can attendees also upvote questions, and can a moderator approve them?
+| | Before | Now |
+|---|---|---|
+| Middle page: share of text that is its own | 33% | 52% |
+| Pages at 50% or more | 30 of 162 | 88 of 162 |
+| Pages under 25% | 45 | 4 |
+| Pairs of pages sharing more than 45% of sentences | 5 | 0 |
+
+By family (middle page): Sociana-vs 57%, two-product and approach articles 51%, buyer guides 69%, alternatives 45%, competitor pricing 36%.
+
+3. **What changed in the layouts.** A Sociana-vs page compares only that product's main capabilities in full and names the rest. An alternatives page no longer repeats those tables; it lists Sociana and the five closest products (it listed up to fourteen, some off-topic). A two-product table compares the two products, and Sociana's coverage is a line of linked names. Each question appears on one page type only.
+4. **Prices by case.** One table now decides the Sociana price each page shows. Wedding, ticketing and agency pages show their own package price; the other cases wait for your figures (26 cases listed in `docs/plan/REGISTER_CONFIRMATION_SHEET.md` in the Sociana repository).
+5. **Still under 50%:** 74 pages, mostly alternatives pages, the 12 competitor pricing pages (they change again when your prices arrive) and the pages about discontinued products. All stay hidden. Recommendation: open pages in batches, only those at 50% or more, after your legal read.
 
 ### Where it stood on 22 November
 
