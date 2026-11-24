@@ -38,16 +38,16 @@ You asked for pages that are far more descriptive, that list Sociana's version o
 
 | | Before | Now |
 |---|---|---|
-| Middle page: share of text that is its own | 33% | 52% |
-| Pages at 50% or more | 30 of 162 | 88 of 162 |
+| Middle page: share of text that is its own | 33% | 53% |
+| Pages at 50% or more | 30 of 162 | 100 of 162 |
 | Pages under 25% | 45 | 4 |
 | Pairs of pages sharing more than 45% of sentences | 5 | 0 |
 
-By family (middle page): Sociana-vs 57%, two-product and approach articles 51%, buyer guides 69%, alternatives 45%, competitor pricing 36%.
+By family (middle page): Sociana-vs 56.5%, two-product and approach articles 51%, buyer guides 70%, alternatives 50%, competitor pricing 36%.
 
 3. **What changed in the layouts.** A Sociana-vs page compares only that product's main capabilities in full and names the rest. An alternatives page no longer repeats those tables; it lists Sociana and the five closest products (it listed up to fourteen, some off-topic). A two-product table compares the two products, and Sociana's coverage is a line of linked names. Each question appears on one page type only.
 4. **Prices by case.** One table now decides the Sociana price each page shows. Wedding, ticketing and agency pages show their own package price; the other cases wait for your figures (26 cases listed in `docs/plan/REGISTER_CONFIRMATION_SHEET.md` in the Sociana repository).
-5. **Still under 50%:** 74 pages, mostly alternatives pages, the 12 competitor pricing pages (they change again when your prices arrive) and the pages about discontinued products. All stay hidden. Recommendation: open pages in batches, only those at 50% or more, after your legal read.
+5. **Still under 50%:** 62 pages, mostly alternatives pages, the 12 competitor pricing pages (they change again when your prices arrive) and the pages about discontinued products. All stay hidden. Recommendation: open pages in batches, only those at 50% or more, after your legal read.
 
 ### Where it stood on 22 November
 
